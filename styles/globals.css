@@ -1,16 +1,235 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/* GLOBAL */
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: transparent;
+  font-family: "Nunito", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome */
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  padding: 0 !important;
+  list-style: none;
+}
+
+button {
+  font-size: 14px !important;
+  font-family: "Poppins", sans-serif;
+}
+
+/* PAGES */
+
+/* Layout */
+
+.landing {
+  padding: 7rem 0;
+  min-height: 80vh;
+}
+
+.landing-img {
+  width: 100%;
+}
+
+.mail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 5px 25px;
+  background-color: white;
+  border-radius: 0 0 0 15px;
+  z-index: 2;
+  font-size: 2rem;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.mail:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .mail {
+    display: none;
+  }
+}
+
+/* index */
+
+.scroller {
+  position: absolute;
+  top: 75px;
+  height: 79.9vh;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 992px) {
+  .scroller {
+    display: none;
+  }
+}
+
+.scroller-img {
+  width: 80%;
+  position: relative;
+}
+
+.home {
+  background: linear-gradient(to bottom left, #0f339f 47%, #2448ff 100%);
+  color: whitesmoke;
+  position: relative;
+}
+
+#home-btn {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}
+
+#home-btn:hover {
+  background-color: white;
+  border: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+  color: black;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #0f339f;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+}
+
+.mask:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* services */
+
+.services {
+  background: linear-gradient(to top right, #208831 53%, #00bd2f 84%);
+  color: whitesmoke;
+}
+
+.services .service i {
+  font-size: 4rem;
+}
+
+.services .service {
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.services .service:hover i {
+  color: #28ff4a;
+}
+
+/* connect */
+
+.connect {
+  background: linear-gradient(to bottom left, #dc6d18 51%, #ffbc47 100%);
+  color: whitesmoke;
+}
+
+.connect-links {
+  font-size: 2rem;
+}
+
+.connect-links i {
+  padding: 0.5rem;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.connect-links i:hover {
+  background-color: whitesmoke;
+  color: #ff6f00;
+}
+
+.connect form {
+  padding: 2rem 1rem;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+
+.connect form label {
+  color: #4f4f4f !important;
+}
+
+.connect form button {
+  background: #ff6f00;
+  border: 2px solid #ff6f00;
+  transition: 0.2s ease-in-out;
+}
+
+.connect form button:hover {
+  background: whitesmoke;
+  color: #ff6f00;
+  border: 2px solid #ff6f00;
+}
+
+/* COMPONENTS */
+
+/* Navbar */
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  padding: 2rem;
+  color: white;
+}
+
+footer h5 {
+  text-decoration: underline;
+}
+
+footer li {
+  color: whitesmoke;
+}
+
+footer li:hover {
+  opacity: 0.6;
 }
