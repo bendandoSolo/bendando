@@ -11,17 +11,22 @@ export default function Footer() {
           <div className="col-md-3">
             <p>Privacy Policy ©Bendando</p>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 footer-links">
             <h5>Connect</h5>
             <ul>
               <Link href="mailto:enquiries@bendando.com">
                 <a>
-                  <li>Enquires@bendando.com</li>
+                  <li>
+                    <i className="far fa-envelope me-3"></i>
+                    Enquires@bendando.com
+                  </li>
                 </a>
               </Link>
               <Link href="tel:+4402089468865">
                 <a>
-                  <li>Phone: 0208 946 8865</li>
+                  <li>
+                    <i className="fas fa-phone me-3"></i>Phone: 0208 946 8865
+                  </li>
                 </a>
               </Link>
             </ul>

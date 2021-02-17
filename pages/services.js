@@ -1,10 +1,20 @@
-import Head from "next/head";
+// Components
 import Navbar from "./components/Navbar";
+import Message from "./components/Message";
+
+// Next
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Services() {
   return (
     <div className="services">
+      <Head>
+        <title>Services | BenDando</title>
+      </Head>
       <Navbar />
+      <Message />
+
       <div className="landing">
         <div className="container">
           <div className="row justify-content-between">
@@ -19,9 +29,13 @@ export default function Services() {
                 With increasing use of mobile you never know how fast your users
                 can download data.
               </h5>
-              <button type="button" className="btn mb-5" id="home-btn">
-                View Our Last Project
-              </button>
+              <Link href="/winflat">
+                <a className="mb-5">
+                  <button type="button" className="btn mb-5" id="home-btn">
+                    View Our Last Project
+                  </button>
+                </a>
+              </Link>
             </div>
             <div className="col-md-6">
               <div className="row">

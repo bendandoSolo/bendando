@@ -12,13 +12,6 @@ export default function Navbar() {
             <img className="landing-img" src="/images/logo.png" />
           </a>
         </Link>
-        <Link href="/connect">
-          <a>
-            <div className="mail">
-              <i className="far fa-envelope"></i>
-            </div>
-          </a>
-        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -33,7 +26,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link href="#">
+              <Link href="/projects">
                 <a className="nav-link" aria-current="page">
                   Projects
                 </a>

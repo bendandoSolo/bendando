@@ -1,13 +1,19 @@
-import Head from "next/head";
+// Components
 import Navbar from "./components/Navbar";
+import Message from "./components/Message";
 
 // Next
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Connect() {
   return (
     <div className="connect">
+      <Head>
+        <title>Connect | BenDando</title>
+      </Head>
       <Navbar />
+      <Message />
       <div className="landing">
         <div className="container">
           <div className="row justify-content-between">
@@ -58,7 +64,7 @@ export default function Connect() {
               </div>
             </div>
             <div className="col-md-5">
-              <form className="mt-4">
+              <form className="mt-4 connect-form">
                 <div className="form-outline mb-4">
                   <input
                     type="text"

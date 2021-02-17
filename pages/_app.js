@@ -6,11 +6,13 @@ import Head from "next/head";
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Message from "./components/Message";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
+        <title>BenDando</title>
         {/* MDB LINKS */}
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -32,7 +34,6 @@ function MyApp({ Component, pageProps }) {
           src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
         ></script>
       </Head>
-
       <Component {...pageProps} />
       <Footer />
     </div>

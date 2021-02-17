@@ -4,15 +4,20 @@ import Link from "next/link";
 
 // Components
 import Navbar from "./components/Navbar";
+import Message from "./components/Message";
 
 export default function Home() {
   return (
     <div className="home">
+      <Head>
+        <title>Home | BenDando</title>
+      </Head>
       <Navbar />
+      <Message />
       <div className="landing">
         <div className="container">
           <div className="row ">
-            <div className="col-md-6 ">
+            <div className="col-lg-5 me-4">
               <h1 className="mb-4">
                 We build beautiful websites and applications with web services.
               </h1>
