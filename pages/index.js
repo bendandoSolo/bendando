@@ -32,7 +32,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <div className="scroller">
                 <div className="scroller-img">
                   <img className="landing-img" src="/images/greenacre.png" />
@@ -59,8 +59,34 @@ export default function Home() {
                   <div className="mask"></div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
+        </div>
+      </div>
+      <div className="scroller">
+        <div className="scroller-img">
+          <img className="landing-img" src="/images/greenacre.png" />
+          <div className="mask"></div>
+        </div>
+        <div className="scroller-img">
+          <img className="landing-img" src="/images/malcolm-wall.png" />{" "}
+          <div className="mask"></div>
+        </div>
+        <div className="scroller-img">
+          <img className="landing-img" src="/images/win-a-flat.png" />{" "}
+          <div className="mask"></div>
+        </div>
+        <div className="scroller-img">
+          <img className="landing-img" src="/images/greenacre.png" />{" "}
+          <div className="mask"></div>
+        </div>
+        <div className="scroller-img">
+          <img className="landing-img" src="/images/malcolm-wall.png" />{" "}
+          <div className="mask"></div>
+        </div>
+        <div className="scroller-img">
+          <img className="landing-img" src="/images/win-a-flat.png" />{" "}
+          <div className="mask"></div>
         </div>
       </div>
     </div>
