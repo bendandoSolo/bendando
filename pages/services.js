@@ -29,7 +29,7 @@ export default function Services() {
                 With increasing use of mobile you never know how fast your users
                 can download data.
               </h5>
-              <Link href="/winflat">
+              <Link href="/win-a-flat">
                 <a className="mb-5">
                   <button type="button" className="btn mb-5" id="home-btn">
                     View Our Last Project

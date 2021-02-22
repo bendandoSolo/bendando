@@ -112,7 +112,14 @@ button {
 }
 
 .home {
-  background: linear-gradient(to bottom left, #0f339f 47%, #2448ff 100%);
+  background-image: linear-gradient(
+    to right top,
+    #a111a8,
+    #ce008e,
+    #eb1b74,
+    #f9475b,
+    #fd6d46
+  );
   color: whitesmoke;
   position: relative;
 }
@@ -136,13 +143,20 @@ button {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: #0f339f;
+  background-image: linear-gradient(
+    to right top,
+    #a111a8,
+    #ce008e,
+    #eb1b74,
+    #f9475b,
+    #fd6d46
+  );
   opacity: 0.9;
   transition: 0.2s ease-in-out;
 }
 
 .mask:hover {
-  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.2;
 }
 /* project */
 
@@ -152,7 +166,14 @@ button {
 }
 
 .project {
-  background: linear-gradient(to bottom left, #6a0101 60%, #dd0e0e 100%);
+  background-image: linear-gradient(
+    to right top,
+    #8b1818,
+    #961717,
+    #a21515,
+    #ad1313,
+    #b91010
+  );
   color: whitesmoke;
 }
 
@@ -170,7 +191,14 @@ button {
 }
 
 .project-display {
-  background-color: #262126;
+  background-image: linear-gradient(
+    to right top,
+    #4f0f0f,
+    #530e0e,
+    #570c0c,
+    #5a0a0a,
+    #5e0808
+  );
   padding-top: 8rem;
 }
 
@@ -186,7 +214,7 @@ button {
 
 #project-btn:hover {
   background-color: #6a0101;
-  border: 2px solid black;
+  border: 2px solid #6a0101;
   transition: 0.2s ease-in-out;
   color: whitesmoke;
 }
@@ -260,7 +288,42 @@ button {
 /* winaflat */
 
 .winaflat {
-  background: linear-gradient(to bottom left, #0a755b 47%, #75a744 100%);
+  background: linear-gradient(
+    to left bottom,
+    #00c88b,
+    #04b97c,
+    #06aa6d,
+    #069b5f,
+    #048c51
+  );
+  color: whitesmoke;
+}
+
+/* Malcolm Wall */
+
+.malcolm-wall {
+  background: linear-gradient(
+    to left bottom,
+    #35035c,
+    #450468,
+    #570575,
+    #680580,
+    #7b048c
+  );
+  color: whitesmoke;
+}
+
+/* Green-Acre */
+
+.green-acre {
+  background: linear-gradient(
+    to left top,
+    #31bc43,
+    #48b63d,
+    #58af37,
+    #63a934,
+    #6ca331
+  );
   color: whitesmoke;
 }
 
@@ -298,7 +361,7 @@ button {
 }
 
 .project-end {
-  background-color: #0a755b;
+  /* background-color: #0a755b; */
   padding: 4rem 0;
   color: white;
 }
@@ -358,6 +421,10 @@ button {
 
 .message i {
   font-size: 3rem;
+}
+
+.booking {
+  margin-top: 5rem;
 }
 
 /* Navbar */

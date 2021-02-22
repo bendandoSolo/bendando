@@ -151,7 +151,7 @@ export default function winflat() {
             </a>
           </Link>
         </div>
-        <div className="project-end">
+        <div className="project-end winaflat">
           <div className="container">
             <div className="row">
               <div className="col-md-4">

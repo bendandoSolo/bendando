@@ -35,9 +35,22 @@ class Message extends React.Component {
               className="close"
               id="close"
             >
-              <i class="far fa-window-close"></i>
+              <i className="far fa-window-close"></i>
             </button>
-            <div className="message-contact">
+            <div className="booking">
+              <h2 className="mb-3">Fancy an appointment?</h2>
+              <iframe
+                width="100%"
+                height="650px"
+                src="https://general-bendando.zohobookings.com/portal-embed#/customer/4118759000000026057"
+                frameBorder="0"
+                allowFullScreen=""
+                className="mb-3"
+              >
+                {" "}
+              </iframe>
+            </div>
+            {/* <div className="message-contact">
               <h2 className="mb-4">Contact Us</h2>
               <h5 className="mb-5">
                 Drop us a message and we will get right back to you.
@@ -72,7 +85,7 @@ class Message extends React.Component {
                   Send
                 </button>
               </form>
-            </div>
+            </div> */}
             <div className="row justify-content-between mb-5">
               <div className="col-md-3 text-center">
                 <Link href="/">

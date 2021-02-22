@@ -25,7 +25,7 @@ export default function Projects() {
                 techniques to ensure that your website only sends the files that
                 are required to ensure the best performance on all devices.
               </h5>
-              <Link href="/winflat">
+              <Link href="/win-a-flat">
                 <a>
                   <button type="button" className="btn mb-5" id="home-btn">
                     View Our Last Project
@@ -50,7 +50,7 @@ export default function Projects() {
                   successfully answer 3 questions to be entered into a prize
                   draw to win a brand new flat!
                 </p>
-                <Link href="/winflat">
+                <Link href="/win-a-flat">
                   <a>
                     <button type="button" className="btn mb-5" id="project-btn">
                       View This Project
@@ -67,7 +67,7 @@ export default function Projects() {
                   successfully answer 3 questions to be entered into a prize
                   draw to win a brand new flat!
                 </p>
-                <Link href="/winflat">
+                <Link href="/green-acre">
                   <a>
                     <button type="button" className="btn mb-5" id="project-btn">
                       View This Project
@@ -84,7 +84,7 @@ export default function Projects() {
                   successfully answer 3 questions to be entered into a prize
                   draw to win a brand new flat!
                 </p>
-                <Link href="/winflat">
+                <Link href="/malcolm-wall">
                   <a>
                     <button type="button" className="btn mb-5" id="project-btn">
                       View This Project
@@ -103,7 +103,7 @@ export default function Projects() {
                   successfully answer 3 questions to be entered into a prize
                   draw to win a brand new flat!
                 </p>
-                <Link href="/winflat">
+                <Link href="/win-a-flat">
                   <a>
                     <button type="button" className="btn mb-5" id="project-btn">
                       View This Project
@@ -120,7 +120,7 @@ export default function Projects() {
                   successfully answer 3 questions to be entered into a prize
                   draw to win a brand new flat!
                 </p>
-                <Link href="/winflat">
+                <Link href="/win-a-flat">
                   <a>
                     <button type="button" className="btn mb-5" id="project-btn">
                       View This Project
@@ -137,7 +137,7 @@ export default function Projects() {
                   successfully answer 3 questions to be entered into a prize
                   draw to win a brand new flat!
                 </p>
-                <Link href="/winflat">
+                <Link href="/win-a-flat">
                   <a>
                     <button type="button" className="btn mb-5" id="project-btn">
                       View This Project
