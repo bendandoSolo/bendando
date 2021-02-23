@@ -127,30 +127,78 @@ export default function Home() {
         </div>
       </div>
       <div className="scroller" id="scroller">
-        <div className="scroller-img">
-          <img className="landing-img" src="/images/greenacre.png" />
-          <div className="mask"></div>
-        </div>
-        <div className="scroller-img">
-          <img className="landing-img" src="/images/malcolm-wall.png" />{" "}
-          <div className="mask"></div>
-        </div>
-        <div className="scroller-img">
-          <img className="landing-img" src="/images/win-a-flat.png" />{" "}
-          <div className="mask"></div>
-        </div>
-        <div className="scroller-img is-clone">
-          <img className="landing-img" src="/images/greenacre.png" />{" "}
-          <div className="mask"></div>
-        </div>
-        <div className="scroller-img is-clone">
-          <img className="landing-img" src="/images/malcolm-wall.png" />{" "}
-          <div className="mask"></div>
-        </div>
-        <div className="scroller-img is-clone">
-          <img className="landing-img" src="/images/win-a-flat.png" />{" "}
-          <div className="mask"></div>
-        </div>
+        <Link href="/">
+          <div className="scroller-img">
+            <img className="landing-img" src="/images/tenanthub.png" />
+            <div className="scroller-name">
+              <h3>Tenant Hub</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
+        <Link href="/green-acre">
+          <div className="scroller-img">
+            <img className="landing-img" src="/images/greenacre.png" />
+            <div className="scroller-name">
+              <h3>Green Acre</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
+        <Link href="/malcolm-wall">
+          <div className="scroller-img">
+            <img className="landing-img" src="/images/malcolm-wall.png" />
+            <div className="scroller-name">
+              <h3>Malcolm Wall</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
+        <Link href="/win-a-flat">
+          <div className="scroller-img">
+            <img className="landing-img" src="/images/win-a-flat.png" />
+            <div className="scroller-name">
+              <h3>Win A Flat</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
+        <Link href="/">
+          <div className="scroller-img is-clone">
+            <img className="landing-img" src="/images/tenanthub.png" />
+            <div className="scroller-name">
+              <h3>Tenant Hub</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
+        <Link href="/green-acre">
+          <div className="scroller-img is-clone">
+            <img className="landing-img" src="/images/greenacre.png" />
+            <div className="scroller-name">
+              <h3>Green Acre</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
+        <Link href="/malcolm-wall">
+          <div className="scroller-img is-clone">
+            <img className="landing-img" src="/images/malcolm-wall.png" />
+            <div className="scroller-name">
+              <h3>Malcolm Wall</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
+        <Link href="/win-a-flat">
+          <div className="scroller-img is-clone">
+            <img className="landing-img" src="/images/win-a-flat.png" />
+            <div className="scroller-name">
+              <h3>Win A Flat</h3>
+            </div>
+            <div className="mask"></div>
+          </div>
+        </Link>
       </div>
     </div>
   );

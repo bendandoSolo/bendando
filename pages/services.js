@@ -39,17 +39,23 @@ export default function Services() {
             </div>
             <div className="col-md-6">
               <div className="row">
-                <div className="col-md-6 text-center p-3 service">
-                  <i className="fas fa-database mb-4"></i>
-                  <h5 className="mb-4">DATA COLLECTION</h5>
+                <div className="col-md-6 p-3 service">
+                  {/* <i className="fas fa-database mb-4"></i> */}
+                  <h5 className="mb-4">
+                    <i className="fas fa-database me-4 mb-4"></i>
+                    DATA COLLECTION{" "}
+                  </h5>
                   <p>
                     We build GDPR compliant databases or integrate with your own
                     to collect whatever information is required from your users.
                   </p>
                 </div>
-                <div className="col-md-6 text-center p-3 service">
-                  <i className="fas fa-shopping-basket mb-4"></i>
-                  <h5 className="mb-4">E-COMMERCE</h5>
+                <div className="col-md-6 p-3 service">
+                  {/* <i className="fas fa-shopping-basket mb-4"></i> */}
+                  <h5 className="mb-4">
+                    <i className="fas fa-shopping-basket me-4 mb-4"></i>
+                    E-COMMERCE{" "}
+                  </h5>
                   <p>
                     In addition to credit card payments we allow your customers
                     to pay with one click using cards saving in browsers,
@@ -59,18 +65,24 @@ export default function Services() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-6 text-center p-3 service">
-                  <i className="fas fa-search mb-4"></i>
-                  <h5 className="mb-4">ANALYTICS</h5>
+                <div className="col-md-6 p-3 service">
+                  {/* <i className="fas fa-search mb-4"></i> */}
+                  <h5 className="mb-4">
+                    <i className="fas fa-search me-4 mb-4"></i>
+                    ANALYTICS
+                  </h5>
                   <p>
                     We use a variety of tools to analyse who comes to your
                     website, how long they stay, what devices they use allowing
                     you customize the delivery of your message.
                   </p>
                 </div>
-                <div className="col-md-6 text-center p-3 service">
-                  <i className="fab fa-adn mb-4"></i>
-                  <h5 className="mb-4">APP</h5>
+                <div className="col-md-6 p-3 service">
+                  {/* <i className="fab fa-adn mb-4"></i> */}
+                  <h5 className="mb-4">
+                    <i className="fab fa-adn me-4 mb-4"></i>
+                    APP
+                  </h5>
                   <p>
                     Want an app that links to your website, social media and
                     database? Talk to us too, it’s easier than you think.

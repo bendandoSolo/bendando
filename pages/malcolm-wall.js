@@ -86,7 +86,7 @@ export default function malcolmWall() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 text-center">
               <img
                 className="project-mobile"
                 src="/images/malcolm-wall/mobile-screenshot.png"

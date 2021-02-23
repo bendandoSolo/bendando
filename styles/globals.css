@@ -22,6 +22,11 @@ body {
   display: none;
 }
 
+h1 {
+  text-decoration: underline;
+  text-decoration-color: #ff00ff;
+}
+
 h1,
 h2,
 h3,
@@ -57,7 +62,7 @@ button {
   position: absolute;
   top: 0;
   right: 0;
-  height: 75px;
+  height: 76px;
   padding: 5px 25px;
   background-color: white;
   border-radius: 0 0 0 15px;
@@ -111,14 +116,21 @@ button {
   position: relative;
 }
 
+.scroller-name {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  padding: 1rem 2rem;
+  background: rgb(175, 4, 160);
+  border-radius: 0 10px 0 0;
+}
+
 .home {
-  background-image: linear-gradient(
-    to right top,
-    #a111a8,
-    #ce008e,
-    #eb1b74,
-    #f9475b,
-    #fd6d46
+  background: rgb(175, 4, 160);
+  background: linear-gradient(
+    45deg,
+    rgba(175, 4, 160, 1) 48%,
+    rgba(222, 34, 85, 1) 88%
   );
   color: whitesmoke;
   position: relative;
@@ -143,21 +155,24 @@ button {
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(
-    to right top,
-    #a111a8,
-    #ce008e,
-    #eb1b74,
-    #f9475b,
-    #fd6d46
+  background: rgb(175, 4, 160);
+  background: linear-gradient(
+    45deg,
+    rgba(175, 4, 160, 1) 48%,
+    rgba(222, 34, 85, 1) 88%
   );
-  opacity: 0.9;
+  opacity: 0.6;
   transition: 0.2s ease-in-out;
 }
 
 .mask:hover {
-  opacity: 0.2;
+  opacity: 0;
 }
+
+.mask:hover .scroller-name {
+  opacity: 0;
+}
+
 /* project */
 
 .landing-2 {
@@ -203,6 +218,7 @@ button {
 }
 
 .project-display img {
+  height: 170px;
   width: 100%;
 }
 
@@ -288,13 +304,13 @@ button {
 /* winaflat */
 
 .winaflat {
-  background: linear-gradient(
-    to left bottom,
-    #00c88b,
-    #04b97c,
-    #06aa6d,
-    #069b5f,
-    #048c51
+  background-image: linear-gradient(
+    to right top,
+    #3dd1d1,
+    #00c7e2,
+    #00bbee,
+    #40adf2,
+    #719ced
   );
   color: whitesmoke;
 }
@@ -302,13 +318,13 @@ button {
 /* Malcolm Wall */
 
 .malcolm-wall {
-  background: linear-gradient(
-    to left bottom,
-    #35035c,
-    #450468,
-    #570575,
-    #680580,
-    #7b048c
+  background-image: linear-gradient(
+    to bottom,
+    #1a1b25,
+    #3b3e50,
+    #5f6581,
+    #848fb4,
+    #abbbeb
   );
   color: whitesmoke;
 }
@@ -316,13 +332,25 @@ button {
 /* Green-Acre */
 
 .green-acre {
-  background: linear-gradient(
-    to left top,
-    #31bc43,
-    #48b63d,
-    #58af37,
-    #63a934,
-    #6ca331
+  background-image: linear-gradient(
+    to right top,
+    #256b21,
+    #257c22,
+    #228d23,
+    #1e9e23,
+    #16b023
+  );
+  color: whitesmoke;
+}
+
+.tenants-hub {
+  background-image: linear-gradient(
+    to right top,
+    #136af0,
+    #2e65ef,
+    #4060ed,
+    #4e5aeb,
+    #5b54e9
   );
   color: whitesmoke;
 }
@@ -339,6 +367,7 @@ button {
 
 .project-mobile {
   width: 100%;
+  max-width: 500px;
 }
 
 .project-link {
@@ -384,7 +413,7 @@ button {
   color: black;
   padding: 0 4rem;
   max-width: 500px;
-  border-left: 4px solid black;
+  /* border-left: 4px solid black; */
   animation: appear 0.5s;
 }
 
@@ -417,6 +446,15 @@ button {
 
 .message-contact {
   margin-top: 4rem;
+}
+
+.message a {
+  color: darkblue;
+  transition: 0.2s ease-out;
+}
+
+.message a:hover {
+  opacity: 0.7;
 }
 
 .message i {

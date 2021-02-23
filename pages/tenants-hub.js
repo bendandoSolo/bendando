@@ -6,17 +6,17 @@ import Message from "./components/Message";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function winflat() {
+export default function tenanthub() {
   return (
-    <div className="winaflat">
+    <div className="tenants-hub">
       <Navbar />
       <Message />
       <div className="landing">
         <div className="container">
           <div className="row ">
             <div className="col-md-6 ">
-              <h1 className="mb-4">Win A Flat </h1>
-              <h4 className="mb-4">Website Build</h4>
+              <h1 className="mb-4">Tenants Hub</h1>
+              <h4 className="mb-4">App & Website Build</h4>
               <h5 className="mb-4">
                 A competition website for Equinox Living promoted by Uri Geller
                 and the national press allowing UK residents who successfully
@@ -39,7 +39,7 @@ export default function winflat() {
             <div className="col-md-6">
               <img
                 className="project-desktop mb-5"
-                src="/images/winaflat/desktop-screenshot.png"
+                src="/images/tenant-hub/desktop-screenshot.png"
               />
               <h2>Features</h2>
               <ul>
@@ -89,7 +89,7 @@ export default function winflat() {
             <div className="col-md-6 text-center">
               <img
                 className="project-mobile"
-                src="/images/winaflat/mobile-screenshot.png"
+                src="/images/tenant-hub/mobile-screenshot.png"
               />
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function winflat() {
             </a>
           </Link>
         </div>
-        <div className="project-end winaflat">
+        <div className="project-end tenants-hub">
           <div className="container">
             <div className="row">
               <div className="col-md-4">

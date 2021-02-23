@@ -18,10 +18,10 @@ export default function greenAcre() {
               <h1 className="mb-4">Green Acre</h1>
               <h4 className="mb-4">Website Build</h4>
               <h5 className="mb-4">
-                Malcolm wall is a giant in the media industry a truly charming
-                man and a pleasure to work with. As CEO for Virgin Media,
-                Pinewood and involved with various Media companies around the
-                world, he wanted an online resume for potential partners.
+                Greenacre Energy is a company whose mission is to identify and
+                invest in environmentally sustainable solutions for the disposal
+                of all waste. They work alongside governments and experts across
+                the UK and South East Asia.
               </h5>
             </div>
             <div className="col-md-6">
@@ -39,7 +39,7 @@ export default function greenAcre() {
             <div className="col-md-6">
               <img
                 className="project-desktop mb-5"
-                src="/images/malcolm-wall/desktop-screenshot.png"
+                src="/images/green-acre/desktop-screenshot.png"
               />
               <h2>Features</h2>
               <ul>
@@ -86,10 +86,10 @@ export default function greenAcre() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 text-center">
               <img
                 className="project-mobile"
-                src="/images/malcolm-wall/mobile-screenshot.png"
+                src="/images/green-acre/mobile-screenshot.png"
               />
             </div>
           </div>
