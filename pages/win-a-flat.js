@@ -94,11 +94,12 @@ export default function winflat() {
             </div>
           </div>
           <div className="row pb-5 align-items-center reverse">
-            <div className="col-md-6">
-              <img
-                className="project-mobile mb-4"
-                src="/images/winaflat/3D-flat.png"
-              />
+            <div className="col-md-6 text-center">
+              <iframe
+                src="https://samvirtualdemo.azurewebsites.net//"
+                style={{ height: 500, width: 600 }}
+                title="Iframe Example"
+              ></iframe>
             </div>
             <div className="col-md-6 position-relative">
               {/* <div className="shape-1"></div>
