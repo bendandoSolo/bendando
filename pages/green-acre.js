@@ -94,7 +94,7 @@ export default function greenAcre() {
             </div>
           </div>
           <div className="row pb-5 align-items-center reverse">
-            <div className="col-md-6">
+            <div className="col-md-6 text-center">
               <img
                 className="project-mobile mb-4"
                 src="/images/winaflat/3D-flat.png"
@@ -120,7 +120,7 @@ export default function greenAcre() {
             </div>
           </div>
           <div className="row py-5 align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-6 text-center">
               <img
                 className="project-mobile mb-4"
                 src="/images/winaflat/3D-flat.png"

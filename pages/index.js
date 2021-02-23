@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </div>
       <div className="scroller" id="scroller">
-        <Link href="/">
+        <Link href="/tenants-hub">
           <div className="scroller-img">
             <img className="landing-img" src="/images/tenanthub.png" />
             <div className="scroller-name">

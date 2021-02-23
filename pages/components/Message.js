@@ -19,13 +19,19 @@ class Message extends React.Component {
 
   hideComponent() {
     this.setState({ showMessage: false });
+    document.getElementById("close").style.cssText =
+      "animation: disappear 0.2s";
   }
 
   render() {
     const { showMessage } = this.state;
     return (
       <div>
-        <button className="mail" onClick={() => this.showComponent()}>
+        <button
+          className="mail"
+          id="close"
+          onClick={() => this.showComponent()}
+        >
           <i className="far fa-envelope"></i>
         </button>
         {showMessage && (

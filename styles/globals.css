@@ -306,11 +306,11 @@ button {
 .winaflat {
   background-image: linear-gradient(
     to right top,
-    #3dd1d1,
-    #00c7e2,
-    #00bbee,
-    #40adf2,
-    #719ced
+    #05a8a1,
+    #0f9d96,
+    #15938a,
+    #188880,
+    #1a7e75
   );
   color: whitesmoke;
 }
@@ -413,7 +413,6 @@ button {
   color: black;
   padding: 0 4rem;
   max-width: 500px;
-  /* border-left: 4px solid black; */
   animation: appear 0.5s;
 }
 
@@ -425,6 +424,17 @@ button {
   100% {
     opacity: 1;
     right: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+  100% {
+    opacity: 1;
+    right: -500px;
   }
 }
 

@@ -111,40 +111,6 @@ export default function Projects() {
                   </a>
                 </Link>
               </div>
-              <div className="col-md-3 mb-5 text-center">
-                <img className="mb-4" src="/images/win-a-flat.png" />
-                <h3>Win A Flat</h3>
-                <p>
-                  A competition website for Equinox Living promoted by Uri
-                  Geller and the national press allowing UK residents who
-                  successfully answer 3 questions to be entered into a prize
-                  draw to win a brand new flat!
-                </p>
-                <Link href="/win-a-flat">
-                  <a>
-                    <button type="button" className="btn mb-5" id="home-btn">
-                      View This Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
-              <div className="col-md-3 mb-5 text-center">
-                <img className="mb-4" src="/images/win-a-flat.png" />
-                <h3>Win A Flat</h3>
-                <p>
-                  A competition website for Equinox Living promoted by Uri
-                  Geller and the national press allowing UK residents who
-                  successfully answer 3 questions to be entered into a prize
-                  draw to win a brand new flat!
-                </p>
-                <Link href="/win-a-flat">
-                  <a>
-                    <button type="button" className="btn mb-5" id="home-btn">
-                      View This Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
