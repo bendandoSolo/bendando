@@ -41,7 +41,7 @@ export default function malcolmWall() {
                 src="/images/malcolm-wall/desktop-screenshot.png"
               />
               <h2>Features</h2>
-              <ul>
+              <ul className="mb-5">
                 <li className="mt-5">
                   <h5>
                     <i className="fas fa-arrow-circle-right me-3"></i>Website
@@ -90,56 +90,6 @@ export default function malcolmWall() {
                 className="project-mobile"
                 src="/images/malcolm-wall/mobile-screenshot.png"
               />
-            </div>
-          </div>
-          <div className="row pb-5 align-items-center reverse">
-            <div className="col-md-6">
-              <img
-                className="project-mobile mb-4"
-                src="/images/winaflat/3D-flat.png"
-              />
-            </div>
-            <div className="col-md-6 position-relative">
-              {/* <div className="shape-1"></div>
-              <div className="shape-2"></div> */}
-              <div className="project-text mx-3">
-                <p>
-                  Winaflat was fully optimized to load as quickly as possible
-                  for the wide variety of devices and users.
-                </p>
-                <p>
-                  With heavy use of analytics we analysed and modified the
-                  website to reach the largest audience.
-                </p>
-                <p>
-                  Containers a Panorama viewer allowing users to move round the
-                  interior of the flat to really get a feel for the prize.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row py-5 align-items-center">
-            <div className="col-md-6">
-              <img
-                className="project-mobile mb-4"
-                src="/images/winaflat/3D-flat.png"
-              />
-            </div>
-            <div className="col-md-6 position-relative">
-              {/* <div className="shape-1"></div>
-              <div className="shape-2"></div> */}
-              <div className="project-text mx-3">
-                <p>
-                  We used an ecommerce system accepting card and android and
-                  apple pay to make the process as seamless as possible with a
-                  custom database storing user details.
-                </p>
-                <p>
-                  We also created random selection software for the prize draw
-                  to be live streamed from the website when Uri Geller announces
-                  the winner.
-                </p>
-              </div>
             </div>
           </div>
         </div>
