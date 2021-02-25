@@ -188,6 +188,12 @@ export default function Home() {
               </div>
             </div>
           </Link>
+          <div className="scroller-btn">
+            <div className="circle" id="circle">
+              <p>Scroll</p>
+              <i className="fas fa-chevron-down"></i>
+            </div>
+          </div>
         </div>
 
         {/* ONLY APPEARS ON MOBILE */}
