@@ -79,6 +79,16 @@ export default function Services() {
                   </p>
                 </div>
               </div>
+              <div className="row">
+                <div className="col-md-6 p-3 service">
+                  <i className="fas fa-tasks me-4 mb-4"></i>
+                  <h5 className="mb-4">CRM</h5>
+                  <p>
+                    We can build and design your own CRM for your business. This
+                    is can be customized forthe
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
