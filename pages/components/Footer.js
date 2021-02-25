@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <footer className="container">
-        <div className="row pt-4">
+        <div className="row pt-4 justify-content-between">
           <div className="col-md-3">
             <p>Privacy Policy ©Bendando</p>
           </div>

@@ -1,6 +1,6 @@
 // Components
 import Navbar from "./components/Navbar";
-import Message from "./components/Message";
+import Footer from "./components/Footer";
 
 // Next
 import Head from "next/head";
@@ -10,8 +10,7 @@ export default function greenAcre() {
   return (
     <div className="green-acre">
       <Navbar />
-      <Message />
-      <div className="landing">
+      <div className="landing-2">
         <div className="container">
           <div className="row ">
             <div className="col-md-6 ">
@@ -42,7 +41,7 @@ export default function greenAcre() {
                 src="/images/green-acre/desktop-screenshot.png"
               />
               <h2>Features</h2>
-              <ul>
+              <ul className="mb-5">
                 <li className="mt-5">
                   <h5>
                     <i className="fas fa-arrow-circle-right me-3"></i>Website
@@ -93,16 +92,14 @@ export default function greenAcre() {
               />
             </div>
           </div>
-          <div className="row pb-5 align-items-center reverse">
+          <div className="row pb-5 align-items-center reverse mt-5">
             <div className="col-md-6 text-center">
               <img
                 className="project-mobile mb-4"
-                src="/images/winaflat/3D-flat.png"
+                src="/images/green-acre/screenshot-1.png"
               />
             </div>
             <div className="col-md-6 position-relative">
-              {/* <div className="shape-1"></div>
-              <div className="shape-2"></div> */}
               <div className="project-text mx-3">
                 <p>
                   Winaflat was fully optimized to load as quickly as possible
@@ -123,12 +120,10 @@ export default function greenAcre() {
             <div className="col-md-6 text-center">
               <img
                 className="project-mobile mb-4"
-                src="/images/winaflat/3D-flat.png"
+                src="/images/green-acre/screenshot-2.png"
               />
             </div>
             <div className="col-md-6 position-relative">
-              {/* <div className="shape-1"></div>
-              <div className="shape-2"></div> */}
               <div className="project-text mx-3">
                 <p>
                   We used an ecommerce system accepting card and android and
@@ -169,6 +164,7 @@ export default function greenAcre() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

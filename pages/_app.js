@@ -4,9 +4,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 
 // Components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Message from "./components/Message";
+import Contact from "./components/Contact";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -34,8 +32,8 @@ function MyApp({ Component, pageProps }) {
           src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
         ></script>
       </Head>
+      <Contact />
       <Component {...pageProps} />
-      <Footer />
     </div>
   );
 }

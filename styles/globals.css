@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .row {
   --bs-gutter-x: 0 !important;
 }
@@ -20,11 +24,6 @@ body {
 /* Chrome */
 ::-webkit-scrollbar {
   display: none;
-}
-
-h1 {
-  text-decoration: underline;
-  text-decoration-color: #ff00ff;
 }
 
 h1,
@@ -51,7 +50,13 @@ button {
 
 .landing {
   padding: 7rem 0;
-  min-height: 80vh;
+  min-height: 90vh;
+}
+
+@media screen and (max-width: 992px) {
+  .landing {
+    padding-bottom: 0;
+  }
 }
 
 .landing-img {
@@ -98,7 +103,7 @@ button {
   position: absolute;
   top: 75.5px;
   right: 0;
-  height: 79.9vh;
+  height: 91vh;
   width: 50%;
   overflow-y: scroll;
   cursor: pointer;
@@ -107,13 +112,16 @@ button {
 @media screen and (max-width: 991px) {
   .scroller {
     display: none;
-    width: 0px;
   }
 }
 
 .scroller-img {
-  /* width: 80%; */
   position: relative;
+  transition: 0.2s ease-out;
+}
+
+.scroller-img:hover {
+  opacity: 0.7;
 }
 
 .scroller-name {
@@ -121,19 +129,27 @@ button {
   z-index: 10;
   bottom: 0;
   padding: 1rem 2rem;
-  background: rgb(175, 4, 160);
+  background: rgb(213, 31, 126);
   border-radius: 0 10px 0 0;
 }
 
+@media screen and (max-width: 991px) {
+  .scroller-name {
+    padding: 0.3rem 1rem;
+    font-size: 12px;
+  }
+}
+
 .home {
-  background: rgb(175, 4, 160);
+  background: rgb(213, 31, 126);
   background: linear-gradient(
     45deg,
-    rgba(175, 4, 160, 1) 48%,
-    rgba(222, 34, 85, 1) 88%
+    rgba(213, 31, 126, 1) 52%,
+    rgba(255, 126, 34, 1) 100%
   );
   color: whitesmoke;
   position: relative;
+  min-height: 100vh;
 }
 
 #home-btn {
@@ -149,28 +165,14 @@ button {
   color: black;
 }
 
-.mask {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgb(175, 4, 160);
-  background: linear-gradient(
-    45deg,
-    rgba(175, 4, 160, 1) 48%,
-    rgba(222, 34, 85, 1) 88%
-  );
-  opacity: 0.6;
-  transition: 0.2s ease-in-out;
+.grid img {
+  height: 100%;
 }
 
-.mask:hover {
-  opacity: 0;
-}
-
-.mask:hover .scroller-name {
-  opacity: 0;
+@media screen and (min-width: 992px) {
+  .grid {
+    display: none;
+  }
 }
 
 /* project */
@@ -365,6 +367,12 @@ button {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .project-desktop {
+    margin-top: -1rem;
+  }
+}
+
 .project-mobile {
   width: 100%;
   max-width: 500px;
@@ -372,7 +380,6 @@ button {
 
 .project-link {
   background-color: #3fb5ef;
-  /* color: whitesmoke; */
   transition: 0.2s ease-in-out;
 }
 
@@ -390,7 +397,6 @@ button {
 }
 
 .project-end {
-  /* background-color: #0a755b; */
   padding: 4rem 0;
   color: white;
 }
@@ -406,14 +412,15 @@ button {
 .message {
   position: fixed;
   right: 0;
-  z-index: 10;
+  z-index: 200;
   top: 0;
   min-height: 100vh;
   background-color: whitesmoke;
   color: black;
   padding: 0 4rem;
   max-width: 500px;
-  animation: appear 0.5s;
+  animation: appear 0.7s;
+  border-left: 2px solid black;
 }
 
 @keyframes appear {
@@ -427,14 +434,19 @@ button {
   }
 }
 
-@keyframes disappear {
-  0% {
-    opacity: 0;
-    right: 0;
+@media screen and (max-width: 992px) {
+  .message {
+    padding: 2rem 1.5rem;
   }
-  100% {
-    opacity: 1;
-    right: -500px;
+
+  .message h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .message {
+    width: 100vw;
   }
 }
 
@@ -458,13 +470,13 @@ button {
   margin-top: 4rem;
 }
 
-.message a {
-  color: darkblue;
-  transition: 0.2s ease-out;
-}
-
 .message a:hover {
   opacity: 0.7;
+}
+.message button:hover {
+  background-color: transparent;
+  color: blue !important;
+  border: 0 !important;
 }
 
 .message i {
@@ -488,6 +500,7 @@ nav ul {
 }
 
 /* Footer */
+
 .footer {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -507,4 +520,99 @@ footer h5 {
 
 .footer-links li:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 992px) {
+  #contact-form,
+  #contact-btn {
+    display: none;
+  }
+}
+
+#contact-btn {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 12.5px 20px;
+  font-size: 2rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 450;
+}
+
+#contact-form {
+  width: 0px;
+  height: 76px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  z-index: 400;
+  padding: 2rem;
+}
+
+#contact-form form {
+  position: absolute;
+  opacity: 0;
+  color: black;
+  display: none;
+  right: 50px;
+  margin-left: 40px;
+}
+
+.appear {
+  animation: appear 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  display: block !important;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block !important;
+  }
+}
+
+@keyframes animate {
+  0% {
+    right: 0;
+    height: 76px;
+  }
+  50% {
+    right: 72px;
+    width: 500px;
+    height: 76px;
+  }
+  100% {
+    right: 72px;
+    width: 500px;
+  }
+}
+
+@keyframes animate-out {
+  0% {
+    height: 600px;
+    right: 72px;
+    width: 500px;
+  }
+
+  25% {
+    height: 700px;
+    right: 72px;
+    width: 500px;
+  }
+  50% {
+    right: 72px;
+    width: 500px;
+    height: 76px;
+  }
+  100% {
+    right: 0;
+    height: 76px;
+  }
 }

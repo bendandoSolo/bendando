@@ -6,7 +6,6 @@ import Link from "next/link";
 
 // Components
 import Navbar from "./components/Navbar";
-import Message from "./components/Message";
 
 export default function Home() {
   useEffect(() => {
@@ -104,7 +103,6 @@ export default function Home() {
         <title>Home | BenDando</title>
       </Head>
       <Navbar />
-      <Message />
       <div className="landing">
         <div className="container">
           <div className="row ">
@@ -125,80 +123,110 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="scroller" id="scroller">
-        <Link href="/tenants-hub">
-          <div className="scroller-img">
-            <img className="landing-img" src="/images/tenanthub.png" />
-            <div className="scroller-name">
-              <h3>Tenant Hub</h3>
+        <div className="scroller" id="scroller">
+          <Link href="/tenants-hub">
+            <div className="scroller-img">
+              <img className="landing-img" src="/images/tenanthub.png" />
+              <div className="scroller-name">
+                <h3>Tenant Hub</h3>
+              </div>
             </div>
-            <div className="mask"></div>
-          </div>
-        </Link>
-        <Link href="/green-acre">
-          <div className="scroller-img">
-            <img className="landing-img" src="/images/greenacre.png" />
-            <div className="scroller-name">
-              <h3>Green Acre</h3>
+          </Link>
+          <Link href="/green-acre">
+            <div className="scroller-img">
+              <img className="landing-img" src="/images/greenacre.png" />
+              <div className="scroller-name">
+                <h3>Green Acre</h3>
+              </div>
             </div>
-            <div className="mask"></div>
-          </div>
-        </Link>
-        <Link href="/malcolm-wall">
-          <div className="scroller-img">
-            <img className="landing-img" src="/images/malcolm-wall.png" />
-            <div className="scroller-name">
-              <h3>Malcolm Wall</h3>
+          </Link>
+          <Link href="/malcolm-wall">
+            <div className="scroller-img">
+              <img className="landing-img" src="/images/malcolm-wall.png" />
+              <div className="scroller-name">
+                <h3>Malcolm Wall</h3>
+              </div>
             </div>
-            <div className="mask"></div>
-          </div>
-        </Link>
-        <Link href="/win-a-flat">
-          <div className="scroller-img">
-            <img className="landing-img" src="/images/win-a-flat.png" />
-            <div className="scroller-name">
-              <h3>Win A Flat</h3>
+          </Link>
+          <Link href="/win-a-flat">
+            <div className="scroller-img">
+              <img className="landing-img" src="/images/win-a-flat.png" />
+              <div className="scroller-name">
+                <h3>Win A Flat</h3>
+              </div>
             </div>
-            <div className="mask"></div>
-          </div>
-        </Link>
-        <Link href="/">
-          <div className="scroller-img is-clone">
-            <img className="landing-img" src="/images/tenanthub.png" />
-            <div className="scroller-name">
-              <h3>Tenant Hub</h3>
+          </Link>
+          <Link href="/">
+            <div className="scroller-img is-clone">
+              <img className="landing-img" src="/images/tenanthub.png" />
+              <div className="scroller-name">
+                <h3>Tenant Hub</h3>
+              </div>
             </div>
-            <div className="mask"></div>
-          </div>
-        </Link>
-        <Link href="/green-acre">
-          <div className="scroller-img is-clone">
-            <img className="landing-img" src="/images/greenacre.png" />
-            <div className="scroller-name">
-              <h3>Green Acre</h3>
+          </Link>
+          <Link href="/green-acre">
+            <div className="scroller-img is-clone">
+              <img className="landing-img" src="/images/greenacre.png" />
+              <div className="scroller-name">
+                <h3>Green Acre</h3>
+              </div>
             </div>
-            <div className="mask"></div>
-          </div>
-        </Link>
-        <Link href="/malcolm-wall">
-          <div className="scroller-img is-clone">
-            <img className="landing-img" src="/images/malcolm-wall.png" />
-            <div className="scroller-name">
-              <h3>Malcolm Wall</h3>
+          </Link>
+          <Link href="/malcolm-wall">
+            <div className="scroller-img is-clone">
+              <img className="landing-img" src="/images/malcolm-wall.png" />
+              <div className="scroller-name">
+                <h3>Malcolm Wall</h3>
+              </div>
             </div>
-            <div className="mask"></div>
-          </div>
-        </Link>
-        <Link href="/win-a-flat">
-          <div className="scroller-img is-clone">
-            <img className="landing-img" src="/images/win-a-flat.png" />
-            <div className="scroller-name">
-              <h3>Win A Flat</h3>
+          </Link>
+          <Link href="/win-a-flat">
+            <div className="scroller-img is-clone">
+              <img className="landing-img" src="/images/win-a-flat.png" />
+              <div className="scroller-name">
+                <h3>Win A Flat</h3>
+              </div>
             </div>
-            <div className="mask"></div>
+          </Link>
+        </div>
+
+        {/* ONLY APPEARS ON MOBILE */}
+        <div className="grid mt-5">
+          <div className="row">
+            <Link href="/win-a-flat">
+              <div className="position-relative">
+                <img className="landing-img" src="/images/win-a-flat.png" />
+                <div className="scroller-name">
+                  <h3>Win A Flat</h3>
+                </div>
+              </div>
+            </Link>
+            <Link href="/tenants-hub">
+              <div className="position-relative">
+                <img className="landing-img" src="/images/tenanthub.png" />
+                <div className="scroller-name">
+                  <h3>Tenants Hub</h3>
+                </div>
+              </div>
+            </Link>
+            <Link href="/green-acre">
+              <div className="position-relative">
+                <img className="landing-img" src="/images/greenacre.png" />
+                <div className="scroller-name">
+                  <h3>Green Acre</h3>
+                </div>
+              </div>
+            </Link>
+            <Link href="/malcolm-wall">
+              <div className="position-relative">
+                <img className="landing-img" src="/images/malcolm-wall.png" />
+                <div className="scroller-name">
+                  <h3>Malcolm Wall</h3>
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );

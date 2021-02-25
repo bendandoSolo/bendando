@@ -1,6 +1,6 @@
 // Components
 import Navbar from "./components/Navbar";
-import Message from "./components/Message";
+import Footer from "./components/Footer";
 
 // Next
 import Head from "next/head";
@@ -10,8 +10,7 @@ export default function malcolmWall() {
   return (
     <div className="malcolm-wall">
       <Navbar />
-      <Message />
-      <div className="landing">
+      <div className="landing-2">
         <div className="container">
           <div className="row ">
             <div className="col-md-6 ">
@@ -169,6 +168,7 @@ export default function malcolmWall() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

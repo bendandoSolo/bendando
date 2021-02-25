@@ -1,6 +1,6 @@
 // Components
 import Navbar from "./components/Navbar";
-import Message from "./components/Message";
+import Footer from "./components/Footer";
 
 // Next
 import Head from "next/head";
@@ -10,8 +10,7 @@ export default function winflat() {
   return (
     <div className="winaflat">
       <Navbar />
-      <Message />
-      <div className="landing">
+      <div className="landing-2">
         <div className="container">
           <div className="row ">
             <div className="col-md-6 ">
@@ -94,10 +93,11 @@ export default function winflat() {
             </div>
           </div>
           <div className="row pb-5 align-items-center reverse">
-            <div className="col-md-6 text-center">
+            <div className="col-md-6 text-center position-relative">
               <iframe
                 src="https://samvirtualdemo.azurewebsites.net//"
-                style={{ height: 500, width: 600 }}
+                height="500px"
+                width="90%"
                 title="Iframe Example"
               ></iframe>
             </div>
@@ -170,6 +170,7 @@ export default function winflat() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

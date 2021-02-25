@@ -1,6 +1,5 @@
 // Components
 import Navbar from "./components/Navbar";
-import Message from "./components/Message";
 
 // Next
 import Head from "next/head";
@@ -13,8 +12,6 @@ export default function Projects() {
         <title>Projects | BenDando</title>
       </Head>
       <Navbar />
-      <Message />
-
       <div className="landing-2">
         <div className="container">
           <div className="row">
