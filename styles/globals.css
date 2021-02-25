@@ -101,9 +101,9 @@ button {
 
 .scroller {
   position: absolute;
-  top: 75.5px;
+  top: 0;
   right: 0;
-  height: 91vh;
+  height: 100vh;
   width: 50%;
   overflow-y: scroll;
   cursor: pointer;
@@ -129,7 +129,7 @@ button {
   z-index: 10;
   bottom: 0;
   padding: 1rem 2rem;
-  background: rgb(213, 31, 126);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 0 10px 0 0;
 }
 
@@ -141,11 +141,11 @@ button {
 }
 
 .home {
-  background: rgb(213, 31, 126);
+  background: rgb(156, 31, 213);
   background: linear-gradient(
     45deg,
-    rgba(213, 31, 126, 1) 52%,
-    rgba(255, 126, 34, 1) 100%
+    rgba(156, 31, 213, 1) 17%,
+    rgba(255, 36, 158, 1) 58%
   );
   color: whitesmoke;
   position: relative;
@@ -282,7 +282,7 @@ button {
 }
 
 .connect form {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   background-color: whitesmoke;
   border-radius: 15px;
 }
@@ -306,13 +306,11 @@ button {
 /* winaflat */
 
 .winaflat {
-  background-image: linear-gradient(
-    to right top,
-    #05a8a1,
-    #0f9d96,
-    #15938a,
-    #188880,
-    #1a7e75
+  background: rgb(39, 91, 180);
+  background: linear-gradient(
+    45deg,
+    rgba(39, 91, 180, 1) 53%,
+    rgba(80, 213, 255, 1) 97%
   );
   color: whitesmoke;
 }
@@ -320,13 +318,11 @@ button {
 /* Malcolm Wall */
 
 .malcolm-wall {
-  background-image: linear-gradient(
-    to bottom,
-    #1a1b25,
-    #3b3e50,
-    #5f6581,
-    #848fb4,
-    #abbbeb
+  background: rgb(37, 48, 68);
+  background: linear-gradient(
+    45deg,
+    rgba(37, 48, 68, 1) 53%,
+    rgba(163, 215, 231, 1) 97%
   );
   color: whitesmoke;
 }
@@ -334,13 +330,11 @@ button {
 /* Green-Acre */
 
 .green-acre {
-  background-image: linear-gradient(
-    to right top,
-    #256b21,
-    #257c22,
-    #228d23,
-    #1e9e23,
-    #16b023
+  background: rgb(10, 85, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(10, 85, 0, 1) 58%,
+    rgba(164, 223, 85, 1) 100%
   );
   color: whitesmoke;
 }
@@ -379,21 +373,16 @@ button {
 }
 
 .project-link {
-  background-color: #3fb5ef;
+  background-color: #232858;
   transition: 0.2s ease-in-out;
 }
 
 .project-link:hover {
-  background-color: transparent;
+  opacity: 0.7;
 }
 
 .project-link a {
   color: whitesmoke;
-}
-
-.project-link:hover a {
-  text-decoration: underline;
-  color: #3fb5ef;
 }
 
 .project-end {
@@ -531,14 +520,19 @@ footer h5 {
 
 #contact-btn {
   position: absolute;
-  background-color: black;
-  color: white;
-  padding: 12.5px 20px;
+  background-color: #232858;
+  color: whitesmoke;
+  padding: 12.5px 30px;
   font-size: 2rem;
   top: 0;
   right: 0;
   cursor: pointer;
   z-index: 450;
+  transition: ease-out 0.2s;
+}
+
+#contact-btn:hover {
+  opacity: 0.7;
 }
 
 #contact-form {
@@ -547,18 +541,23 @@ footer h5 {
   position: absolute;
   top: 0px;
   right: 0px;
-  background-color: white;
+  background-color: #232858;
   z-index: 400;
-  padding: 2rem;
 }
 
 #contact-form form {
   position: absolute;
   opacity: 0;
-  color: black;
+  color: whitesmoke;
   display: none;
   right: 50px;
   margin-left: 40px;
+}
+
+#contact-form form label,
+#contact-form form input,
+#contact-form form textarea {
+  color: whitesmoke;
 }
 
 .appear {
@@ -584,12 +583,12 @@ footer h5 {
     height: 76px;
   }
   50% {
-    right: 72px;
+    right: 90px;
     width: 500px;
     height: 76px;
   }
   100% {
-    right: 72px;
+    right: 90px;
     width: 500px;
   }
 }
@@ -597,17 +596,17 @@ footer h5 {
 @keyframes animate-out {
   0% {
     height: 600px;
-    right: 72px;
+    right: 90px;
     width: 500px;
   }
 
   25% {
     height: 700px;
-    right: 72px;
+    right: 90px;
     width: 500px;
   }
   50% {
-    right: 72px;
+    right: 90px;
     width: 500px;
     height: 76px;
   }

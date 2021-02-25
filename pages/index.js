@@ -108,7 +108,7 @@ export default function Home() {
           <div className="row ">
             <div className="col-lg-5 me-4">
               <h1 className="mb-4">
-                We build beautiful websites and applications with web services.
+                We build beautiful websites and applications.
               </h1>
               <h5 className="mb-4">Check out the services that we offer.</h5>
               <div>
@@ -124,6 +124,14 @@ export default function Home() {
           </div>
         </div>
         <div className="scroller" id="scroller">
+          <Link href="/win-a-flat">
+            <div className="scroller-img">
+              <img className="landing-img" src="/images/win-a-flat.png" />
+              <div className="scroller-name">
+                <h3>Win A Flat</h3>
+              </div>
+            </div>
+          </Link>
           <Link href="/tenants-hub">
             <div className="scroller-img">
               <img className="landing-img" src="/images/tenanthub.png" />
@@ -149,7 +157,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/win-a-flat">
-            <div className="scroller-img">
+            <div className="scroller-img is-clone">
               <img className="landing-img" src="/images/win-a-flat.png" />
               <div className="scroller-name">
                 <h3>Win A Flat</h3>
@@ -177,14 +185,6 @@ export default function Home() {
               <img className="landing-img" src="/images/malcolm-wall.png" />
               <div className="scroller-name">
                 <h3>Malcolm Wall</h3>
-              </div>
-            </div>
-          </Link>
-          <Link href="/win-a-flat">
-            <div className="scroller-img is-clone">
-              <img className="landing-img" src="/images/win-a-flat.png" />
-              <div className="scroller-name">
-                <h3>Win A Flat</h3>
               </div>
             </div>
           </Link>

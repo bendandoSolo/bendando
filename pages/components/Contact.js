@@ -12,7 +12,7 @@ const Contact = () => {
       state = !state;
       if (state === true) {
         form.style.cssText =
-          "animation: animate 1s;  animation-fill-mode: both; right: 96px; height: 600px;";
+          "animation: animate 1s;  animation-fill-mode: both; right: 90px; height: 600px;";
         formInputs.classList.add("appear");
         console.log(formInputs);
       } else {
@@ -60,7 +60,7 @@ const Contact = () => {
               </label>
             </div>
 
-            <button type="submit" className="btn btn-primary btn-block mb-4">
+            <button type="submit" className="btn btn-block mb-4" id="home-btn">
               Send
             </button>
           </form>

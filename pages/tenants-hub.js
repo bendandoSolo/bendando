@@ -145,7 +145,7 @@ export default function tenanthub() {
           </div>
         </div>
         <div className="row text-center py-4 project-link">
-          <Link href="/">
+          <Link href="https://www.tenantshub.co.uk/">
             <a>
               <h3>View site</h3>
             </a>
@@ -156,8 +156,8 @@ export default function tenanthub() {
             <div className="row">
               <div className="col-md-4">
                 <h5>Next Project</h5>
-                <h2>Greenacre Capital</h2>
-                <Link href="/">
+                <h2>Win A Flat</h2>
+                <Link href="/win-a-flat">
                   <a>
                     <button type="button" className="btn" id="home-btn">
                       View Next Project

@@ -158,7 +158,7 @@ export default function winflat() {
               <div className="col-md-4">
                 <h5>Next Project</h5>
                 <h2>Greenacre Capital</h2>
-                <Link href="/">
+                <Link href="/green-acre">
                   <a>
                     <button type="button" className="btn" id="home-btn">
                       View Next Project
