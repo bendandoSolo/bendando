@@ -1,0 +1,105 @@
+@media screen and (max-width: 992px) {
+  #contact-form,
+  #contact-btn {
+    display: none;
+  }
+}
+
+#contact-btn {
+  position: absolute;
+  background-color: #232858;
+  color: whitesmoke;
+  padding: 12.5px 30px;
+  font-size: 2rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 450;
+  transition: ease-out 0.5;
+}
+
+#contact-btn:hover {
+  opacity: 1;
+  width: 400px;
+}
+
+#contact-form {
+  width: 0px;
+  height: 76px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #232858;
+  z-index: 400;
+}
+
+#contact-form form {
+  position: absolute;
+  opacity: 0;
+  color: whitesmoke;
+  display: none;
+  right: 50px;
+  margin-left: 40px;
+}
+
+#contact-form form label,
+#contact-form form input,
+#contact-form form textarea {
+  color: whitesmoke;
+}
+
+.appear {
+  animation: appear 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  display: block !important;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block !important;
+  }
+}
+
+@keyframes animate {
+  0% {
+    right: 0;
+    height: 76px;
+  }
+  50% {
+    right: 90px;
+    width: 500px;
+    height: 76px;
+  }
+  100% {
+    right: 90px;
+    width: 500px;
+  }
+}
+
+@keyframes animate-out {
+  0% {
+    height: 600px;
+    right: 90px;
+    width: 500px;
+  }
+
+  25% {
+    height: 700px;
+    right: 90px;
+    width: 500px;
+  }
+  50% {
+    right: 90px;
+    width: 500px;
+    height: 76px;
+  }
+  100% {
+    right: 0;
+    height: 76px;
+  }
+}
