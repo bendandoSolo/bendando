@@ -65,7 +65,7 @@ export default function tenanthub() {
                 <h2>Win A Flat</h2>
                 <Link href="/win-a-flat">
                   <a>
-                    <button type="button" className="btn" id="home-btn">
+                    <button type="button" className="btn" id="global-btn">
                       View Next Project
                     </button>
                   </a>

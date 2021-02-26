@@ -114,7 +114,7 @@ export default function Home() {
               <div>
                 <Link href="/services">
                   <a>
-                    <button type="button" className="btn" id="home-btn">
+                    <button type="button" className="btn" id="global-btn">
                       View Our Services
                     </button>
                   </a>
@@ -124,6 +124,7 @@ export default function Home() {
           </div>
         </div>
         <div className="scroller" id="scroller">
+          <div className="mask"></div>
           <Link href="/win-a-flat">
             <div className="scroller-img">
               <img className="landing-img" src="/images/win-a-flat.png" />
@@ -189,7 +190,7 @@ export default function Home() {
             </div>
           </Link>
           <div className="scroller-btn">
-            <div className="circle" id="circle">
+            <div className="circle" id="scroller-circle">
               <p>Scroll</p>
               <i className="fas fa-chevron-down"></i>
             </div>

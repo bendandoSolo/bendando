@@ -160,7 +160,7 @@ export default function winflat() {
                 <h2>Greenacre Capital</h2>
                 <Link href="/green-acre">
                   <a>
-                    <button type="button" className="btn" id="home-btn">
+                    <button type="button" className="btn" id="global-btn">
                       View Next Project
                     </button>
                   </a>

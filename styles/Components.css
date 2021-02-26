@@ -1,0 +1,12 @@
+#global-btn {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}
+
+#global-btn:hover {
+  background-color: white;
+  border: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+  color: black;
+}

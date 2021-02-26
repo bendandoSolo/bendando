@@ -1,0 +1,106 @@
+.home {
+  background: rgb(156, 31, 213);
+  background: linear-gradient(
+    45deg,
+    rgba(156, 31, 213, 1) 17%,
+    rgba(255, 36, 158, 1) 58%
+  );
+  color: whitesmoke;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Scroller */
+
+.scroller {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .scroller {
+    display: none;
+  }
+}
+
+.scroller-img {
+  position: relative;
+  transition: 0.2s ease-out;
+}
+
+.scroller-img:hover {
+  opacity: 0.7;
+}
+
+.scroller-name {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 0 10px 0 0;
+}
+
+.scroller-name h3 {
+  font-size: 20px;
+}
+
+#scroller-circle {
+  background-color: #232858;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.scroller-btn {
+  margin: 0;
+  position: fixed;
+  color: gray;
+  font-size: 2.6rem;
+  z-index: 2000;
+  bottom: 20px;
+  right: 23vw;
+  border-radius: 100%;
+}
+
+.scroller-btn p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .scroller-name {
+    padding: 0.3rem 1rem;
+    font-size: 12px;
+  }
+}
+
+/* Grid */
+
+.grid img {
+  height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .grid {
+    display: none;
+  }
+}
+
+/* Mask */
+
+.mask {
+  min-height: 100%;
+  width: 100%;
+  left: 50%;
+  background-color: white;
+  position: fixed;
+  z-index: 0;
+}

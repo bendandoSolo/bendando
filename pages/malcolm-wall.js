@@ -108,7 +108,7 @@ export default function malcolmWall() {
                 <h2>Tenants Hub</h2>
                 <Link href="/tenants-hub">
                   <a>
-                    <button type="button" className="btn" id="home-btn">
+                    <button type="button" className="btn" id="global-btn">
                       View Next Project
                     </button>
                   </a>

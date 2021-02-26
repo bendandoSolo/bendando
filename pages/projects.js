@@ -24,7 +24,7 @@ export default function Projects() {
               </h5>
               <Link href="/win-a-flat">
                 <a>
-                  <button type="button" className="btn mb-5" id="home-btn">
+                  <button type="button" className="btn mb-5" id="global-btn">
                     View Our Last Project
                   </button>
                 </a>
@@ -49,7 +49,7 @@ export default function Projects() {
                 </p>
                 <Link href="/tenants-hub">
                   <a>
-                    <button type="button" className="btn mb-5" id="home-btn">
+                    <button type="button" className="btn mb-5" id="global-btn">
                       View This Project
                     </button>
                   </a>
@@ -66,7 +66,7 @@ export default function Projects() {
                 </p>
                 <Link href="/win-a-flat">
                   <a>
-                    <button type="button" className="btn mb-5" id="home-btn">
+                    <button type="button" className="btn mb-5" id="global-btn">
                       View This Project
                     </button>
                   </a>
@@ -83,7 +83,7 @@ export default function Projects() {
                 </p>
                 <Link href="/green-acre">
                   <a>
-                    <button type="button" className="btn mb-5" id="home-btn">
+                    <button type="button" className="btn mb-5" id="global-btn">
                       View This Project
                     </button>
                   </a>
@@ -102,7 +102,7 @@ export default function Projects() {
                 </p>
                 <Link href="/malcolm-wall">
                   <a>
-                    <button type="button" className="btn mb-5" id="home-btn">
+                    <button type="button" className="btn mb-5" id="global-btn">
                       View This Project
                     </button>
                   </a>

@@ -8,6 +8,13 @@ const Contact = () => {
     let form = document.getElementById("contact-form");
     let formInputs = document.querySelector("#contact-form form");
 
+    // btn.addEventListener("click", () => {
+    //   state = !state;
+    //   if (state === true) {
+    //   } else {
+    //   }
+    // });
+
     btn.addEventListener("click", () => {
       state = !state;
       if (state === true) {
@@ -60,7 +67,11 @@ const Contact = () => {
               </label>
             </div>
 
-            <button type="submit" className="btn btn-block mb-4" id="home-btn">
+            <button
+              type="submit"
+              className="btn btn-block mb-4"
+              id="global-btn"
+            >
               Send
             </button>
           </form>

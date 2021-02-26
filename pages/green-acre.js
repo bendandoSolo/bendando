@@ -111,7 +111,7 @@ export default function greenAcre() {
                 <h2>Malcolm Wall</h2>
                 <Link href="/malcolm-wall">
                   <a>
-                    <button type="button" className="btn" id="home-btn">
+                    <button type="button" className="btn" id="global-btn">
                       View Next Project
                     </button>
                   </a>

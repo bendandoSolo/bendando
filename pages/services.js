@@ -29,7 +29,7 @@ export default function Services() {
               </h5>
               <Link href="/win-a-flat">
                 <a className="mb-5">
-                  <button type="button" className="btn mb-5" id="home-btn">
+                  <button type="button" className="btn mb-5" id="global-btn">
                     View Our Last Project
                   </button>
                 </a>
@@ -38,7 +38,6 @@ export default function Services() {
             <div className="col-md-6">
               <div className="row">
                 <div className="col-md-6 p-3 service">
-                  {/* <i className="fas fa-database mb-4"></i> */}
                   <i className="fas fa-database me-4 mb-4"></i>
                   <h5 className="mb-4">DATA COLLECTION </h5>
                   <p>
@@ -47,7 +46,6 @@ export default function Services() {
                   </p>
                 </div>
                 <div className="col-md-6 p-3 service">
-                  {/* <i className="fas fa-shopping-basket mb-4"></i> */}
                   <i className="fas fa-shopping-basket me-4 mb-4"></i>
                   <h5 className="mb-4">E-COMMERCE </h5>
                   <p>
@@ -60,7 +58,6 @@ export default function Services() {
               </div>
               <div className="row">
                 <div className="col-md-6 p-3 service">
-                  {/* <i className="fas fa-search mb-4"></i> */}
                   <i className="fas fa-search me-4 mb-4"></i>
                   <h5 className="mb-4">ANALYTICS</h5>
                   <p>
@@ -70,7 +67,6 @@ export default function Services() {
                   </p>
                 </div>
                 <div className="col-md-6 p-3 service">
-                  {/* <i className="fab fa-adn mb-4"></i> */}
                   <i className="fab fa-adn me-4 mb-4"></i>
                   <h5 className="mb-4">APP</h5>
                   <p>
