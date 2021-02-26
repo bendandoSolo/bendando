@@ -245,11 +245,11 @@ button {
 /* Malcolm Wall */
 
 .malcolm-wall {
-  background: rgb(37, 48, 68);
+  background: rgb(79, 93, 111);
   background: linear-gradient(
     45deg,
-    rgba(37, 48, 68, 1) 53%,
-    rgba(163, 215, 231, 1) 97%
+    rgba(79, 93, 111, 1) 65%,
+    rgba(162, 171, 172, 1) 100%
   );
   color: whitesmoke;
 }

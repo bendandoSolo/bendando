@@ -24,6 +24,12 @@ export default function Home() {
       );
     }
 
+    let scrollBtn = doc.getElementById("scroller-circle");
+
+    scrollBtn.addEventListener("click", () => {
+      context.scrollBy(0, 400);
+    });
+
     function setScrollPos(pos) {
       context.scrollTop = pos;
     }
@@ -191,7 +197,6 @@ export default function Home() {
           </Link>
           <div className="scroller-btn">
             <div className="circle" id="scroller-circle">
-              <p>Scroll</p>
               <i className="fas fa-chevron-down"></i>
             </div>
           </div>

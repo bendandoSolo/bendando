@@ -31,6 +31,7 @@
   width: 50%;
   overflow-y: scroll;
   cursor: pointer;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 991px) {
@@ -63,8 +64,8 @@
 
 #scroller-circle {
   background-color: #232858;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   text-align: center;
   border-radius: 50%;
   padding: 10px;
