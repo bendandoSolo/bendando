@@ -14,7 +14,7 @@ const Contact = () => {
         prompt.style.cssText =
           "animation: prompt-hover 1s; animation-fill-mode: both;";
         form.style.cssText =
-          "animation: fade-in 1s; animation-fill-mode: both; animation-delay: 1s;";
+          "animation: fade-in 1s; animation-fill-mode: both; animation-delay: 1s; display: block;";
       }
       console.log(hovered);
     });
@@ -24,7 +24,8 @@ const Contact = () => {
       hovered = false;
       prompt.style.cssText =
         "animation: prompt-hover-out 1s; animation-fill-mode: both; animation-delay: 1s;";
-      form.style.cssText = "animation: fade-out 1s; animation-fill-mode: both;";
+      form.style.cssText =
+        "animation: fade-out 1s; animation-fill-mode: both; display: none;";
     });
 
     return () => {};
