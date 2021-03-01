@@ -2,76 +2,69 @@ import React, { useEffect } from "react";
 
 const Contact = () => {
   useEffect(() => {
-    let state = false;
+    let menu = document.getElementById("menu");
+    let prompt = document.getElementById("prompt");
 
-    let btn = document.getElementById("contact-btn");
-    let form = document.getElementById("contact-form");
-    let formInputs = document.querySelector("#contact-form form");
+    let hovered = false;
+    let clicked = false;
 
-    // btn.addEventListener("click", () => {
-    //   state = !state;
-    //   if (state === true) {
-    //   } else {
-    //   }
-    // });
-
-    btn.addEventListener("click", () => {
-      state = !state;
-      if (state === true) {
+    menu.addEventListener("mouseover", () => {
+      hovered = true;
+      if (hovered) {
+        prompt.style.cssText =
+          "animation: prompt-hover 1s; animation-fill-mode: both;";
         form.style.cssText =
-          "animation: animate 1s;  animation-fill-mode: both; right: 90px; height: 600px;";
-        formInputs.classList.add("appear");
-        console.log(formInputs);
-      } else {
-        form.style.cssText = "animation: animate-out 1s;";
-        formInputs.classList.remove("appear");
+          "animation: fade-in 1s; animation-fill-mode: both; animation-delay: 1s;";
       }
+      console.log(hovered);
     });
+
+    menu.addEventListener("click", () => {
+      console.log("click");
+      hovered = false;
+      prompt.style.cssText =
+        "animation: prompt-hover-out 1s; animation-fill-mode: both; animation-delay: 1s;";
+      form.style.cssText = "animation: fade-out 1s; animation-fill-mode: both;";
+    });
+
     return () => {};
   }, []);
 
   return (
     <>
-      <div id="contact-btn">
-        <i className="far fa-envelope"></i>
-      </div>
-      <div id="contact-form">
-        <div id="trial">
-          <form className="my-5">
-            <h2 className="mb-4">Contact Us</h2>
-            <h5 className="mb-5">
-              Drop us a message and we will get right back to you.
-            </h5>
-            <div className="form-outline mb-4">
-              <input type="text" id="form4Example1" className="form-control" />
-              <label className="form-label" htmlFor="form4Example1">
+      <i id="menu" class="fas fa-envelope"></i>
+      <div id="prompt">
+        <div id="form">
+          <h3 className="my-4" id="prompt-title">
+            Contact Us
+          </h3>
+          <form>
+            <div class="form-outline my-4">
+              <input type="text" id="form4Example1" class="form-control" />
+              <label class="form-label" for="form4Example1">
                 Name
               </label>
             </div>
 
-            <div className="form-outline mb-4">
-              <input type="email" id="form4Example2" className="form-control" />
-              <label className="form-label" htmlFor="form4Example2">
+            <div class="form-outline mb-4">
+              <input type="email" id="form4Example2" class="form-control" />
+              <label class="form-label" for="form4Example2">
                 Email address
               </label>
             </div>
 
-            <div className="form-outline mb-4">
+            <div class="form-outline mb-4">
               <textarea
-                className="form-control"
+                class="form-control"
                 id="form4Example3"
                 rows="4"
               ></textarea>
-              <label className="form-label" htmlFor="form4Example3">
+              <label class="form-label" for="form4Example3">
                 Message
               </label>
             </div>
 
-            <button
-              type="submit"
-              className="btn btn-block mb-4"
-              id="global-btn"
-            >
+            <button type="submit" class="btn btn-primary mb-4" id="global-btn">
               Send
             </button>
           </form>
