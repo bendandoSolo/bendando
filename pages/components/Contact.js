@@ -12,20 +12,18 @@ const Contact = () => {
       hovered = true;
       if (hovered) {
         prompt.style.cssText =
-          "animation: prompt-hover 1s; animation-fill-mode: both;";
+          "animation: prompt-hover 0.6s; animation-fill-mode: both;";
         form.style.cssText =
-          "animation: fade-in 1s; animation-fill-mode: both; animation-delay: 1s; display: block;";
+          "animation: fade-in 0.8s; animation-fill-mode: both; animation-delay: 0.8s; display: block;";
       }
-      console.log(hovered);
     });
 
     menu.addEventListener("click", () => {
-      console.log("click");
       hovered = false;
       prompt.style.cssText =
-        "animation: prompt-hover-out 1s; animation-fill-mode: both; animation-delay: 1s;";
+        "animation: prompt-hover-out 0.8s; animation-fill-mode: both; animation-delay: 0.2s;";
       form.style.cssText =
-        "animation: fade-out 1s; animation-fill-mode: both; display: none;";
+        "animation: fade-out 0.8s; animation-fill-mode: both; ";
     });
 
     return () => {};
