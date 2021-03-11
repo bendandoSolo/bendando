@@ -113,19 +113,40 @@ export default function Home() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-5 me-4">
+
+
               <h1 className="mb-4">
-                We build beautiful websites and applications.
+                We build beautiful websites and apps
               </h1>
-              <h5 className="mb-4">Check out the services that we offer.</h5>
+              
+              {/* <div>
+                <Link href="/services">
+                  <a>
+                    <button type="button" className="btn" id="global-btn" style={{color: '#ff0000'}}>
+                      <b>View Our Services</b>
+                    </button>
+                  </a>
+                </Link>
+              </div> */}
+            
               <div>
                 <Link href="/services">
                   <a>
-                    <button type="button" className="btn" id="global-btn">
-                      View Our Services
+                    <button type="button" className="btn-transparent-white btn-lg" style={{margin: '24px 0'}} /*id="global-btn"*/ >
+                      <b>View Our Services</b>
                     </button>
                   </a>
                 </Link>
               </div>
+             
+                <h5 className="mb-4" style={{margin: '40px 0'}}>Scroll to view our Projects </h5>
+              
+              <div className="horizontal-center" style={{paddingTop: '100px'}}>
+               
+                <i className="fas fa-chevron-down fa-3x hover" style={{display: 'block'}}></i>
+              </div>
+
+
             </div>
           </div>
         </div>

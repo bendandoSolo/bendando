@@ -51,7 +51,7 @@ export default function winflat() {
                 <li className="mt-5">
                   <h5>
                     <i className="fas fa-arrow-circle-right me-3"></i>Optimized
-                    for quicker download times
+                    for quicker loading times
                   </h5>
                 </li>
                 <li className="mt-5">
@@ -62,8 +62,7 @@ export default function winflat() {
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Ecommerce
-                    System
+                    <i className="fas fa-arrow-circle-right me-3"></i>Payment System
                   </h5>
                 </li>
                 <li className="mt-5">
@@ -75,7 +74,13 @@ export default function winflat() {
                 <li className="mt-5">
                   <h5>
                     <i className="fas fa-arrow-circle-right me-3"></i>Customer
-                    entries database
+                    entries database and ticket creation
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Randomized winner
+                    selection software
                   </h5>
                 </li>
                 <li className="mt-5">

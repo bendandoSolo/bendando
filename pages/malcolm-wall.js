@@ -14,13 +14,13 @@ export default function malcolmWall() {
         <div className="container">
           <div className="row ">
             <div className="col-md-6 ">
-              <h1 className="mb-4">Malcolm Wall</h1>
+              <h1 className="mb-4">Malcolm Wall Media</h1>
               <h4 className="mb-4">Website Build</h4>
               <h5 className="mb-4">
-                Malcolm wall is a giant in the media industry a truly charming
-                man and a pleasure to work with. As CEO for Virgin Media,
+                Malcolm wall is a giant in the media industry a truely charming
+                client and a pleasure to work with. As CEO for Virgin Media,
                 Pinewood and involved with various Media companies around the
-                world, he wanted an online resume for potential partners.
+                world, he required an online resume for attracting potential partners.
               </h5>
             </div>
             <div className="col-md-6">
@@ -50,37 +50,20 @@ export default function malcolmWall() {
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Optimized
-                    for quicker download times
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Rss Media News Feeds
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>3D
-                    environmental viewer
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Clean simple design optimized for fast page loading
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Ecommerce
-                    System
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Apple /
-                    Android Pay
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Customer
-                    entries database
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Analytics
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Customized animated scrolling for news feeds on home page
                   </h5>
                 </li>
               </ul>
@@ -94,11 +77,9 @@ export default function malcolmWall() {
           </div>
         </div>
         <div className="row text-center py-4 project-link">
-          <Link href="https://malcolmwallmedia.co.uk/">
-            <a>
+            <a  href="https://malcolmwallmedia.co.uk/" target="_blank">
               <h3>View site</h3>
             </a>
-          </Link>
         </div>
         <div className="project-end malcolm-wall">
           <div className="container">
