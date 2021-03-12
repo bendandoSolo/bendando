@@ -26,102 +26,97 @@ export default function tenanthub() {
             </div>
             <div className="col-md-6">
               <img
-                className="landing-img mb-5"
-                src="/images/winaflat/mockup.png"
+                className="landing-img my-5"
+                src="/images/tenant-hub/mockup.png"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="project-content" >
+      <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-6" style={{paddingBottom: '100px'}}>
+            <div className="col-md-6" style={{ paddingBottom: "100px" }}>
               <img
                 className="project-desktop mb-5"
                 src="/images/tenant-hub/desktop-screenshot.png"
               />
-                <h2>Features</h2>
-              <ul >
+              <h2>Features</h2>
+              <ul>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Web application
-                    and app design and creation
+                    <i className="fas fa-chevron-right me-4 hover"></i>Web
+                    application and app design and creation
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Saas sign up website
-
+                    <i className="fas fa-chevron-right me-4 hover"></i>Saas sign
+                    up website
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Automated service for logging and managing building faults
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     White label application
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Payment System
+                    <i className="fas fa-chevron-right me-4 hover"></i>Payment
+                    System
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     User Accounts and management
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Database 
+                    <i className="fas fa-chevron-right me-4 hover"></i>Database
                     of faults and associated pictures
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Automatic email and SMS notification service
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Automatic 
+                    <i className="fas fa-chevron-right me-4 hover"></i>Automatic
                     progress reports
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Real time messaging 
-                    service
+                    <i className="fas fa-chevron-right me-4 hover"></i>Real time
+                    messaging service
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Calendar Management
-                    integrated with Google Calendar
+                    <i className="fas fa-chevron-right me-4 hover"></i>Calendar
+                    Management integrated with Google Calendar
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Customized 
-                    pluggins for individual clients
+                    <i className="fas fa-chevron-right me-4 hover"></i>
+                    Customized pluggins for individual clients
                   </h5>
                 </li>
               </ul>
-
-
-
-
             </div>
-
-           
 
             <div className="col-md-6 text-center">
               <img
@@ -130,13 +125,10 @@ export default function tenanthub() {
               />
             </div>
           </div>
-
-
-
         </div>
         <div className="row text-center py-4 project-link">
           <Link href="https://www.tenantshub.co.uk/">
-            <a>
+            <a target="_blank">
               <h3>View site</h3>
             </a>
           </Link>
@@ -149,7 +141,7 @@ export default function tenanthub() {
                 <h2>Win A Flat</h2>
                 <Link href="/win-a-flat">
                   <a>
-                    <button type="button" className="btn" id="global-btn">
+                    <button type="button" className="btn global-btn">
                       View Next Project
                     </button>
                   </a>

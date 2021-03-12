@@ -63,12 +63,7 @@
 }
 
 #scroller-circle {
-  background-color: #232858;
-  width: 80px;
-  height: 80px;
   text-align: center;
-  border-radius: 50%;
-  padding: 10px;
 }
 
 .scroller-btn {
@@ -77,8 +72,8 @@
   color: gray;
   font-size: 2.6rem;
   z-index: 2000;
-  bottom: 20px;
-  right: 23vw;
+  bottom: 0px;
+  right: 24%;
   border-radius: 100%;
 }
 
@@ -112,8 +107,13 @@
   min-height: 100%;
   width: 100%;
   left: 50%;
-  background-color: white;
+  background-color: rgb(123, 38, 157);
   position: fixed;
   z-index: 0;
 }
 
+.scroll-point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

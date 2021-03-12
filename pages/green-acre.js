@@ -20,8 +20,8 @@ export default function greenAcre() {
                 Greenacre Energy is a company whose mission is to identify and
                 invest in environmentally sustainable solutions for the disposal
                 of all waste. They work alongside governments and experts across
-                the UK and South East Asia. They approached us to brand their organisation
-                and design their website.
+                the UK and South East Asia. They approached us to brand their
+                organisation and design their website.
               </h5>
             </div>
             <div className="col-md-6">
@@ -45,31 +45,31 @@ export default function greenAcre() {
               <ul className="mb-5">
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Website
+                    <i className="fas fa-chevron-right me-4 hover"></i>Website
                     design and creation
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Company Branding
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Complete wireframe and website mockups
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Fully
+                    <i className="fas fa-chevron-right me-4 hover"></i>Fully
                     responsive
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Video banner on homepage
                   </h5>
                 </li>
@@ -92,24 +92,24 @@ export default function greenAcre() {
             <div className="col-md-6 position-relative">
               <div className="project-text mx-3">
                 <p>
-                Greenacre Capital brand needed to reflect their position as a global company
-                investing in environmentally sustainable projects.
+                  Greenacre Capital brand needed to reflect their position as a
+                  global company investing in environmentally sustainable
+                  projects.
                 </p>
                 <p>
-                 Greenacre capital approached us to brand their organisation
-                 and design their website. Particular attention to detail was required
-                 in order for the brands neeed to appeal to high net worth individuals.
+                  Greenacre capital approached us to brand their organisation
+                  and design their website. Particular attention to detail was
+                  required in order for the brands neeed to appeal to high net
+                  worth individuals.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div className="row text-center py-4 project-link">
-         
-            <a href="https://www.greenacre-capital.com/" target="_blank">
-              <h3>View site</h3>
-            </a>
-         
+          <a href="https://www.greenacre-capital.com/" target="_blank">
+            <h3>View site</h3>
+          </a>
         </div>
         <div className="project-end green-acre">
           <div className="container">
@@ -119,7 +119,7 @@ export default function greenAcre() {
                 <h2>Malcolm Wall</h2>
                 <Link href="/malcolm-wall">
                   <a>
-                    <button type="button" className="btn" id="global-btn">
+                    <button type="button" className="btn global-btn">
                       View Next Project
                     </button>
                   </a>

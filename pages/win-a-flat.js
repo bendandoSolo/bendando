@@ -44,48 +44,49 @@ export default function winflat() {
               <ul>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Website
+                    <i className="fas fa-chevron-right me-4 hover"></i>Website
                     design and creation.
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Optimized
+                    <i className="fas fa-chevron-right me-4 hover"></i>Optimized
                     for quicker loading times
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>3D
+                    <i className="fas fa-chevron-right me-4 hover"></i>3D
                     environmental viewer
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Payment System
+                    <i className="fas fa-chevron-right me-4 hover"></i>Payment
+                    System
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Apple /
+                    <i className="fas fa-chevron-right me-4 hover"></i>Apple /
                     Android Pay
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Customer
+                    <i className="fas fa-chevron-right me-4 hover"></i>Customer
                     entries database and ticket creation
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Randomized winner
-                    selection software
+                    <i className="fas fa-chevron-right me-4 hover"></i>
+                    Randomized winner selection software
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Analytics
+                    <i className="fas fa-chevron-right me-4 hover"></i>Analytics
                   </h5>
                 </li>
               </ul>
@@ -152,7 +153,7 @@ export default function winflat() {
         </div>
         <div className="row text-center py-4 project-link">
           <Link href="/">
-            <a>
+            <a target="_blank">
               <h3>View site</h3>
             </a>
           </Link>
@@ -165,7 +166,7 @@ export default function winflat() {
                 <h2>Greenacre Capital</h2>
                 <Link href="/green-acre">
                   <a>
-                    <button type="button" className="btn" id="global-btn">
+                    <button type="button" className="btn global-btn">
                       View Next Project
                     </button>
                   </a>

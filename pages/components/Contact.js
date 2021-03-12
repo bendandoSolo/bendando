@@ -63,7 +63,7 @@ const Contact = () => {
               </label>
             </div>
 
-            <button type="submit" class="btn btn-primary mb-4" id="global-btn">
+            <button type="submit" class="btn global-btn">
               Send
             </button>
           </form>

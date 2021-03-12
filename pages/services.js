@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Services() {
   return (
-    <div className="malcolm-wall">
+    <div className="services">
       <Head>
         <title>Services | BenDando</title>
       </Head>
@@ -29,7 +29,7 @@ export default function Services() {
               </h5>
               <Link href="/win-a-flat">
                 <a className="mb-5">
-                  <button type="button" className="btn mb-5" id="global-btn">
+                  <button type="button" className="btn mb-5 global-btn">
                     View Our Last Project
                   </button>
                 </a>
@@ -58,12 +58,11 @@ export default function Services() {
               </div>
               <div className="row">
                 <div className="col-md-6 p-3 service">
-                  <i className="fas fa-search me-4 mb-4"></i>
-                  <h5 className="mb-4">ANALYTICS</h5>
+                  <i className="fas fa-tasks me-4 mb-4"></i>
+                  <h5 className="mb-4">CRM</h5>
                   <p>
-                    We use a variety of tools to analyse who comes to your
-                    website, how long they stay, what devices they use allowing
-                    you customize the delivery of your message.
+                    We can build and design your own CRM for your business. This
+                    is can be customized forthe
                   </p>
                 </div>
                 <div className="col-md-6 p-3 service">
@@ -72,16 +71,6 @@ export default function Services() {
                   <p>
                     Want an app that links to your website, social media and
                     database? Talk to us too, it’s easier than you think.
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-6 p-3 service">
-                  <i className="fas fa-tasks me-4 mb-4"></i>
-                  <h5 className="mb-4">CRM</h5>
-                  <p>
-                    We can build and design your own CRM for your business. This
-                    is can be customized forthe
                   </p>
                 </div>
               </div>

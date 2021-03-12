@@ -97,10 +97,7 @@ export default function Connect() {
                   </label>
                 </div>
                 <div className="d-flex justify-content-end">
-                  <button
-                    type="submit"
-                    className="btn btn-primary mb-4 px-5 py-3"
-                  >
+                  <button type="submit" className="btn global-btn mb-4 px-5">
                     Send
                   </button>
                 </div>

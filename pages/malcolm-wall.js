@@ -20,7 +20,8 @@ export default function malcolmWall() {
                 Malcolm wall is a giant in the media industry a truely charming
                 client and a pleasure to work with. As CEO for Virgin Media,
                 Pinewood and involved with various Media companies around the
-                world, he required an online resume for attracting potential partners.
+                world, he required an online resume for attracting potential
+                partners.
               </h5>
             </div>
             <div className="col-md-6">
@@ -44,25 +45,25 @@ export default function malcolmWall() {
               <ul className="mb-5">
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Website
+                    <i className="fas fa-chevron-right me-4 hover"></i>Website
                     design and creation.
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Rss Media News Feeds
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Clean simple design optimized for fast page loading
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    <i className="fas fa-chevron-right hover"></i>
                     Customized animated scrolling for news feeds on home page
                   </h5>
                 </li>
@@ -77,9 +78,9 @@ export default function malcolmWall() {
           </div>
         </div>
         <div className="row text-center py-4 project-link">
-            <a  href="https://malcolmwallmedia.co.uk/" target="_blank">
-              <h3>View site</h3>
-            </a>
+          <a href="https://malcolmwallmedia.co.uk/" target="_blank">
+            <h3>View site</h3>
+          </a>
         </div>
         <div className="project-end malcolm-wall">
           <div className="container">
@@ -89,7 +90,7 @@ export default function malcolmWall() {
                 <h2>Tenants Hub</h2>
                 <Link href="/tenants-hub">
                   <a>
-                    <button type="button" className="btn" id="global-btn">
+                    <button type="button" className="btn global-btn">
                       View Next Project
                     </button>
                   </a>

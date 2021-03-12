@@ -6,6 +6,7 @@ import Link from "next/link";
 
 // Components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -24,11 +25,11 @@ export default function Home() {
       );
     }
 
-    let scrollBtn = doc.getElementById("scroller-circle");
+    // let scrollBtn = doc.getElementById("scroller-circle");
 
-    scrollBtn.addEventListener("click", () => {
-      context.scrollBy(0, 400);
-    });
+    // scrollBtn.addEventListener("click", () => {
+    //   context.scrollBy(0, 400);
+    // });
 
     function setScrollPos(pos) {
       context.scrollTop = pos;
@@ -113,40 +114,44 @@ export default function Home() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-5 me-4">
+              <h1 className="mb-4">We Build Beautiful Websites and Apps</h1>
 
-
-              <h1 className="mb-4">
-                We build beautiful websites and apps
-              </h1>
-              
-              {/* <div>
-                <Link href="/services">
-                  <a>
-                    <button type="button" className="btn" id="global-btn" style={{color: '#ff0000'}}>
-                      <b>View Our Services</b>
-                    </button>
-                  </a>
-                </Link>
-              </div> */}
-            
               <div>
                 <Link href="/services">
                   <a>
-                    <button type="button" className="btn-transparent-white btn-lg" style={{margin: '24px 0'}} /*id="global-btn"*/ >
+                    <button type="button" className="global-btn btn">
                       <b>View Our Services</b>
                     </button>
                   </a>
                 </Link>
               </div>
-             
-                <h5 className="mb-4" style={{margin: '40px 0'}}>Scroll to view our Projects </h5>
-              
-              <div className="horizontal-center" style={{paddingTop: '100px'}}>
-               
-                <i className="fas fa-chevron-down fa-3x hover" style={{display: 'block'}}></i>
+              <div></div>
+              <div className="row">
+                <div className="col-md-7">
+                  <h5 className="my-4">Scroll to view our Projects</h5>
+                </div>
+                <div className="scroll-point col-md-3">
+                  <i
+                    className="fas fa-chevron-right fa-3x hover"
+                    style={{ display: "block" }}
+                  ></i>
+                  {/* <i
+                    className="fas fa-chevron-right fa-3x hover"
+                    style={{ display: "block" }}
+                  ></i>
+                  <i
+                    className="fas fa-chevron-right fa-3x hover"
+                    style={{ display: "block" }}
+                  ></i> */}
+                </div>
               </div>
 
-
+              {/* <div className="horizontal-center">
+                <i
+                  className="fas fa-chevron-down fa-3x hover"
+                  style={{ display: "block" }}
+                ></i>
+              </div> */}
             </div>
           </div>
         </div>
@@ -216,11 +221,6 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <div className="scroller-btn">
-            <div className="circle" id="scroller-circle">
-              <i className="fas fa-chevron-down"></i>
-            </div>
-          </div>
         </div>
 
         {/* ONLY APPEARS ON MOBILE */}
@@ -261,6 +261,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

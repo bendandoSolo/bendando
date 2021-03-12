@@ -1,17 +1,15 @@
 @import "./Home.css";
 @import "./Components.css";
 @import "./Buttons.css";
-/* @import "./Contact.css"; */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap");
 
 /* GLOBAL */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-body {
-  overflow-x: hidden;
+  background-color: transparent;
+  font-family: "Karla", sans-serif;
 }
 
 .row {
@@ -19,10 +17,9 @@ body {
 }
 
 body {
-  background-color: transparent;
-  font-family: "Nunito", sans-serif;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
 }
 
 /* Chrome */
@@ -30,31 +27,18 @@ body {
   display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-nav {
-  font-family: "Poppins", sans-serif;
-}
-
 ul {
   padding: 0 !important;
   list-style: none;
 }
 
-button {
-  font-size: 14px !important;
-  font-family: "Poppins", sans-serif;
-}
-
-.horizontal-center{
+.horizontal-center {
   display: flex;
   justify-content: center;
 }
 
-.hover:hover{
-opacity: 0.7;
+.hover:hover {
+  opacity: 0.7;
 }
 /* PAGES */
 
@@ -176,22 +160,17 @@ opacity: 0.7;
 /* services */
 
 .services {
-  background: linear-gradient(to top right, #208831 53%, #00bd2f 84%);
+  background: rgb(79, 93, 111);
+  background: linear-gradient(
+    45deg,
+    rgba(79, 93, 111, 1) 65%,
+    rgba(162, 171, 172, 1) 100%
+  );
   color: whitesmoke;
 }
 
 .services .service i {
   font-size: 4rem;
-}
-
-.services .service {
-  border-radius: 15px;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.services .service:hover i {
-  color: #28ff4a;
 }
 
 /* connect */
@@ -219,24 +198,13 @@ opacity: 0.7;
 
 .connect form {
   padding: 3rem 1rem;
-  background-color: whitesmoke;
-  border-radius: 15px;
+  background-color: #e39556;
 }
 
-.connect form label {
-  color: #4f4f4f !important;
-}
-
-.connect-form button {
-  background: #ff6f00;
-  border: 2px solid #ff6f00;
-  transition: 0.2s ease-in-out;
-}
-
-.connect form button:hover {
-  background: whitesmoke;
-  color: #ff6f00;
-  border: 2px solid #ff6f00;
+.connect form label,
+.connect form input,
+.connect form textarea {
+  color: whitesmoke !important;
 }
 
 /* winaflat */
@@ -332,22 +300,6 @@ opacity: 0.7;
 
 /* COMPONENTS */
 
-/* Message */
-
-.message {
-  position: fixed;
-  right: 0;
-  z-index: 200;
-  top: 0;
-  min-height: 100vh;
-  background-color: whitesmoke;
-  color: black;
-  padding: 0 4rem;
-  max-width: 500px;
-  animation: appear 0.7s;
-  border-left: 2px solid black;
-}
-
 @keyframes appear {
   0% {
     opacity: 0;
@@ -355,59 +307,6 @@ opacity: 0.7;
   100% {
     opacity: 1;
   }
-}
-
-@media screen and (max-width: 992px) {
-  .message {
-    padding: 2rem 1.5rem;
-  }
-
-  .message h2 {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 501px) {
-  .message {
-    width: 100vw;
-  }
-}
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  height: 75px;
-  padding: 5px 25px;
-  border-radius: 0 0 0 15px;
-  z-index: 2;
-  font-size: 2rem;
-  transition: 0.2s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #1266f1;
-}
-
-.message-contact {
-  margin-top: 4rem;
-}
-
-.message a:hover {
-  opacity: 0.7;
-}
-.message button:hover {
-  background-color: transparent;
-  color: blue !important;
-  border: 0 !important;
-}
-
-.message i {
-  font-size: 3rem;
-}
-
-.booking {
-  margin-top: 5rem;
 }
 
 /* Navbar */
@@ -425,7 +324,10 @@ nav ul {
 /* Footer */
 
 .footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: #232858;
+  z-index: 200000;
+  position: absolute;
+  width: 100%;
 }
 
 footer {
@@ -463,6 +365,12 @@ footer h5 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 992px) {
+  #menu {
+    display: none;
+  }
+}
+
 #prompt label,
 #prompt input {
   color: whitesmoke;
@@ -482,6 +390,12 @@ footer h5 {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #prompt {
+    display: none;
+  }
 }
 
 #prompt-title {
