@@ -248,14 +248,8 @@ ul {
 }
 
 .tenants-hub {
-  background-image: linear-gradient(
-    to right top,
-    #136af0,
-    #2e65ef,
-    #4060ed,
-    #4e5aeb,
-    #5b54e9
-  );
+  background: #5433ff;
+  background: linear-gradient(90deg, #20bdff 0, #5433ff);
   color: whitesmoke;
 }
 

@@ -36,7 +36,7 @@ export default function tenanthub() {
       <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-6" style={{ paddingBottom: "100px" }}>
+            <div className="col-md-6">
               <img
                 className="project-desktop mb-5"
                 src="/images/tenant-hub/desktop-screenshot.png"

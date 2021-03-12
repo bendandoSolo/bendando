@@ -130,19 +130,8 @@ export default function Home() {
                 <div className="col-md-7">
                   <h5 className="my-4">Scroll to view our Projects</h5>
                 </div>
-                <div className="scroll-point col-md-3">
-                  <i
-                    className="fas fa-chevron-right fa-3x hover"
-                    style={{ display: "block" }}
-                  ></i>
-                  {/* <i
-                    className="fas fa-chevron-right fa-3x hover"
-                    style={{ display: "block" }}
-                  ></i>
-                  <i
-                    className="fas fa-chevron-right fa-3x hover"
-                    style={{ display: "block" }}
-                  ></i> */}
+                <div className="scroll-point col-md-3 justify-content-center">
+                  <i className="fas fa-chevron-down fa-3x hover"></i>
                 </div>
               </div>
 
