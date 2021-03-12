@@ -1,3 +1,6 @@
+// REACT
+import { useEffect } from "react";
+
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -6,7 +9,15 @@ import Footer from "./components/Footer";
 import Head from "next/head";
 import Link from "next/link";
 
+// DATA AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function tenanthub() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="tenants-hub">
       <Navbar />
@@ -26,6 +37,8 @@ export default function tenanthub() {
             </div>
             <div className="col-md-6">
               <img
+                data-aos="fade-up"
+                data-aos-duration="500"
                 className="landing-img my-5"
                 src="/images/tenant-hub/mockup.png"
               />
@@ -38,11 +51,14 @@ export default function tenanthub() {
           <div className="row justify-content-between">
             <div className="col-md-6">
               <img
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="500"
                 className="project-desktop mb-5"
                 src="/images/tenant-hub/desktop-screenshot.png"
               />
               <h2>Features</h2>
-              <ul>
+              <ul data-aos="fade-up" className="my-5">
                 <li className="mt-5">
                   <h5>
                     <i className="fas fa-chevron-right me-4 hover"></i>Web
@@ -120,6 +136,8 @@ export default function tenanthub() {
 
             <div className="col-md-6 text-center">
               <img
+                data-aos="fade-up"
+                data-aos-duration="500"
                 className="project-mobile"
                 src="/images/tenant-hub/mobile-screenshot.png"
               />
