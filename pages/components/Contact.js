@@ -41,14 +41,14 @@ const Contact = () => {
             <div class="form-outline my-4">
               <input type="text" id="form4Example1" class="form-control" />
               <label class="form-label" for="form4Example1">
-                Name
+                Hi, my name is...
               </label>
             </div>
 
             <div class="form-outline mb-4">
               <input type="email" id="form4Example2" class="form-control" />
               <label class="form-label" for="form4Example2">
-                Email address
+                My email is...
               </label>
             </div>
 
@@ -59,7 +59,7 @@ const Contact = () => {
                 rows="4"
               ></textarea>
               <label class="form-label" for="form4Example3">
-                Message
+                I wanted to know...
               </label>
             </div>
 
