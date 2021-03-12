@@ -106,12 +106,12 @@ export default function greenAcre() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link">
+        <div className="row text-center py-4 project-link green-acre">
           <a href="https://www.greenacre-capital.com/" target="_blank">
             <h3>View site</h3>
           </a>
         </div>
-        <div className="project-end green-acre">
+        <div className="project-end">
           <div className="container">
             <div className="row">
               <div className="col-md-4">

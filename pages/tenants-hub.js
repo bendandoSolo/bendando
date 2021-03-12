@@ -126,14 +126,14 @@ export default function tenanthub() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link">
+        <div className="row text-center py-4 project-link tenants-hub">
           <Link href="https://www.tenantshub.co.uk/">
             <a target="_blank">
               <h3>View site</h3>
             </a>
           </Link>
         </div>
-        <div className="project-end tenants-hub">
+        <div className="project-end ">
           <div className="container">
             <div className="row">
               <div className="col-md-4">

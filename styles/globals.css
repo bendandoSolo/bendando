@@ -222,11 +222,13 @@ ul {
 /* Malcolm Wall */
 
 .malcolm-wall {
-  background: rgb(79, 93, 111);
-  background: linear-gradient(
-    45deg,
-    rgba(79, 93, 111, 1) 65%,
-    rgba(162, 171, 172, 1) 100%
+  background-image: linear-gradient(
+    to right top,
+    #55099a,
+    #590f9c,
+    #5d149d,
+    #60199f,
+    #641da1
   );
   color: whitesmoke;
 }
@@ -234,11 +236,13 @@ ul {
 /* Green-Acre */
 
 .green-acre {
-  background: rgb(10, 85, 0);
-  background: linear-gradient(
-    45deg,
-    rgba(10, 85, 0, 1) 58%,
-    rgba(164, 223, 85, 1) 100%
+  background-image: linear-gradient(
+    to right top,
+    #205b45,
+    #34734a,
+    #528a4a,
+    #77a047,
+    #a2b541
   );
   color: whitesmoke;
 }
@@ -277,7 +281,7 @@ ul {
 }
 
 .project-link {
-  background-color: #232858;
+  /* background-color: #232858; */
   transition: 0.2s ease-in-out;
 }
 
@@ -292,6 +296,7 @@ ul {
 .project-end {
   padding: 4rem 0;
   color: white;
+  background-color: #152f3b;
 }
 
 .reverse {
@@ -324,15 +329,12 @@ nav ul {
 /* Footer */
 
 .footer {
-  background: #232858;
+  color: #232858;
   z-index: 200000;
   position: absolute;
   width: 100%;
-}
-
-footer {
   padding: 2rem;
-  color: white;
+  background-color: whitesmoke;
 }
 
 footer h5 {
@@ -340,7 +342,7 @@ footer h5 {
 }
 
 .footer-links li {
-  color: whitesmoke;
+  color: #232858;
 }
 
 .footer-links li:hover {

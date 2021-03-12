@@ -77,12 +77,12 @@ export default function malcolmWall() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link">
+        <div className="row text-center py-4 project-link malcolm-wall">
           <a href="https://malcolmwallmedia.co.uk/" target="_blank">
             <h3>View site</h3>
           </a>
         </div>
-        <div className="project-end malcolm-wall">
+        <div className="project-end">
           <div className="container">
             <div className="row">
               <div className="col-md-4">

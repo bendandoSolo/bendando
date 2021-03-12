@@ -98,8 +98,8 @@ export default function winflat() {
               />
             </div>
           </div>
-          <div className="row pb-5 align-items-center reverse">
-            <div className="col-md-6 text-center position-relative">
+          <div className="row pb-5 align-items-center">
+            <div className="col-md-6 text-center position-relative mt-5">
               <iframe
                 src="https://samvirtualdemo.azurewebsites.net//"
                 height="500px"
@@ -126,7 +126,7 @@ export default function winflat() {
               </div>
             </div>
           </div>
-          <div className="row py-5 align-items-center">
+          <div className="row py-5 align-items-center reverse">
             <div className="col-md-6">
               <img
                 className="project-mobile mb-4"
@@ -151,14 +151,14 @@ export default function winflat() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link">
+        <div className="row text-center py-4 project-link winaflat">
           <Link href="/">
             <a target="_blank">
               <h3>View site</h3>
             </a>
           </Link>
         </div>
-        <div className="project-end winaflat">
+        <div className="project-end ">
           <div className="container">
             <div className="row">
               <div className="col-md-4">
