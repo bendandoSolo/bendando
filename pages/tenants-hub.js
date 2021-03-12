@@ -33,15 +33,96 @@ export default function tenanthub() {
           </div>
         </div>
       </div>
-      <div className="project-content">
+      <div className="project-content" >
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-6">
+            <div className="col-md-6" style={{paddingBottom: '100px'}}>
               <img
                 className="project-desktop mb-5"
                 src="/images/tenant-hub/desktop-screenshot.png"
               />
+                <h2>Features</h2>
+              <ul >
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Web application
+                    and app design and creation
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Saas sign up website
+
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Automated service for logging and managing building faults
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    White label application
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Payment System
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    User Accounts and management
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Database 
+                    of faults and associated pictures
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Automatic email and SMS notification service
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Automatic 
+                    progress reports
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Real time messaging 
+                    service
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Calendar Management
+                    integrated with Google Calendar
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>Customized 
+                    pluggins for individual clients
+                  </h5>
+                </li>
+              </ul>
+
+
+
+
             </div>
+
+           
+
             <div className="col-md-6 text-center">
               <img
                 className="project-mobile"
@@ -49,6 +130,9 @@ export default function tenanthub() {
               />
             </div>
           </div>
+
+
+
         </div>
         <div className="row text-center py-4 project-link">
           <Link href="https://www.tenantshub.co.uk/">

@@ -14,13 +14,14 @@ export default function greenAcre() {
         <div className="container">
           <div className="row ">
             <div className="col-md-6 ">
-              <h1 className="mb-4">Green Acre</h1>
-              <h4 className="mb-4">Website Build</h4>
+              <h1 className="mb-4">Greenacre Capital</h1>
+              <h4 className="mb-4">Website and Branding</h4>
               <h5 className="mb-4">
                 Greenacre Energy is a company whose mission is to identify and
                 invest in environmentally sustainable solutions for the disposal
                 of all waste. They work alongside governments and experts across
-                the UK and South East Asia.
+                the UK and South East Asia. They approached us to brand their organisation
+                and design their website.
               </h5>
             </div>
             <div className="col-md-6">
@@ -45,13 +46,19 @@ export default function greenAcre() {
                 <li className="mt-5">
                   <h5>
                     <i className="fas fa-arrow-circle-right me-3"></i>Website
-                    design and creation.
+                    design and creation
                   </h5>
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Optimized
-                    for quicker download times
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Company Branding
+                  </h5>
+                </li>
+                <li className="mt-5">
+                  <h5>
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Complete wireframe and website mockups
                   </h5>
                 </li>
                 <li className="mt-5">
@@ -62,8 +69,8 @@ export default function greenAcre() {
                 </li>
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-arrow-circle-right me-3"></i>Integrated
-                    contact form
+                    <i className="fas fa-arrow-circle-right me-3"></i>
+                    Video banner on homepage
                   </h5>
                 </li>
               </ul>
@@ -85,23 +92,24 @@ export default function greenAcre() {
             <div className="col-md-6 position-relative">
               <div className="project-text mx-3">
                 <p>
-                  Winaflat was fully optimized to load as quickly as possible
-                  for the wide variety of devices and users.
+                Greenacre Capital brand needed to reflect their position as a global company
+                investing in environmentally sustainable projects.
                 </p>
                 <p>
-                  With heavy use of analytics we analysed and modified the
-                  website to reach the largest audience.
+                 Greenacre capital approached us to brand their organisation
+                 and design their website. Particular attention to detail was required
+                 in order for the brands neeed to appeal to high net worth individuals.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div className="row text-center py-4 project-link">
-          <Link href="https://www.greenacre-capital.com/">
-            <a>
+         
+            <a href="https://www.greenacre-capital.com/" target="_blank">
               <h3>View site</h3>
             </a>
-          </Link>
+         
         </div>
         <div className="project-end green-acre">
           <div className="container">

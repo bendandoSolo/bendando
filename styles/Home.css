@@ -55,7 +55,7 @@
   bottom: 0;
   padding: 0.5rem 1rem;
   background: rgba(0, 0, 0, 1);
-  border-radius: 0 10px 0 0;
+  /* border-radius: 0 10px 0 0; */
 }
 
 .scroller-name h3 {
@@ -116,3 +116,4 @@
   position: fixed;
   z-index: 0;
 }
+
