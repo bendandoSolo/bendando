@@ -126,12 +126,14 @@ export default function Home() {
                 </Link>
               </div>
               <div></div>
-              <div className="row">
+              <div className="row scroll-option">
                 <div className="col-md-7">
                   <h5 className="my-4">Scroll to view our Projects</h5>
                 </div>
-                <div className="scroll-point col-md-3 justify-content-center">
-                  <i className="fas fa-chevron-down fa-3x hover"></i>
+                <div className="scroll-point col-md-3">
+                  <a href="#grid">
+                    <i className="fas fa-chevron-down fa-3x hover text-white"></i>
+                  </a>
                 </div>
               </div>
 
@@ -213,7 +215,7 @@ export default function Home() {
         </div>
 
         {/* ONLY APPEARS ON MOBILE */}
-        <div className="grid mt-5">
+        <div id="grid" className="grid mt-5">
           <div className="row">
             <Link href="/win-a-flat">
               <div className="position-relative">
