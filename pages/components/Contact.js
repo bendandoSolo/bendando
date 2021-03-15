@@ -31,39 +31,36 @@ const Contact = () => {
 
   return (
     <>
-      <i id="menu" class="fas fa-envelope"></i>
+      <i id="menu" className="fas fa-envelope"></i>
       <div id="prompt">
         <div id="form">
           <h3 className="my-4" id="prompt-title">
             Contact Us
           </h3>
           <form>
-            <div class="form-outline my-4">
-              <input type="text" id="form4Example1" class="form-control" />
-              <label class="form-label" for="form4Example1">
+            <div className="form-outline my-4">
+              <input type="text" id="form4Example1" className="form-control" />
+              <label className="form-label" htmlFor="form4Example1">
                 Hi, my name is...
               </label>
             </div>
-
-            <div class="form-outline mb-4">
-              <input type="email" id="form4Example2" class="form-control" />
-              <label class="form-label" for="form4Example2">
+            <div className="form-outline mb-4">
+              <input type="email" id="form4Example2" className="form-control" />
+              <label className="form-label" htmlFor="form4Example2">
                 My email is...
               </label>
             </div>
-
-            <div class="form-outline mb-4">
+            <div className="form-outline mb-4">
               <textarea
-                class="form-control"
+                className="form-control"
                 id="form4Example3"
                 rows="4"
               ></textarea>
-              <label class="form-label" for="form4Example3">
+              <label className="form-label" htmlFor="form4Example3">
                 I wanted to know...
               </label>
             </div>
-
-            <button type="submit" class="btn global-btn">
+            <button type="submit" className="btn global-btn">
               Send
             </button>
           </form>

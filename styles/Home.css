@@ -116,16 +116,23 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 992px) {
   .scroll-option {
     margin-top: 200px;
+    pointer-events: none;
+  }
+
+  .scroll-point {
+    pointer-events: auto;
   }
 }
 
 @media screen and (max-width: 350px) {
   .scroll-option {
     margin-top: 120px;
+    pointer-events: auto;
   }
 }

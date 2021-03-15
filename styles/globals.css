@@ -103,57 +103,105 @@ ul {
 }
 
 .project {
-  background-image: linear-gradient(
-    to right top,
-    #8b1818,
-    #961717,
-    #a21515,
-    #ad1313,
-    #b91010
+  background: rgb(79, 93, 111);
+  background: linear-gradient(
+    45deg,
+    rgba(79, 93, 111, 1) 65%,
+    rgba(162, 171, 172, 1) 100%
   );
   color: whitesmoke;
-}
-
-.arrow {
-  transform: rotate(210deg);
-  width: 100%;
-  margin-bottom: 3.5rem;
-  animation: appear 1s;
-}
-
-@media screen and (max-width: 992px) {
-  .arrow {
-    display: none;
-  }
 }
 
 .project-display {
-  background-image: linear-gradient(
-    to right top,
-    #4f0f0f,
-    #530e0e,
-    #570c0c,
-    #5a0a0a,
-    #5e0808
-  );
-  padding-top: 8rem;
+  /* background-color: #d6d6d6; */
+  padding-top: 5rem;
 }
 
 .project-display img {
-  height: 170px;
   width: 100%;
+  transition: 0.2 ease;
 }
 
-#project-btn {
-  background-color: transparent;
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
+.project-section {
+  position: relative;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+  display: inline-block;
+  overflow: hidden;
 }
 
-#project-btn:hover {
-  background-color: #6a0101;
-  border: 2px solid #6a0101;
-  transition: 0.2s ease-in-out;
+.project-image {
+  transition: 0.8s ease-in-out;
+  max-width: 100%;
+}
+
+.project-section:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca08ff;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+  z-index: 2;
+}
+
+.project-mask:hover {
+  opacity: 0.5;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  z-index: 5;
+}
+
+.project-title {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 4rem 0.5rem 0.5rem;
+  text-align: start;
+  transition: 0.8s;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-title:hover {
+  color: black;
+}
+
+.project-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: white;
+  color: white;
+  z-index: -1;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.project-section:hover .project-title:hover:before {
+  height: 180%;
+}
+
+.project-type {
+  background-color: white;
+  color: black;
+  padding: 0rem 4rem 0rem 0.5rem;
+  text-align: start;
+}
+
+.project-link a {
   color: whitesmoke;
 }
 
@@ -272,19 +320,6 @@ ul {
 .project-mobile {
   width: 100%;
   max-width: 500px;
-}
-
-.project-link {
-  /* background-color: #232858; */
-  transition: 0.2s ease-in-out;
-}
-
-.project-link:hover {
-  opacity: 0.7;
-}
-
-.project-link a {
-  color: whitesmoke;
 }
 
 .project-end {

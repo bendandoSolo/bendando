@@ -53,7 +53,7 @@ export default function tenanthub() {
               <img
                 data-aos="fade-up"
                 data-aos-delay="500"
-                data-aos-duration="500"
+                data-aos-duration="250"
                 className="project-desktop mb-5"
                 src="/images/tenant-hub/desktop-screenshot.png"
               />

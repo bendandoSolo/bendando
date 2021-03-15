@@ -1,5 +1,6 @@
 // Components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Next
 import Head from "next/head";
@@ -24,94 +25,62 @@ export default function Projects() {
               </h5>
               <Link href="/win-a-flat">
                 <a>
-                  <button type="button" className="btn mb-5" id="global-btn">
+                  <button type="button" className="btn global-btn">
                     View Our Last Project
                   </button>
                 </a>
               </Link>
             </div>
-            <div className="col-md-4">
-              <img className="arrow" src="/images/arrow.png" />
-            </div>
           </div>
         </div>
-        <div className="project-display">
-          <div className="container">
-            <div className="row justify-content-between">
-              <div className="col-md-3 mb-5 text-center">
-                <img className="mb-4" src="/images/tenanthub.png" />
-                <h3>Tenants Hub</h3>
-                <p>
-                  A competition website for Equinox Living promoted by Uri
-                  Geller and the national press allowing UK residents who
-                  successfully answer 3 questions to be entered into a prize
-                  draw to win a brand new flat!
-                </p>
-                <Link href="/tenants-hub">
-                  <a>
-                    <button type="button" className="btn mb-5" id="global-btn">
-                      View This Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
-              <div className="col-md-3 mb-5 text-center">
-                <img className="mb-4" src="/images/win-a-flat.png" />
-                <h3>Win A Flat</h3>
-                <p>
-                  A competition website for Equinox Living promoted by Uri
-                  Geller and the national press allowing UK residents who
-                  successfully answer 3 questions to be entered into a prize
-                  draw to win a brand new flat!
-                </p>
-                <Link href="/win-a-flat">
-                  <a>
-                    <button type="button" className="btn mb-5" id="global-btn">
-                      View This Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
-              <div className="col-md-3 mb-5 text-center">
-                <img className="mb-4" src="/images/greenacre.png" />
-                <h3>Green Acre</h3>
-                <p>
-                  Greenacre Energy is a company whose mission is to identify and
-                  invest in environmentally sustainable solutions for the
-                  disposal of all waste. They work alongside governments and
-                  experts across the UK and South East Asia.
-                </p>
-                <Link href="/green-acre">
-                  <a>
-                    <button type="button" className="btn mb-5" id="global-btn">
-                      View This Project
-                    </button>
-                  </a>
-                </Link>
+        <div className="project-display mt-5">
+          <div className="row justify-content-evenly mb-3">
+            <div className="col-md-5 mb-3 text-center project-section">
+              <div className="project-mask"></div>
+              <img className="project-image" src="/images/tenanthub.png" />
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Tenants Hub</h5>
+                </div>
+                <div className="project-type">App Build</div>
               </div>
             </div>
-            <div className="row justify-content-between">
-              <div className="col-md-3 mb-5 text-center">
-                <img className="mb-4" src="/images/malcolm-wall.png" />
-                <h3>Malcolm Wall</h3>
-                <p>
-                  Malcolm wall is a giant in the media industry a truly charming
-                  man and a pleasure to work with. As CEO for Virgin Media,
-                  Pinewood and involved with various Media companies around the
-                  world, he wanted an online resume for potential partners.
-                </p>
-                <Link href="/malcolm-wall">
-                  <a>
-                    <button type="button" className="btn mb-5" id="global-btn">
-                      View This Project
-                    </button>
-                  </a>
-                </Link>
+            <div className="col-md-5 mb-3 text-center project-section">
+              <div className="project-mask"></div>
+              <img className="project-image" src="/images/win-a-flat.png" />
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Win A Flat</h5>
+                </div>
+                <div className="project-type">App Build</div>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-evenly pb-5">
+            <div className="col-md-5 mb-3 text-center project-section">
+              <div className="project-mask"></div>
+              <img className="project-image" src="/images/greenacre.png" />
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Green Acre</h5>
+                </div>
+                <div className="project-type">Website Build</div>
+              </div>
+            </div>
+            <div className="col-md-5 mb-3 text-center project-section">
+              <div className="project-mask"></div>
+              <img className="project-image" src="/images/malcolm-wall.png" />
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Malcolm Wall</h5>
+                </div>
+                <div className="project-type">Website Build</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -136,13 +136,6 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-
-              {/* <div className="horizontal-center">
-                <i
-                  className="fas fa-chevron-down fa-3x hover"
-                  style={{ display: "block" }}
-                ></i>
-              </div> */}
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
         ></script>
       </Head>
-      <Contact />
+      {/* <Contact /> */}
       <Component {...pageProps} />
     </div>
   );
