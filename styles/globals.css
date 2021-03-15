@@ -103,11 +103,13 @@ ul {
 }
 
 .project {
-  background: rgb(79, 93, 111);
-  background: linear-gradient(
-    45deg,
-    rgba(79, 93, 111, 1) 65%,
-    rgba(162, 171, 172, 1) 100%
+  background-image: linear-gradient(
+    to right top,
+    #30353d,
+    #4d525e,
+    #6d7281,
+    #8f92a5,
+    #b4b4cb
   );
   color: whitesmoke;
 }
@@ -208,11 +210,13 @@ ul {
 /* services */
 
 .services {
-  background: rgb(79, 93, 111);
-  background: linear-gradient(
-    45deg,
-    rgba(79, 93, 111, 1) 65%,
-    rgba(162, 171, 172, 1) 100%
+  background-image: linear-gradient(
+    to right top,
+    #30353d,
+    #4d525e,
+    #6d7281,
+    #8f92a5,
+    #b4b4cb
   );
   color: whitesmoke;
 }
