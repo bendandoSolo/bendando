@@ -35,48 +35,52 @@ export default function Projects() {
         </div>
         <div className="project-display mt-5">
           <div className="row justify-content-evenly mb-3">
-            <div className="col-md-5 mb-3 text-center project-section">
-              <div className="project-mask"></div>
-              <img className="project-image" src="/images/tenanthub.png" />
-              <div className="project-info">
-                <div className="project-title">
-                  <h5>Tenants Hub</h5>
+            <Link href="/tenants-hub">
+              <div className="col-md-5 mb-3 text-center project-section">
+                <img className="project-image" src="/images/tenanthub.jpg" />
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Tenants Hub</h5>
+                  </div>
+                  <div className="project-type">App Build</div>
                 </div>
-                <div className="project-type">App Build</div>
               </div>
-            </div>
-            <div className="col-md-5 mb-3 text-center project-section">
-              <div className="project-mask"></div>
-              <img className="project-image" src="/images/win-a-flat.png" />
-              <div className="project-info">
-                <div className="project-title">
-                  <h5>Win A Flat</h5>
+            </Link>
+            <Link href="win-a-flat">
+              <div className="col-md-5 mb-3 text-center project-section">
+                <img className="project-image" src="/images/win-a-flat.jpg" />
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Win A Flat</h5>
+                  </div>
+                  <div className="project-type">App Build</div>
                 </div>
-                <div className="project-type">App Build</div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="row justify-content-evenly pb-5">
-            <div className="col-md-5 mb-3 text-center project-section">
-              <div className="project-mask"></div>
-              <img className="project-image" src="/images/greenacre.png" />
-              <div className="project-info">
-                <div className="project-title">
-                  <h5>Green Acre</h5>
+            <Link href="green-acre">
+              <div className="col-md-5 mb-3 text-center project-section">
+                <img className="project-image" src="/images/greenacre.jpg" />
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Green Acre</h5>
+                  </div>
+                  <div className="project-type">Website Build</div>
                 </div>
-                <div className="project-type">Website Build</div>
               </div>
-            </div>
-            <div className="col-md-5 mb-3 text-center project-section">
-              <div className="project-mask"></div>
-              <img className="project-image" src="/images/malcolm-wall.png" />
-              <div className="project-info">
-                <div className="project-title">
-                  <h5>Malcolm Wall</h5>
+            </Link>
+            <Link href="/malcolm-wall">
+              <div className="col-md-5 mb-3 text-center project-section">
+                <img className="project-image" src="/images/malcolm-wall.jpg" />
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Malcolm Wall</h5>
+                  </div>
+                  <div className="project-type">Website Build</div>
                 </div>
-                <div className="project-type">Website Build</div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

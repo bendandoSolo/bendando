@@ -143,7 +143,7 @@ export default function Home() {
           <div className="mask"></div>
           <Link href="/win-a-flat">
             <div className="scroller-img">
-              <img className="landing-img" src="/images/win-a-flat.png" />
+              <img className="landing-img" src="/images/win-a-flat.jpg" />
               <div className="scroller-name">
                 <h3>Win A Flat</h3>
               </div>
@@ -151,7 +151,7 @@ export default function Home() {
           </Link>
           <Link href="/tenants-hub">
             <div className="scroller-img">
-              <img className="landing-img" src="/images/tenanthub.png" />
+              <img className="landing-img" src="/images/tenanthub.jpg" />
               <div className="scroller-name">
                 <h3>Tenant Hub</h3>
               </div>
@@ -159,7 +159,7 @@ export default function Home() {
           </Link>
           <Link href="/green-acre">
             <div className="scroller-img">
-              <img className="landing-img" src="/images/greenacre.png" />
+              <img className="landing-img" src="/images/greenacre.jpg" />
               <div className="scroller-name">
                 <h3>Green Acre</h3>
               </div>
@@ -167,7 +167,7 @@ export default function Home() {
           </Link>
           <Link href="/malcolm-wall">
             <div className="scroller-img">
-              <img className="landing-img" src="/images/malcolm-wall.png" />
+              <img className="landing-img" src="/images/malcolm-wall.jpg" />
               <div className="scroller-name">
                 <h3>Malcolm Wall</h3>
               </div>
@@ -175,7 +175,7 @@ export default function Home() {
           </Link>
           <Link href="/win-a-flat">
             <div className="scroller-img is-clone">
-              <img className="landing-img" src="/images/win-a-flat.png" />
+              <img className="landing-img" src="/images/win-a-flat.jpg" />
               <div className="scroller-name">
                 <h3>Win A Flat</h3>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
           </Link>
           <Link href="/">
             <div className="scroller-img is-clone">
-              <img className="landing-img" src="/images/tenanthub.png" />
+              <img className="landing-img" src="/images/tenanthub.jpg" />
               <div className="scroller-name">
                 <h3>Tenant Hub</h3>
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
           </Link>
           <Link href="/green-acre">
             <div className="scroller-img is-clone">
-              <img className="landing-img" src="/images/greenacre.png" />
+              <img className="landing-img" src="/images/greenacre.jpg" />
               <div className="scroller-name">
                 <h3>Green Acre</h3>
               </div>
@@ -199,7 +199,7 @@ export default function Home() {
           </Link>
           <Link href="/malcolm-wall">
             <div className="scroller-img is-clone">
-              <img className="landing-img" src="/images/malcolm-wall.png" />
+              <img className="landing-img" src="/images/malcolm-wall.jpg" />
               <div className="scroller-name">
                 <h3>Malcolm Wall</h3>
               </div>

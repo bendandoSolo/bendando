@@ -99,7 +99,7 @@ export default function winflat() {
             </div>
           </div>
           <div className="row pb-5 align-items-center">
-            <div className="col-md-6 text-center position-relative mt-5">
+            <div className="col-md-6 text-center position-relative my-4">
               <iframe
                 src="https://samvirtualdemo.azurewebsites.net//"
                 height="500px"
@@ -158,7 +158,7 @@ export default function winflat() {
             </a>
           </Link>
         </div>
-        <div className="project-end ">
+        <div className="project-end">
           <div className="container">
             <div className="row">
               <div className="col-md-4">
