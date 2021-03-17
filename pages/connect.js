@@ -16,7 +16,7 @@ export default function Connect() {
       <div className="landing">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="zoom-in">
               <h1 className="mb-4">Connect</h1>
               <h5 className="mb-4">
                 We love talking about website solutions, we do it all day!
@@ -62,7 +62,7 @@ export default function Connect() {
                 </Link>
               </div>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5" data-aos="zoom-in" data-aos-delay="250">
               <form className="my-4 connect-form">
                 <div className="form-outline mb-4">
                   <input

@@ -153,10 +153,6 @@ ul {
   z-index: 2;
 }
 
-.project-mask:hover {
-  opacity: 0.5;
-}
-
 .project-info {
   position: absolute;
   bottom: 0;

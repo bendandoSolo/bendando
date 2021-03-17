@@ -16,7 +16,7 @@ export default function Services() {
       <div className="landing">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-5">
+            <div className="col-md-5" data-aos="zoom-in">
               <h1 className="mb-4">Our Services</h1>
               <h5 className="mb-4">
                 We use industry best practise technologies with bundling
@@ -35,7 +35,7 @@ export default function Services() {
                 </a>
               </Link>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="zoom-in" data-aos-delay="250">
               <div className="row">
                 <div className="col-md-6 p-3 service">
                   <i className="fas fa-database me-4 mb-4"></i>

@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="landing-2">
         <div className="container">
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-md-5" data-aos="zoom-in">
               <h1 className="mb-4">Our Projects</h1>
               <h5 className="mb-4">
                 We use industry best practise technologies with bundling
@@ -36,7 +36,11 @@ export default function Projects() {
         <div className="project-display mt-5">
           <div className="row justify-content-evenly mb-3">
             <Link href="/tenants-hub">
-              <div className="col-md-5 mb-3 text-center project-section">
+              <div
+                className="col-md-5 mb-3 text-center project-section"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <img className="project-image" src="/images/tenanthub.jpg" />
                 <div className="project-info">
                   <div className="project-title">
@@ -47,7 +51,11 @@ export default function Projects() {
               </div>
             </Link>
             <Link href="win-a-flat">
-              <div className="col-md-5 mb-3 text-center project-section">
+              <div
+                className="col-md-5 mb-3 text-center project-section"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <img className="project-image" src="/images/win-a-flat.jpg" />
                 <div className="project-info">
                   <div className="project-title">
@@ -60,7 +68,11 @@ export default function Projects() {
           </div>
           <div className="row justify-content-evenly pb-5">
             <Link href="green-acre">
-              <div className="col-md-5 mb-3 text-center project-section">
+              <div
+                className="col-md-5 mb-3 text-center project-section"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <img className="project-image" src="/images/greenacre.jpg" />
                 <div className="project-info">
                   <div className="project-title">
@@ -71,7 +83,11 @@ export default function Projects() {
               </div>
             </Link>
             <Link href="/malcolm-wall">
-              <div className="col-md-5 mb-3 text-center project-section">
+              <div
+                className="col-md-5 mb-3 text-center project-section"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <img className="project-image" src="/images/malcolm-wall.jpg" />
                 <div className="project-info">
                   <div className="project-title">

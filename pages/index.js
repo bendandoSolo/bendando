@@ -113,9 +113,8 @@ export default function Home() {
       <div className="landing">
         <div className="container">
           <div className="row ">
-            <div className="col-lg-5 me-4">
+            <div className="col-lg-5 me-4" data-aos="zoom-in">
               <h1 className="mb-4">We Build Beautiful Websites and Apps</h1>
-
               <div>
                 <Link href="/services">
                   <a>
@@ -144,64 +143,88 @@ export default function Home() {
           <Link href="/win-a-flat">
             <div className="scroller-img">
               <img className="landing-img" src="/images/win-a-flat.jpg" />
-              <div className="scroller-name">
-                <h3>Win A Flat</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Win A Flat</h5>
+                </div>
+                <div className="project-type">App Build</div>
               </div>
             </div>
           </Link>
           <Link href="/tenants-hub">
             <div className="scroller-img">
               <img className="landing-img" src="/images/tenanthub.jpg" />
-              <div className="scroller-name">
-                <h3>Tenant Hub</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Tenants Hub</h5>
+                </div>
+                <div className="project-type">App Build</div>
               </div>
             </div>
           </Link>
           <Link href="/green-acre">
             <div className="scroller-img">
               <img className="landing-img" src="/images/greenacre.jpg" />
-              <div className="scroller-name">
-                <h3>Green Acre</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Green Acre</h5>
+                </div>
+                <div className="project-type">Website Build</div>
               </div>
             </div>
           </Link>
           <Link href="/malcolm-wall">
             <div className="scroller-img">
               <img className="landing-img" src="/images/malcolm-wall.jpg" />
-              <div className="scroller-name">
-                <h3>Malcolm Wall</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Malcolm Wall</h5>
+                </div>
+                <div className="project-type">Website Build</div>
               </div>
             </div>
           </Link>
           <Link href="/win-a-flat">
             <div className="scroller-img is-clone">
               <img className="landing-img" src="/images/win-a-flat.jpg" />
-              <div className="scroller-name">
-                <h3>Win A Flat</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Win A Flat</h5>
+                </div>
+                <div className="project-type">App Build</div>
               </div>
             </div>
           </Link>
           <Link href="/">
             <div className="scroller-img is-clone">
               <img className="landing-img" src="/images/tenanthub.jpg" />
-              <div className="scroller-name">
-                <h3>Tenant Hub</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Tenants Hub</h5>
+                </div>
+                <div className="project-type">App Build</div>
               </div>
             </div>
           </Link>
           <Link href="/green-acre">
             <div className="scroller-img is-clone">
               <img className="landing-img" src="/images/greenacre.jpg" />
-              <div className="scroller-name">
-                <h3>Green Acre</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Green Acre</h5>
+                </div>
+                <div className="project-type">Website Build</div>
               </div>
             </div>
           </Link>
           <Link href="/malcolm-wall">
             <div className="scroller-img is-clone">
               <img className="landing-img" src="/images/malcolm-wall.jpg" />
-              <div className="scroller-name">
-                <h3>Malcolm Wall</h3>
+              <div className="project-info">
+                <div className="project-title">
+                  <h5>Malcolm Wall</h5>
+                </div>
+                <div className="project-type">Website Build</div>
               </div>
             </div>
           </Link>
