@@ -1,12 +1,22 @@
 import "../styles/globals.css";
 
+import { useEffect } from "react";
+
 // Next Links
 import Head from "next/head";
 
 // Components
 import Contact from "./components/Contact";
 
+// DATA AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <Head>

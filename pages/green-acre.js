@@ -26,6 +26,8 @@ export default function greenAcre() {
             </div>
             <div className="col-md-6">
               <img
+                data-aos="fade-up"
+                data-aos-duration="500"
                 className="landing-img mb-5"
                 src="/images/green-acre/mockup.png"
               />
@@ -38,6 +40,8 @@ export default function greenAcre() {
           <div className="row justify-content-between">
             <div className="col-md-6">
               <img
+                data-aos="fade-up"
+                data-aos-delay="500"
                 className="project-desktop mb-5"
                 src="/images/green-acre/desktop-screenshot.png"
               />
@@ -77,6 +81,8 @@ export default function greenAcre() {
             </div>
             <div className="col-md-6 text-center">
               <img
+                data-aos="fade-up"
+                data-aos-duration="500"
                 className="project-mobile"
                 src="/images/green-acre/mobile-screenshot.png"
               />

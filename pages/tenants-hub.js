@@ -1,6 +1,3 @@
-// REACT
-import { useEffect } from "react";
-
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -9,15 +6,7 @@ import Footer from "./components/Footer";
 import Head from "next/head";
 import Link from "next/link";
 
-// DATA AOS
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export default function tenanthub() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="tenants-hub">
       <Navbar />

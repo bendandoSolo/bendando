@@ -25,6 +25,8 @@ export default function winflat() {
             </div>
             <div className="col-md-6">
               <img
+                data-aos="fade-up"
+                data-aos-duration="500"
                 className="landing-img mb-5"
                 src="/images/winaflat/mockup.png"
               />
@@ -37,6 +39,8 @@ export default function winflat() {
           <div className="row justify-content-between">
             <div className="col-md-6">
               <img
+                data-aos="fade-up"
+                data-aos-delay="500"
                 className="project-desktop mb-5"
                 src="/images/winaflat/desktop-screenshot.png"
               />
@@ -93,6 +97,8 @@ export default function winflat() {
             </div>
             <div className="col-md-6 text-center">
               <img
+                data-aos="fade-up"
+                data-aos-duration="500"
                 className="project-mobile"
                 src="/images/winaflat/mobile-screenshot.png"
               />
