@@ -6,7 +6,41 @@ import Footer from "./components/Footer";
 import Head from "next/head";
 import Link from "next/link";
 
+// Imports
+import { Formik, Form, Field } from "formik";
+import * as Yup from "yup";
+
 export default function Connect() {
+  const SignupSchema = Yup.object().shape({
+    name: Yup.string()
+      //  .min(2, 'Too Short!')
+      //  .max(50, 'Too Long!')
+      .required("Required"),
+
+    email: Yup.string().email("Invalid email").required("Required"),
+    message: Yup.string().required("Required"),
+  });
+
+  const sendEmail = async (props) => {
+    props["to"] = "enquiries@bendando.com";
+    props["website"] = "bendando.co.uk";
+    const response = await fetch(
+      "https://sendgridcontactform.azurewebsites.net",
+      {
+        method: "POST",
+        cors: "*",
+        contentType: "application/json",
+        body: JSON.stringify(props),
+      }
+    );
+    // Functions added here to create animation
+    if (response.status != 200) {
+      alert("Error");
+    } else {
+      alert("Success");
+    }
+  };
+
   return (
     <div className="connect">
       <Head>
@@ -63,45 +97,77 @@ export default function Connect() {
               </div>
             </div>
             <div className="col-md-5" data-aos="zoom-in" data-aos-delay="250">
-              <form className="my-4 connect-form">
-                <div className="form-outline mb-4">
-                  <input
-                    type="text"
-                    id="form4Example1"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form4Example1">
-                    Name
-                  </label>
-                </div>
+              <Formik
+                initialValues={{
+                  name: "",
+                  email: "",
+                  message: "",
+                }}
+                validationSchema={SignupSchema}
+                onSubmit={(values) => {
+                  sendEmail(values);
+                }}
+              >
+                {({ errors, touched }) => (
+                  <Form id="contact_form" className="my-4 connect-form">
+                    <div className="form-outline mb-4">
+                      <label>Name:</label>
+                      <Field
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        className="form-input"
+                      />
+                      {errors.name && touched.name ? (
+                        <div className="error-validation">*{errors.name}</div>
+                      ) : null}
+                    </div>
 
-                <div className="form-outline mb-4">
-                  <input
-                    type="email"
-                    id="form4Example2"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form4Example2">
-                    Email address
-                  </label>
-                </div>
+                    <div className="form-outline mb-4">
+                      <label>Email:</label>
+                      <Field
+                        name="email"
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        className="form-input"
+                      />
+                      {errors.email && touched.email ? (
+                        <div className="error-validation">*{errors.email}</div>
+                      ) : null}
+                    </div>
 
-                <div className="form-outline mb-4">
-                  <textarea
-                    className="form-control"
-                    id="form4Example3"
-                    rows="4"
-                  ></textarea>
-                  <label className="form-label" htmlFor="form4Example3">
-                    Message
-                  </label>
-                </div>
-                <div className="d-flex justify-content-end">
-                  <button type="submit" className="btn global-btn mb-4 px-5">
-                    Send
-                  </button>
-                </div>
-              </form>
+                    <div className="form-outline mb-4">
+                      <label>Message:</label>
+
+                      <Field
+                        type="textarea"
+                        as="textarea"
+                        name="message"
+                        type="message"
+                        id="message"
+                        placeholder="Your Message"
+                        cols="30"
+                        rows="5"
+                        className="form-input"
+                      />
+                      {errors.message && touched.message ? (
+                        <div className="error-validation">
+                          *{errors.message}
+                        </div>
+                      ) : null}
+                    </div>
+                    <div className="d-flex justify-content-end">
+                      <button
+                        type="submit"
+                        className="btn global-btn mb-4 px-5"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </Form>
+                )}
+              </Formik>
             </div>
           </div>
         </div>

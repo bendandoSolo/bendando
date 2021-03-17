@@ -63,7 +63,8 @@
 /* Grid */
 
 .grid img {
-  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 @media screen and (min-width: 992px) {

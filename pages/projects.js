@@ -34,7 +34,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project-display mt-5">
-          <div className="row justify-content-evenly mb-3">
+          <div className="row justify-content-evenly">
             <Link href="/tenants-hub">
               <div
                 className="col-md-5 mb-3 text-center project-section"

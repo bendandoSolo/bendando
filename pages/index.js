@@ -231,37 +231,49 @@ export default function Home() {
         </div>
 
         {/* ONLY APPEARS ON MOBILE */}
-        <div id="grid" className="grid mt-5">
+        <div id="grid" className="grid mt-5 pb-1">
           <div className="row">
             <Link href="/win-a-flat">
-              <div className="position-relative">
+              <div className="position-relative mb-3">
                 <img className="landing-img" src="/images/win-a-flat.png" />
-                <div className="scroller-name">
-                  <h3>Win A Flat</h3>
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Win A Flat</h5>
+                  </div>
+                  <div className="project-type">App Build</div>
                 </div>
               </div>
             </Link>
             <Link href="/tenants-hub">
-              <div className="position-relative">
+              <div className="position-relative mb-3">
                 <img className="landing-img" src="/images/tenanthub.png" />
-                <div className="scroller-name">
-                  <h3>Tenants Hub</h3>
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Tenants Hub</h5>
+                  </div>
+                  <div className="project-type">App Build</div>
                 </div>
               </div>
             </Link>
             <Link href="/green-acre">
-              <div className="position-relative">
+              <div className="position-relative mb-3">
                 <img className="landing-img" src="/images/greenacre.png" />
-                <div className="scroller-name">
-                  <h3>Green Acre</h3>
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Green Acre</h5>
+                  </div>
+                  <div className="project-type">Website Build</div>
                 </div>
               </div>
             </Link>
             <Link href="/malcolm-wall">
-              <div className="position-relative">
+              <div className="position-relative mb-3">
                 <img className="landing-img" src="/images/malcolm-wall.png" />
-                <div className="scroller-name">
-                  <h3>Malcolm Wall</h3>
+                <div className="project-info">
+                  <div className="project-title">
+                    <h5>Malcolm Wall</h5>
+                  </div>
+                  <div className="project-type">Website Build</div>
                 </div>
               </div>
             </Link>
