@@ -513,6 +513,7 @@ footer h5 {
 
 .error-validation {
   color: red;
+  font-size: 12px;
 }
 
 .form-input {

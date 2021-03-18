@@ -25,7 +25,7 @@ export default function Connect() {
     props["to"] = "enquiries@bendando.com";
     props["website"] = "bendando.co.uk";
     const response = await fetch(
-      "https://sendgridcontactform.azurewebsites.net",
+      "https://sendgridcontactform.azurewebsites.net/api/SendGrid_ContactFormEmail",
       {
         method: "POST",
         cors: "*",
@@ -110,7 +110,7 @@ export default function Connect() {
               >
                 {({ errors, touched }) => (
                   <Form id="contact_form" className="my-4 connect-form">
-                    <div className="form-outline mb-4">
+                    <div className="mb-4">
                       <label>Name:</label>
                       <Field
                         type="text"
@@ -123,7 +123,7 @@ export default function Connect() {
                       ) : null}
                     </div>
 
-                    <div className="form-outline mb-4">
+                    <div className="mb-4">
                       <label>Email:</label>
                       <Field
                         name="email"
@@ -137,9 +137,8 @@ export default function Connect() {
                       ) : null}
                     </div>
 
-                    <div className="form-outline mb-4">
+                    <div className="mb-4">
                       <label>Message:</label>
-
                       <Field
                         type="textarea"
                         as="textarea"
