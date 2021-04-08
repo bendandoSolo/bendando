@@ -18,6 +18,10 @@
       rgba(123, 38, 157, 1) 41%,
       rgba(214, 66, 118, 1) 79%
     );
+    text-align: center;
+  }
+  .home h1 {
+    font-size: 2.4rem;
   }
 }
 
@@ -62,17 +66,12 @@
 
 /* Grid */
 
-.grid img {
-  width: 100%;
-  position: relative;
+.grid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
 }
-
-@media screen and (min-width: 992px) {
-  .grid {
-    display: none;
-  }
-}
-
 /* Mask */
 
 .mask {
@@ -89,16 +88,35 @@
   flex-direction: row;
   align-items: center;
   pointer-events: none;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-option {
+  display: none;
 }
 
 @media screen and (max-width: 992px) {
   .scroll-option {
+    display: block;
     margin-top: 200px;
     pointer-events: none;
   }
 
   .scroll-point {
     pointer-events: auto;
+    justify-content: center;
   }
 }
 
@@ -106,5 +124,87 @@
   .scroll-option {
     margin-top: 120px;
     pointer-events: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .scroll-option {
+    margin-top: 5px;
+    pointer-events: auto;
+  }
+}
+
+/* TEST DISPLAY */
+
+.index-projects-display {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+}
+
+.test-project-img {
+  height: 25vh;
+  position: relative;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.test-project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgb(123, 38, 157);
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.test-project-info p {
+  margin-bottom: 0;
+  color: rgba(214, 66, 118, 1);
+}
+
+.test-project-img:hover {
+  opacity: 0.9;
+}
+
+.test-project-img:hover .test-project-info {
+  background-color: white;
+  color: rgb(123, 38, 157);
+}
+
+.test-project-img:hover .test-project-info p {
+  color: black;
+}
+
+#green-acre {
+  background-image: url("/images/greenacre.jpg");
+}
+
+#win-a-flat {
+  background-image: url("/images/win-a-flat.jpg");
+}
+
+#tenant-hub {
+  background-image: url("/images/tenanthub.jpg");
+}
+
+#malcolm-wall {
+  background-image: url("/images/malcolm-wall.jpg");
+}
+
+@media screen and (max-width: 992px) {
+  .index-projects-display {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    /* padding: 0 !important; */
+  }
+  .test-project-img {
+    /* margin-bottom: 1rem; */
+    border-bottom: 5px solid rgb(123, 38, 157);
   }
 }

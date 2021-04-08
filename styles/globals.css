@@ -55,6 +55,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .landing {
+    padding: 5rem 0 0 0;
+  }
+}
+
 .landing-img {
   width: 100%;
 }
@@ -347,6 +353,7 @@ ul {
 
 nav {
   position: relative;
+  text-align: left;
 }
 
 nav ul {
@@ -362,8 +369,9 @@ nav ul {
   z-index: 200000;
   position: absolute;
   width: 100%;
-  padding: 2rem;
   background-color: whitesmoke;
+  text-align: left;
+  /* margin-top: 5rem; */
 }
 
 footer h5 {
