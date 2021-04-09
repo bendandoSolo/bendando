@@ -365,13 +365,13 @@ nav ul {
 /* Footer */
 
 .footer {
-  color: #232858;
+  color: whitesmoke;
   z-index: 200000;
   position: absolute;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: #232858;
   text-align: left;
-  /* margin-top: 5rem; */
+  padding-top: 1.5rem;
 }
 
 footer h5 {
@@ -379,7 +379,7 @@ footer h5 {
 }
 
 .footer-links li {
-  color: #232858;
+  color: whitesmoke;
 }
 
 .footer-links li:hover {

@@ -156,6 +156,9 @@ export default function Connect() {
                         </div>
                       ) : null}
                     </div>
+                    <div id="feedback" className="feedback">
+                      <h5 id="feedback-text"></h5>
+                    </div>
                     <div className="d-flex justify-content-end">
                       <button
                         type="submit"
