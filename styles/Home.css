@@ -103,9 +103,9 @@
   }
 }
 
-.scroll-option {
+/* .scroll-option {
   display: none;
-}
+} */
 
 @media screen and (max-width: 992px) {
   .scroll-option {
@@ -142,10 +142,12 @@
   right: 0;
   width: 50%;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .test-project-img {
-  height: 24.5vh;
+  height: 50vh;
   position: relative;
   background-size: cover;
   cursor: pointer;
@@ -157,14 +159,15 @@
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: rgb(123, 38, 157);
+  background-color: whitesmoke;
+  color: rgb(123, 38, 157);
   transition: 0.2s ease-in-out;
   z-index: 2;
 }
 
 .test-project-info p {
   margin-bottom: 0;
-  color: rgba(214, 66, 118, 1);
+  color: #232858;
 }
 
 .test-project-img:hover {
@@ -172,12 +175,12 @@
 }
 
 .test-project-img:hover .test-project-info {
-  background-color: white;
-  color: rgb(123, 38, 157);
+  background-color: #232858;
+  color: rgba(214, 66, 118, 1);
 }
 
 .test-project-img:hover .test-project-info p {
-  color: black;
+  color: whitesmoke;
 }
 
 #green-acre {
@@ -200,11 +203,9 @@
   .index-projects-display {
     position: relative;
     width: 100%;
-    /* height: 100vh; */
-    /* padding: 0 !important; */
   }
   .test-project-img {
-    /* margin-bottom: 1rem; */
+    height: 25vh;
     border-bottom: 5px solid rgb(123, 38, 157);
   }
 }

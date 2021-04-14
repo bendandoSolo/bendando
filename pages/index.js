@@ -137,41 +137,41 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="ourprojects" className="index-projects-display">
-            <div className="test-display">
-              <Link href="/win-a-flat">
-                <div id="win-a-flat" className="test-project-img">
-                  <div className="test-project-info">
-                    <h5>Win-A-Flat</h5>
-                    <p>Website Build</p>
-                  </div>
+        </div>
+        <div id="ourprojects" className="index-projects-display">
+          <div className="test-display">
+            <Link href="/win-a-flat">
+              <div id="win-a-flat" className="test-project-img">
+                <div className="test-project-info">
+                  <h5>Win-A-Flat</h5>
+                  <p>Website Build</p>
                 </div>
-              </Link>
-              <Link href="/tenants-hub">
-                <div id="tenant-hub" className="test-project-img">
-                  <div className="test-project-info">
-                    <h5>Tenants Hub</h5>
-                    <p>App Build</p>
-                  </div>
+              </div>
+            </Link>
+            <Link href="/tenants-hub">
+              <div id="tenant-hub" className="test-project-img">
+                <div className="test-project-info">
+                  <h5>Tenants Hub</h5>
+                  <p>App Build</p>
                 </div>
-              </Link>
-              <Link href="/green-acre">
-                <div id="green-acre" className="test-project-img">
-                  <div className="test-project-info">
-                    <h5>Green Acre</h5>
-                    <p>Website Build</p>
-                  </div>
+              </div>
+            </Link>
+            <Link href="/green-acre">
+              <div id="green-acre" className="test-project-img">
+                <div className="test-project-info">
+                  <h5>Green Acre</h5>
+                  <p>Website Build</p>
                 </div>
-              </Link>
-              <Link href="/malcolm-wall">
-                <div id="malcolm-wall" className="test-project-img">
-                  <div className="test-project-info">
-                    <h5>Malcolm Wall</h5>
-                    <p>Website Build</p>
-                  </div>
+              </div>
+            </Link>
+            <Link href="/malcolm-wall">
+              <div id="malcolm-wall" className="test-project-img">
+                <div className="test-project-info">
+                  <h5>Malcolm Wall</h5>
+                  <p>Website Build</p>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
         {/* <div className="scroller" id="scroller">

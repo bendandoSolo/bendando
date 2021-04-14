@@ -1,7 +1,7 @@
 @import "./Home.css";
 @import "./Components.css";
 @import "./Buttons.css";
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Titillium+Web:wght@300;400&display=swap");
 
 /* GLOBAL */
 * {
@@ -10,6 +10,14 @@
   margin: 0;
   background-color: transparent;
   font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Titillium Web", sans-serif;
 }
 
 .row {
@@ -122,7 +130,7 @@ ul {
 
 .project-display {
   /* background-color: #d6d6d6; */
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .project-display img {
@@ -136,6 +144,13 @@ ul {
   transition: 0.8s ease-in-out;
   display: inline-block;
   overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .project-section {
+    margin-bottom: 1rem;
+  }
 }
 
 .project-image {
@@ -143,66 +158,19 @@ ul {
   max-width: 100%;
 }
 
-.project-section:hover .project-image {
-  transform: scale(1.1);
-}
+@media screen and (min-width: 992px) {
+  .project-section:hover .project-image {
+    transform: scale(1.1);
+  }
 
-.project-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ca08ff;
-  opacity: 0;
-  transition: 0.8s ease-in-out;
-  z-index: 2;
-}
+  .project-section:hover .test-project-info {
+    background-color: #232858;
+    color: rgba(214, 66, 118, 1);
+  }
 
-.project-info {
-  position: absolute;
-  bottom: 0;
-  font-size: 18px;
-  z-index: 5;
-}
-
-.project-title {
-  background-color: black;
-  color: white;
-  padding: 0.5rem 4rem 0.5rem 0.5rem;
-  text-align: start;
-  transition: 0.8s;
-  z-index: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.project-title:hover {
-  color: black;
-}
-
-.project-title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: white;
-  color: white;
-  z-index: -1;
-  transition: 0.8s;
-  bottom: 0;
-  border-radius: 50% 50% 0 0;
-}
-.project-section:hover .project-title:hover:before {
-  height: 180%;
-}
-
-.project-type {
-  background-color: white;
-  color: black;
-  padding: 0rem 4rem 0rem 0.5rem;
-  text-align: start;
+  .project-section:hover .test-project-info p {
+    color: whitesmoke;
+  }
 }
 
 .project-link a {
@@ -331,7 +299,8 @@ ul {
 .project-end {
   padding: 4rem 0;
   color: white;
-  background-color: #152f3b;
+  background-color: #232858;
+  border-bottom: 1px solid white;
 }
 
 .reverse {
