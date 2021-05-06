@@ -96,25 +96,27 @@ export default function Connect() {
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-md-6" data-aos="zoom-in">
-              <h1 className="mb-4">Connect</h1>
-              <h5 className="mb-4">
-                We love talking about website solutions, we do it all day!
+              <h1 className="mb-4" style={{paddingBottom: '20px'}}>Contact</h1>
+              <h5 className="mb-2">
+                We love talking about website and applications, we do it all day!
               </h5>
-              <p>
+              <h5 className="mb-4">
                 Give us a call or drop us an email we will get right back to
                 you.
-              </p>
+              </h5>
               <ul>
                 <li>
-                  <i className="far fa-envelope me-3"></i>Enquires@bendando.com
+                  <i className="far fa-envelope me-3"  style={{paddingTop: '10px'}}></i>enquiries@bendando.com
                 </li>
                 <li>
-                  <i className="fas fa-phone me-3"></i>Phone: 0208 946 8865
+                  <i className="fas fa-phone me-3"  style={{paddingTop: '10px'}}></i>020 8543 8117
                 </li>
                 <li className="mt-4">
                   <ul>
-                    <i className="far fa-address-card me-3"></i>
-                    <li>Bendando Ltd</li>
+                    
+                    <li><i className="far fa-address-card me-3" ></i>Location</li>
+                    
+                    <li style={{paddingTop: '10px'}}>Unit 6</li>
                     <li>Princess Mews Horace Road</li>
                     <li>Kingston-upon-Thames</li>
                     <li>Surrey</li>
@@ -122,7 +124,7 @@ export default function Connect() {
                   </ul>
                 </li>
               </ul>
-              <h5>Follow Us</h5>
+              {/* <h5>Follow Us</h5>
               <div className="connect-links">
                 <Link href="/">
                   <a>
@@ -139,7 +141,7 @@ export default function Connect() {
                     <i className="fab fa-twitter me-3"></i>
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="col-md-5" data-aos="zoom-in" data-aos-delay="250">
               {
