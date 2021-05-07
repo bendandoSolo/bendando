@@ -89,7 +89,7 @@ export default function Connect() {
   return (
     <div className="connect">
       <Head>
-        <title>Connect | BenDando</title>
+        <title>Contact | BenDando</title>
       </Head>
       <Navbar />
       <div className="landing">
