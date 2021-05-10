@@ -125,7 +125,7 @@ export default function Home() {
                 </Link>
               </div>
               <div></div>
-              <div className="row scroll-option">
+              <div className="row scroll-option" id="ourprojects">
                 <div className="col-md-7">
                   <h5 className="my-4">Scroll to view our Projects</h5>
                 </div>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="ourprojects" className="index-projects-display">
+        <div className="index-projects-display">
           <div className="test-display">
             <Link href="/win-a-flat">
               <div id="win-a-flat" className="test-project-img">

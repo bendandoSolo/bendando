@@ -36,7 +36,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/connect">
+              <Link href="/contact">
                 <a className="nav-link">Connect</a>
               </Link>
             </li>

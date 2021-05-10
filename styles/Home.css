@@ -141,13 +141,13 @@
   top: 0;
   right: 0;
   width: 50%;
-  height: 100vh;
+  height: 98vh;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .test-project-img {
-  height: 50vh;
+  height: 49vh;
   position: relative;
   background-size: cover;
   cursor: pointer;
@@ -168,10 +168,6 @@
 .test-project-info p {
   margin-bottom: 0;
   color: #232858;
-}
-
-.test-project-img:hover {
-  opacity: 0.9;
 }
 
 .test-project-img:hover .test-project-info {
