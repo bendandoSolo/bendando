@@ -17,11 +17,11 @@ export default function tenanthub() {
               <h1 className="mb-4">Tenants Hub</h1>
               <h4 className="mb-4">App & Website Build</h4>
               <h5 className="mb-4">
-                This is a Property Management app used to connect Block and
+                A Property Management app used to connect Block and
                 Letting Managers, Owners, Surveyors, Maintenance Personnel and
                 Residents. It's built for your tenants to manage all their
-                building related needs, your maintenance personnel to manage
-                their work and to manage all your building services.
+                building related needs,  maintenance personnel to manage
+                their work and building managers and owners to manage all your building services.
               </h5>
             </div>
             <div className="col-md-6">

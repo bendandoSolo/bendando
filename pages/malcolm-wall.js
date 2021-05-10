@@ -65,12 +65,14 @@ export default function malcolmWall() {
                     Clean simple design optimized for fast page loading
                   </h5>
                 </li>
+
                 <li className="mt-5">
                   <h5>
-                    <i className="fas fa-chevron-right hover"></i>
+                    <i className="fas fa-chevron-right me-4 hover"></i>
                     Customized animated scrolling for news feeds on home page
                   </h5>
                 </li>
+
               </ul>
             </div>
             <div className="col-md-6 text-center">

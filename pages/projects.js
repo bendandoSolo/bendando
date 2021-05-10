@@ -33,7 +33,7 @@ export default function Projects() {
                 <img className="project-image" src="/images/tenanthub.jpg" />
                 <div className="test-project-info">
                   <h5>Tenants Hub</h5>
-                  <p>App Build</p>
+                  <p>App &#183; Website 	&#183; Database</p>
                 </div>
               </div>
             </Link>
@@ -46,7 +46,7 @@ export default function Projects() {
                 <img className="project-image" src="/images/win-a-flat.jpg" />
                 <div className="test-project-info">
                   <h5>Win A Flat</h5>
-                  <p>Website Build</p>
+                  <p>Website 	&#183; Database &#183; Payments</p>
                 </div>
               </div>
             </Link>
@@ -61,7 +61,7 @@ export default function Projects() {
                 <img className="project-image" src="/images/greenacre.jpg" />
                 <div className="test-project-info">
                   <h5>Green Acre</h5>
-                  <p>Website Build</p>
+                  <p>Website 	&#183; Branding</p>
                 </div>
               </div>
             </Link>
@@ -74,7 +74,7 @@ export default function Projects() {
                 <img className="project-image" src="/images/malcolm-wall.jpg" />
                 <div className="test-project-info">
                   <h5>Malcolm Wall</h5>
-                  <p>Website Build</p>
+                  <p>Website 	&#183; Branding &#183; Media Feeds</p>
                 </div>
               </div>
             </Link>

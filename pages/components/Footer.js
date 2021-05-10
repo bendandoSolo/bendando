@@ -9,7 +9,29 @@ export default function Footer() {
       <footer className="container">
         <div className="row p-4 justify-content-between">
           <div className="col-md-3">
-            <p>Privacy Policy ©Bendando</p>
+              <h5>Menu</h5>
+              <ul>
+              <li><Link href="/" style={{color: '#ffffff'}}>
+               Home
+              </Link>
+              </li>
+              <li><Link href="/">
+               Projects
+              </Link>
+              </li>
+              <li><Link href="/">
+               Services
+              </Link>
+              </li>
+              <li><Link href="/">
+               Connect
+              </Link>
+              </li>
+              </ul>
+
+
+
+
           </div>
           <div className="col-md-3 footer-links">
             <h5>Connect</h5>
@@ -18,14 +40,14 @@ export default function Footer() {
                 <a>
                   <li>
                     <i className="far fa-envelope me-3"></i>
-                    Enquires@bendando.com
+                    enquiries@bendando.com
                   </li>
                 </a>
               </Link>
               <Link href="tel:+4402089468865">
                 <a>
                   <li>
-                    <i className="fas fa-phone me-3"></i>Phone: 0208 946 8865
+                    <i className="fas fa-phone me-3"></i>020 8543 8117
                   </li>
                 </a>
               </Link>
