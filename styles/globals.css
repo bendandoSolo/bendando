@@ -17,7 +17,9 @@ h2,
 h3,
 h4,
 h5,
-nav a {
+nav a,
+footer li,
+footer a {
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -199,8 +201,18 @@ ul {
 /* connect */
 
 .connect {
-  background: linear-gradient(to bottom left, #dc6d18 51%, #ffbc47 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(233, 102, 76, 1) 35%,
+    rgba(251, 178, 121, 1) 100%
+  );
+
   color: whitesmoke;
+}
+
+.connect form input,
+.connect form textarea {
+  padding: 1rem;
 }
 
 .connect-links {
@@ -217,17 +229,6 @@ ul {
 .connect-links i:hover {
   background-color: whitesmoke;
   color: #ff6f00;
-}
-
-.connect form {
-  padding: 3rem 1rem;
-  background-color: #e39556;
-}
-
-.connect form label,
-.connect form input,
-.connect form textarea {
-  /* color: whitesmoke !important; */
 }
 
 /* winaflat */
@@ -343,11 +344,11 @@ nav a {
 /* Footer */
 
 .footer {
-  color: whitesmoke;
+  color: rgb(12, 12, 12);
   z-index: 200000;
   position: absolute;
   width: 100%;
-  background-color: #3c3b41;
+  background-color: whitesmoke;
   text-align: left;
   padding-top: 1.5rem;
 }
@@ -356,12 +357,15 @@ footer h5 {
   text-decoration: underline;
 }
 
-.footer-links li {
-  color: whitesmoke;
+.footer-links li,
+footer a {
+  color: rgb(12, 12, 12);
 }
 
-.footer-links li:hover {
+.footer-links li:hover,
+footer a:hover {
   opacity: 0.6;
+  color: rgb(12, 12, 12);
 }
 
 /*  */

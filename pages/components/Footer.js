@@ -9,29 +9,23 @@ export default function Footer() {
       <footer className="container">
         <div className="row p-4 justify-content-between">
           <div className="col-md-3">
-              <h5>Menu</h5>
-              <ul>
-              <li><Link href="/" style={{color: '#ffffff'}}>
-               Home
-              </Link>
+            <h5>Menu</h5>
+            <ul>
+              <li>
+                <Link href="/" style={{ color: "#ffffff" }}>
+                  Home
+                </Link>
               </li>
-              <li><Link href="/">
-               Projects
-              </Link>
+              <li>
+                <Link href="/">Projects</Link>
               </li>
-              <li><Link href="/">
-               Services
-              </Link>
+              <li>
+                <Link href="/">Services</Link>
               </li>
-              <li><Link href="/">
-               Connect
-              </Link>
+              <li>
+                <Link href="/">Connect</Link>
               </li>
-              </ul>
-
-
-
-
+            </ul>
           </div>
           <div className="col-md-3 footer-links">
             <h5>Connect</h5>

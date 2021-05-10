@@ -96,9 +96,12 @@ export default function Connect() {
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-md-6" data-aos="zoom-in">
-              <h1 className="mb-4" style={{paddingBottom: '20px'}}>Contact</h1>
+              <h1 className="mb-4" style={{ paddingBottom: "20px" }}>
+                Contact
+              </h1>
               <h5 className="mb-2">
-                We love talking about website and applications, we do it all day!
+                We love talking about website and applications, we do it all
+                day!
               </h5>
               <h5 className="mb-4">
                 Give us a call or drop us an email we will get right back to
@@ -106,17 +109,26 @@ export default function Connect() {
               </h5>
               <ul>
                 <li>
-                  <i className="far fa-envelope me-3"  style={{paddingTop: '10px'}}></i>enquiries@bendando.com
+                  <i
+                    className="far fa-envelope me-3"
+                    style={{ paddingTop: "10px" }}
+                  ></i>
+                  enquiries@bendando.com
                 </li>
                 <li>
-                  <i className="fas fa-phone me-3"  style={{paddingTop: '10px'}}></i>020 8543 8117
+                  <i
+                    className="fas fa-phone me-3"
+                    style={{ paddingTop: "10px" }}
+                  ></i>
+                  020 8543 8117
                 </li>
                 <li className="mt-4">
                   <ul>
-                    
-                    <li><i className="far fa-address-card me-3" ></i>Location</li>
-                    
-                    <li style={{paddingTop: '10px'}}>Unit 6</li>
+                    <li>
+                      <i className="far fa-address-card me-3"></i>Location
+                    </li>
+
+                    <li style={{ paddingTop: "10px" }}>Unit 6</li>
                     <li>Princess Mews Horace Road</li>
                     <li>Kingston-upon-Thames</li>
                     <li>Surrey</li>
@@ -159,7 +171,6 @@ export default function Connect() {
                   {({ errors, touched }) => (
                     <Form id="contact_form" className="my-4 connect-form">
                       <div className="mb-4">
-                        <label>Name:</label>
                         <Field
                           type="text"
                           name="name"
@@ -172,7 +183,6 @@ export default function Connect() {
                       </div>
 
                       <div className="mb-4">
-                        <label>Email:</label>
                         <Field
                           name="email"
                           type="email"
@@ -188,7 +198,6 @@ export default function Connect() {
                       </div>
 
                       <div className="mb-4">
-                        <label>Message:</label>
                         <Field
                           type="textarea"
                           as="textarea"
@@ -197,7 +206,7 @@ export default function Connect() {
                           id="message"
                           placeholder="Your Message"
                           cols="30"
-                          rows="5"
+                          rows="10"
                           className="form-input"
                         />
                         {errors.message && touched.message ? (
@@ -212,7 +221,7 @@ export default function Connect() {
                       <div id="response">
                         <p id="response-text"></p>
                       </div>
-                      <div className="text-center">
+                      <div className="text-end">
                         <button
                           className="global-btn btn mt-4 px-5"
                           type="submit"

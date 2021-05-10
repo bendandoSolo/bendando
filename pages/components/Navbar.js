@@ -37,7 +37,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <Link href="/contact">
-                <a className="nav-link">Connect</a>
+                <a className="nav-link">Contact</a>
               </Link>
             </li>
           </ul>
