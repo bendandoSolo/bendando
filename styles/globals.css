@@ -194,10 +194,22 @@ ul {
   color: whitesmoke;
 }
 
-.services .service i {
-  font-size: 4rem;
+.services .card {
+  height: 650px;
+  border-radius: 0;
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
 }
 
+.services .card i {
+  font-size: 3rem;
+}
+
+.services .card:hover {
+  background-color: #b4b4cb;
+  color: #30353d;
+}
 /* connect */
 
 .connect {
