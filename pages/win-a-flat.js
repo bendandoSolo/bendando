@@ -1,6 +1,7 @@
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProjectBanner from "./components/ProjectBanner";
 
 // Next
 import Head from "next/head";
@@ -10,30 +11,15 @@ export default function winflat() {
   return (
     <div className="winaflat">
       <Navbar />
-      <div className="landing-2">
-        <div className="container">
-          <div className="row ">
-            <div className="col-md-6 ">
-              <h1 className="mb-4">Win A Flat </h1>
-              <h4 className="mb-4">Website Build</h4>
-              <h5 className="mb-4">
-                A competition website for Equinox Living promoted by Uri Geller
-                and the national press allowing UK residents who successfully
-                answer 3 questions to be entered into a prize draw to win a
-                brand new flat!
-              </h5>
-            </div>
-            <div className="col-md-6">
-              <img
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className="landing-img mb-5"
-                src="/images/winaflat/mockup.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProjectBanner
+        title="Win A Flat"
+        type="Website Build"
+        text="A competition website for Equinox Living promoted by Uri Geller
+              and the national press allowing UK residents who successfully
+              answer 3 questions to be entered into a prize draw to win a brand
+              new flat!"
+        img="/images/winaflat/mockup.png"
+      />
       <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
@@ -114,8 +100,6 @@ export default function winflat() {
               ></iframe>
             </div>
             <div className="col-md-6 position-relative">
-              {/* <div className="shape-1"></div>
-              <div className="shape-2"></div> */}
               <div className="project-text mx-3">
                 <p>
                   Winaflat was fully optimized to load as quickly as possible
@@ -140,8 +124,6 @@ export default function winflat() {
               />
             </div>
             <div className="col-md-6 position-relative">
-              {/* <div className="shape-1"></div>
-              <div className="shape-2"></div> */}
               <div className="project-text mx-3">
                 <p>
                   We used an ecommerce system accepting card and android and
