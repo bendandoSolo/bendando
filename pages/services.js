@@ -21,7 +21,7 @@ export default function Services() {
             className="d-flex flex-column justify-content-center align-items-center"
             data-aos="zoom-in"
           >
-            <div className="text-center" style={{ width: "800px" }}>
+            <div className="text-center" style={{ maxWidth: "800px" }}>
               <h1 className="mb-4">Our Services</h1>
               <h5
                 className="mb-2"

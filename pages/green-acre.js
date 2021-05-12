@@ -1,82 +1,52 @@
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProjectBanner from "./components/ProjectBanner";
 
 // Next
-import Head from "next/head";
 import Link from "next/link";
 
 export default function greenAcre() {
+  let features = [
+    "Website design and creation",
+    "Company Branding",
+    "Complete wireframe and website mockups",
+    "Fully responsive",
+    "Video banner on homepage",
+  ];
+
   return (
     <div className="green-acre">
       <Navbar />
-      <div className="landing-2">
-        <div className="container">
-          <div className="row ">
-            <div className="col-md-6 ">
-              <h1 className="mb-4">Greenacre Capital</h1>
-              <h4 className="mb-4">Website and Branding</h4>
-              <h5 className="mb-4">
-                Greenacre Energy is a company whose mission is to identify and
+      <ProjectBanner
+        title="Greenacre Capital"
+        type="Website and Branding"
+        text="  Greenacre Energy is a company whose mission is to identify and
                 invest in environmentally sustainable solutions for the disposal
                 of all waste. They work alongside governments and experts across
                 the UK and South East Asia. They approached us to brand their
-                organisation and design their website.
-              </h5>
-            </div>
-            <div className="col-md-6">
-              <img
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className="landing-img mb-5"
-                src="/images/green-acre/mockup.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+                organisation and design their website."
+        img="/images/green-acre/mockup.png"
+      />
       <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-md-6">
               <img
                 data-aos="fade-up"
-                data-aos-delay="500"
                 className="project-desktop mb-5"
                 src="/images/green-acre/desktop-screenshot.png"
               />
               <h2>Features</h2>
-              <ul className="mb-5">
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Website
-                    design and creation
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    Company Branding
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    Complete wireframe and website mockups
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Fully
-                    responsive
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    Video banner on homepage
-                  </h5>
-                </li>
+              <ul className="mb-5 features">
+                {features.map((item) => {
+                  return (
+                    <li className="mt-5 d-flex align-items-center">
+                      <i className="fas fa-chevron-right me-4 hover"></i>
+                      <h5>{item}</h5>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             <div className="col-md-6 text-center">

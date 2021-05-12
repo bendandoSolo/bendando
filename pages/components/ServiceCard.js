@@ -1,6 +1,6 @@
 const ServiceCard = ({ icon, title, text }) => {
   return (
-    <div className="col-md-3">
+    <div className="col-lg-3 col-sm-6">
       <div class="card text-center p-4">
         <div class="card-body">
           <i className={icon}></i>

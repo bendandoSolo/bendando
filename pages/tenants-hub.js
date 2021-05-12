@@ -1,127 +1,63 @@
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProjectBanner from "./components/ProjectBanner";
 
 // Next
 import Head from "next/head";
 import Link from "next/link";
 
 export default function tenanthub() {
+  let features = [
+    "Web application and app design and creation",
+    "Saas sign up website",
+    "Automated service for logging and managing building faults",
+    "White label application",
+    "Payment system",
+    "User Accounts and management",
+    "Database of faults and associated pictures",
+    "Automatic email and SMS notification service",
+    "Automatic progress reports",
+    "Real time messaging service",
+    "Calendar Management integrated with Google Calendar",
+    "Customized pluggins for individual clients",
+  ];
+
   return (
     <div className="tenants-hub">
       <Navbar />
-      <div className="landing-2">
-        <div className="container">
-          <div className="row ">
-            <div className="col-md-6 ">
-              <h1 className="mb-4">Tenants Hub</h1>
-              <h4 className="mb-4">App & Website Build</h4>
-              <h5 className="mb-4">
-                A Property Management app used to connect Block and
-                Letting Managers, Owners, Surveyors, Maintenance Personnel and
+      <ProjectBanner
+        title="Tenants Hub"
+        type="App & Website Build"
+        text="  A Property Management app used to connect Block and Letting
+                Managers, Owners, Surveyors, Maintenance Personnel and
                 Residents. It's built for your tenants to manage all their
-                building related needs,  maintenance personnel to manage
-                their work and building managers and owners to manage all your building services.
-              </h5>
-            </div>
-            <div className="col-md-6">
-              <img
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className="landing-img my-5"
-                src="/images/tenant-hub/mockup.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+                building related needs, maintenance personnel to manage their
+                work and building managers and owners to manage all your
+                building services."
+        img="/images/tenant-hub/mockup.png"
+      />
       <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-md-6">
               <img
                 data-aos="fade-up"
-                data-aos-delay="500"
                 className="project-desktop mb-5"
                 src="/images/tenant-hub/desktop-screenshot.png"
               />
               <h2>Features</h2>
-              <ul data-aos="fade-up" className="my-5">
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Web
-                    application and app design and creation
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Saas sign
-                    up website
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    Automated service for logging and managing building faults
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    White label application
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Payment
-                    System
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    User Accounts and management
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Database
-                    of faults and associated pictures
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    Automatic email and SMS notification service
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Automatic
-                    progress reports
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Real time
-                    messaging service
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Calendar
-                    Management integrated with Google Calendar
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    Customized pluggins for individual clients
-                  </h5>
-                </li>
+              <ul className="mb-5 features">
+                {features.map((item) => {
+                  return (
+                    <li className="mt-5 d-flex align-items-center">
+                      <i className="fas fa-chevron-right me-4 hover"></i>
+                      <h5>{item}</h5>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
-
             <div className="col-md-6 text-center">
               <img
                 data-aos="fade-up"

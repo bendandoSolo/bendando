@@ -4,10 +4,20 @@ import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
 
 // Next
-import Head from "next/head";
 import Link from "next/link";
 
 export default function winflat() {
+  let features = [
+    "Website design and creation",
+    "Optimized for quicker loading times",
+    "3D environmental viewer",
+    "Payment System",
+    "Apple / Android Pay",
+    "Customer entries database and ticket creation",
+    "Randomized winner selection software",
+    "Analytics",
+  ];
+
   return (
     <div className="winaflat">
       <Navbar />
@@ -26,59 +36,19 @@ export default function winflat() {
             <div className="col-md-6">
               <img
                 data-aos="fade-up"
-                data-aos-delay="500"
                 className="project-desktop mb-5"
                 src="/images/winaflat/desktop-screenshot.png"
               />
               <h2>Features</h2>
-              <ul>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Website
-                    design and creation.
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Optimized
-                    for quicker loading times
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>3D
-                    environmental viewer
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Payment
-                    System
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Apple /
-                    Android Pay
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Customer
-                    entries database and ticket creation
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>
-                    Randomized winner selection software
-                  </h5>
-                </li>
-                <li className="mt-5">
-                  <h5>
-                    <i className="fas fa-chevron-right me-4 hover"></i>Analytics
-                  </h5>
-                </li>
+              <ul className="mb-5 features">
+                {features.map((item) => {
+                  return (
+                    <li className="mt-5 d-flex align-items-center">
+                      <i className="fas fa-chevron-right me-4 hover"></i>
+                      <h5>{item}</h5>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             <div className="col-md-6 text-center">
