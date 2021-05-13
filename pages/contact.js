@@ -109,18 +109,22 @@ export default function Connect() {
               </h5>
               <ul>
                 <li>
-                  <i
-                    className="far fa-envelope me-3"
-                    style={{ paddingTop: "10px" }}
-                  ></i>
-                  enquiries@bendando.com
+                  <a href="mailto:enquiries@bendando.com">
+                    <i
+                      className="far fa-envelope me-3"
+                      style={{ paddingTop: "10px" }}
+                    ></i>
+                    enquiries@bendando.com
+                  </a>
                 </li>
                 <li>
-                  <i
-                    className="fas fa-phone me-3"
-                    style={{ paddingTop: "10px" }}
-                  ></i>
-                  020 8543 8117
+                  <a href="tel:+4402085438117">
+                    <i
+                      className="fas fa-phone me-3"
+                      style={{ paddingTop: "10px" }}
+                    ></i>
+                    020 8543 8117
+                  </a>
                 </li>
                 <li className="mt-4">
                   <ul>
@@ -136,24 +140,6 @@ export default function Connect() {
                   </ul>
                 </li>
               </ul>
-              {/* <h5>Follow Us</h5>
-              <div className="connect-links">
-                <Link href="/">
-                  <a>
-                    <i className="fab fa-linkedin-in me-3"></i>
-                  </a>
-                </Link>
-                <Link href="/">
-                  <a>
-                    <i className="fab fa-instagram me-3"></i>
-                  </a>
-                </Link>
-                <Link href="/">
-                  <a>
-                    <i className="fab fa-twitter me-3"></i>
-                  </a>
-                </Link>
-              </div> */}
             </div>
             <div className="col-md-5" data-aos="zoom-in" data-aos-delay="250">
               {
