@@ -2,9 +2,8 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
-
-// Next
-import Link from "next/link";
+import ViewSite from "./components/ViewSite";
+import NextProject from "./components/NextProject";
 
 export default function winflat() {
   let features = [
@@ -109,30 +108,8 @@ export default function winflat() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link winaflat">
-          <Link href="/">
-            <a target="_blank">
-              <h3>View site</h3>
-            </a>
-          </Link>
-        </div>
-        <div className="project-end">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4">
-                <h5>Next Project</h5>
-                <h2>Greenacre Capital</h2>
-                <Link href="/green-acre">
-                  <a>
-                    <button type="button" className="btn global-btn">
-                      View Next Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ViewSite url="/" cName="winaflat" />
+        <NextProject project="Greenacre Capital" url="/green-acre" />
       </div>
       <Footer />
     </div>

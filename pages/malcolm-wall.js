@@ -2,6 +2,8 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
+import ViewSite from "./components/ViewSite";
+import NextProject from "./components/NextProject";
 
 // Next
 import Link from "next/link";
@@ -58,28 +60,8 @@ export default function malcolmWall() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link malcolm-wall">
-          <a href="https://malcolmwallmedia.co.uk/" target="_blank">
-            <h3>View site</h3>
-          </a>
-        </div>
-        <div className="project-end">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4">
-                <h5>Next Project</h5>
-                <h2>Tenants Hub</h2>
-                <Link href="/tenants-hub">
-                  <a>
-                    <button type="button" className="btn global-btn">
-                      View Next Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ViewSite url="https://malcolmwallmedia.co.uk/" cName="malcolm-wall" />
+        <NextProject project="Tenants Hub" url="/tenants-hub" />
       </div>
       <Footer />
     </div>

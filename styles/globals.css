@@ -241,12 +241,7 @@ ul {
 /* winaflat */
 
 .winaflat {
-  background: rgb(39, 91, 180);
-  background: linear-gradient(
-    45deg,
-    rgba(39, 91, 180, 1) 53%,
-    rgba(80, 213, 255, 1) 97%
-  );
+  background: rgba(80, 213, 255, 1) 97%;
   color: whitesmoke;
 }
 
@@ -625,4 +620,52 @@ footer a:hover {
 
 .disable-click {
   pointer-events: none;
+}
+
+.project-pane {
+  width: 50vw;
+  height: 45vh;
+  position: relative;
+  background-color: blue;
+  overflow: hidden;
+  transition: 0.8s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .project-pane {
+    width: 100vw;
+    text-align: start;
+  }
+}
+
+.project-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 0.8s ease;
+}
+
+.project-des {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.project-des h5 {
+}
+
+.project-des p {
+  margin-bottom: 0;
+}
+
+.project-pane:hover .project-img {
+  transform: scale(1.1);
+  transition: 0.8s ease;
 }

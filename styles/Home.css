@@ -195,7 +195,7 @@
   background-image: url("/images/malcolm-wall.jpg");
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .index-projects-display {
     position: relative;
     width: 100%;

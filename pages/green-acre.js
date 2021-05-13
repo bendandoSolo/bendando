@@ -2,6 +2,8 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
+import ViewSite from "./components/ViewSite";
+import NextProject from "./components/NextProject";
 
 // Next
 import Link from "next/link";
@@ -82,28 +84,8 @@ export default function greenAcre() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link green-acre">
-          <a href="https://www.greenacre-capital.com/" target="_blank">
-            <h3>View site</h3>
-          </a>
-        </div>
-        <div className="project-end">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4">
-                <h5>Next Project</h5>
-                <h2>Malcolm Wall</h2>
-                <Link href="/malcolm-wall">
-                  <a>
-                    <button type="button" className="btn global-btn">
-                      View Next Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ViewSite url="/" cName="green-acre" />
+        <NextProject project="Malcolm Wall" url="/malcolm-wall" />
       </div>
       <Footer />
     </div>

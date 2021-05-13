@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
+import ViewSite from "./components/ViewSite";
 
 // Next
 import Head from "next/head";
@@ -68,13 +69,7 @@ export default function tenanthub() {
             </div>
           </div>
         </div>
-        <div className="row text-center py-4 project-link tenants-hub">
-          <Link href="https://www.tenantshub.co.uk/">
-            <a target="_blank">
-              <h3>View site</h3>
-            </a>
-          </Link>
-        </div>
+        <ViewSite url="https://www.tenantshub.co.uk/" cName="tenants-hub" />
         <div className="project-end ">
           <div className="container">
             <div className="row">
