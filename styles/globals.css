@@ -233,7 +233,7 @@ ul {
 /* winaflat */
 
 .winaflat {
-  background: rgba(80, 213, 255, 1) 97%;
+  background: #007ca1;
   color: whitesmoke;
 }
 
@@ -377,14 +377,9 @@ footer a:hover {
   outline: none;
 }
 
-/* .form-input::placeholder {
-  color: lightgray;
-} */
-
 .error-validation {
   color: red !important;
   font-size: 11px;
-  /* margin-left: 1rem; */
   margin-bottom: 1rem;
 }
 
@@ -500,6 +495,12 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .project-pane {
+    height: 80vh;
+  }
+}
+
 .project-img {
   object-fit: cover;
   height: 100%;
@@ -519,9 +520,6 @@ footer a:hover {
   padding-left: 1rem;
 }
 
-.project-des h5 {
-}
-
 .project-des p {
   margin-bottom: 0;
 }
@@ -529,4 +527,25 @@ footer a:hover {
 .project-pane:hover .project-img {
   transform: scale(1.1);
   transition: 0.8s ease;
+}
+
+/*  */
+
+.carousel {
+  height: 45vh;
+  position: relative;
+}
+
+.carousel-inner .active {
+  height: 45vh;
+}
+
+.carousel-caption {
+  margin-left: 2rem;
+  text-align: start;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  border: 0;
 }

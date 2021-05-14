@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
 import ViewSite from "./components/ViewSite";
-import NextProject from "./components/NextProject";
+import Carousel from "./components/Carousel";
+import { CarouselData } from "./components/CarouselData";
 
 // Next
 import Link from "next/link";
@@ -61,7 +62,11 @@ export default function malcolmWall() {
           </div>
         </div>
         <ViewSite url="https://malcolmwallmedia.co.uk/" cName="malcolm-wall" />
-        <NextProject project="Tenants Hub" url="/tenants-hub" />
+        <Carousel
+          p1={CarouselData.tenantHub}
+          p2={CarouselData.winAFlat}
+          p3={CarouselData.greenAcre}
+        />
       </div>
       <Footer />
     </div>

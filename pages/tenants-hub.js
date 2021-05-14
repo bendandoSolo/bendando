@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
 import ViewSite from "./components/ViewSite";
+import Carousel from "./components/Carousel";
+import { CarouselData } from "./components/CarouselData";
 
 // Next
 import Head from "next/head";
@@ -70,23 +72,11 @@ export default function tenanthub() {
           </div>
         </div>
         <ViewSite url="https://www.tenantshub.co.uk/" cName="tenants-hub" />
-        <div className="project-end ">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4">
-                <h5>Next Project</h5>
-                <h2>Win A Flat</h2>
-                <Link href="/win-a-flat">
-                  <a>
-                    <button type="button" className="btn global-btn">
-                      View Next Project
-                    </button>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Carousel
+          p1={CarouselData.winAFlat}
+          p2={CarouselData.greenAcre}
+          p3={CarouselData.malcolmWall}
+        />
       </div>
       <Footer />
     </div>

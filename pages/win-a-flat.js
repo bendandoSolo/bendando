@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
 import ViewSite from "./components/ViewSite";
-import NextProject from "./components/NextProject";
+import Carousel from "./components/Carousel";
+import { CarouselData } from "./components/CarouselData";
 
 export default function winflat() {
   let features = [
@@ -109,7 +110,11 @@ export default function winflat() {
           </div>
         </div>
         <ViewSite url="/" cName="winaflat" />
-        <NextProject project="Greenacre Capital" url="/green-acre" />
+        <Carousel
+          p1={CarouselData.greenAcre}
+          p2={CarouselData.malcolmWall}
+          p3={CarouselData.tenantHub}
+        />
       </div>
       <Footer />
     </div>

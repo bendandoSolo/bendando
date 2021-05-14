@@ -1,12 +1,11 @@
 const ServiceCard = ({ icon, title, text }) => {
   return (
     <div className="col-lg-3 col-sm-6">
-      <div class="card text-center p-4">
-        <div class="card-body">
+      <div className="card text-center p-4">
+        <div className="card-body">
           <i className={icon}></i>
-          <h5 class="card-title my-4">{title}</h5>
-
-          <p class="card-text">{text}</p>
+          <h5 className="card-title my-4">{title}</h5>
+          <p className="card-text">{text}</p>
         </div>
       </div>
     </div>

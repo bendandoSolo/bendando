@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectBanner from "./components/ProjectBanner";
 import ViewSite from "./components/ViewSite";
-import NextProject from "./components/NextProject";
+import Carousel from "./components/Carousel";
+import { CarouselData } from "./components/CarouselData";
 
 // Next
 import Link from "next/link";
@@ -85,7 +86,11 @@ export default function greenAcre() {
           </div>
         </div>
         <ViewSite url="/" cName="green-acre" />
-        <NextProject project="Malcolm Wall" url="/malcolm-wall" />
+        <Carousel
+          p1={CarouselData.malcolmWall}
+          p2={CarouselData.tenantHub}
+          p3={CarouselData.winAFlat}
+        />
       </div>
       <Footer />
     </div>
