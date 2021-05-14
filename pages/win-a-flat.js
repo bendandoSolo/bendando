@@ -1,10 +1,10 @@
 // Components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ProjectBanner from "./components/ProjectBanner";
-import ViewSite from "./components/ViewSite";
-import Carousel from "./components/Carousel";
-import { CarouselData } from "./components/CarouselData";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ProjectBanner from "../components/ProjectBanner";
+import ViewSite from "../components/ViewSite";
+import Carousel from "../components/Carousel";
+import { CarouselData } from "../components/CarouselData";
 
 export default function winflat() {
   let features = [

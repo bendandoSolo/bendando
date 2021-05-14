@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 
 // Components
-import Navbar from "./components/Navbar";
-import ProjectPane from "./components/ProjectPane";
+import Navbar from "../components/Navbar";
+import ProjectPane from "../components/ProjectPane";
 
 export default function Home() {
   return (

@@ -5,10 +5,10 @@ const Carousel = ({ p1, p2, p3 }) => {
   return (
     <div
       id="carouselBasicExample"
-      class="carousel slide carousel-fade"
+      className="carousel slide carousel-fade"
       data-mdb-ride="carousel"
     >
-      <div class="carousel-indicators d-none">
+      <div className="carousel-indicators d-none">
         <button
           type="button"
           data-mdb-target="#carouselBasicExample"

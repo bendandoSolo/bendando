@@ -1,8 +1,8 @@
 // Components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ServiceCard from "./components/ServiceCard";
-import { ServiceData } from "./components/ServiceData";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ServiceCard from "../components/ServiceCard";
+import { ServiceData } from "../components/ServiceData";
 
 // Next
 import Head from "next/head";

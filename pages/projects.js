@@ -1,7 +1,7 @@
 // Components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ProjectPane from "./components/ProjectPane";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ProjectPane from "../components/ProjectPane";
 // Next
 import Head from "next/head";
 import Link from "next/link";

@@ -6,7 +6,8 @@ import { useEffect } from "react";
 import Head from "next/head";
 
 // Components
-import Contact from "./components/Contact";
+import Contact from "../components/Contact";
+
 
 // DATA AOS
 import AOS from "aos";
