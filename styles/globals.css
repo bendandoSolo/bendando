@@ -482,7 +482,6 @@ footer a:hover {
   width: 50vw;
   height: 45vh;
   position: relative;
-  background-color: blue;
   overflow: hidden;
   transition: 0.8s ease;
   cursor: pointer;
