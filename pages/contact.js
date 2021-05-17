@@ -109,7 +109,7 @@ export default function Connect() {
               </h5>
               <ul>
                 <li>
-                  <a href="mailto:enquiries@bendando.com">
+                  <a href="mailto:enquiries@bendando.com" className="link">
                     <i
                       className="far fa-envelope me-3"
                       style={{ paddingTop: "10px" }}
@@ -118,7 +118,7 @@ export default function Connect() {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+4402085438117">
+                  <a href="tel:+4402085438117" className="link">
                     <i
                       className="fas fa-phone me-3"
                       style={{ paddingTop: "10px" }}

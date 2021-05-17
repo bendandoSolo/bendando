@@ -217,10 +217,6 @@ ul {
   color: whitesmoke;
 }
 
-.connect a {
-  color: whitesmoke;
-}
-
 .connect form input,
 .connect form textarea {
   padding: 1rem;
@@ -228,6 +224,15 @@ ul {
 
 .connect-links {
   font-size: 2rem;
+}
+
+.link {
+  color: whitesmoke;
+}
+
+.link:hover {
+  opacity: 0.6;
+  color: whitesmoke;
 }
 
 /* winaflat */
@@ -547,4 +552,71 @@ footer a:hover {
 .carousel-control-prev,
 .carousel-control-next {
   border: 0;
+}
+
+#nav-btn-toggle {
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  border: none;
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 992px) {
+  #nav-btn-toggle {
+    display: none;
+  }
+}
+
+.test-nav-items {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: purple;
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  list-style: none;
+}
+
+.test-nav-items a {
+  color: whitesmoke;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .test-nav-items {
+    position: relative;
+    background-color: transparent;
+    z-index: 100;
+    flex-direction: row;
+    transition: none;
+    top: 0;
+    right: 0;
+    height: 100px;
+    justify-content: flex-start;
+  }
+  .test-nav-items a {
+    color: whitesmoke;
+    margin-right: 4rem;
+  }
+}
+
+.test-nav-items.active {
+  right: 0;
+  transition: 0.5s;
+}
+
+.navbar-brand {
+  margin-right: 5rem;
 }
