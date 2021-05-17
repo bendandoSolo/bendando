@@ -33,7 +33,6 @@ export default function Navbar() {
             <Link href="/contact">Contact</Link>
           </li>
         </div>
-
         {/* <button
           className="navbar-toggler"
           type="button"

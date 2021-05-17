@@ -109,7 +109,10 @@ export default function winflat() {
             </div>
           </div>
         </div>
-        <ViewSite url="/" cName="winaflat" />
+        <ViewSite
+          url="http://winaflatdemo.azurewebsites.net/Home"
+          cName="winaflat"
+        />
         <Carousel
           p1={CarouselData.greenAcre}
           p2={CarouselData.malcolmWall}
