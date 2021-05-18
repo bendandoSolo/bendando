@@ -574,8 +574,8 @@ footer a:hover {
 
 .test-nav-items {
   position: fixed;
-  top: 0;
-  right: -100%;
+  top: -100%;
+  right: 0;
   width: 100vw;
   height: 100vh;
   background-color: purple;
@@ -612,7 +612,7 @@ footer a:hover {
 }
 
 .test-nav-items.active {
-  right: 0;
+  top: 0;
   transition: 0.5s;
   overflow-y: hidden;
 }

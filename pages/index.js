@@ -45,28 +45,28 @@ export default function Home() {
             <ProjectPane
               title="Tenants Hub"
               type="App &#183; Website &#183; Database"
-              img="images/tenanthub.jpg"
+              img="images/thub.jpg"
               bgColor="tenants-hub"
               url="/tenants-hub"
             />
             <ProjectPane
               title="Win A Flat"
               type="Website &#183; Database &#183; Payments"
-              img="images/win-a-flat.jpg"
+              img="images/wflat.jpg"
               bgColor="winaflat"
               url="/win-a-flat"
             />
             <ProjectPane
               title="Green Acre"
               type="Website &#183; Branding"
-              img="images/greenacre.jpg"
+              img="images/gacre.jpg"
               bgColor="green-acre"
               url="/green-acre"
             />
             <ProjectPane
               title="Malcolm Wall"
               type="Website &#183; Branding &#183; Media Feeds"
-              img="images/malcolm-wall.jpg"
+              img="images/mwall.jpg"
               bgColor="malcolm-wall"
               url="/malcolm-wall"
             />
