@@ -42,16 +42,20 @@ export default function Services() {
               </Link>
             </div>
           </div>
-          <div className="row">
-            {ServiceData.map((item) => {
-              return (
-                <ServiceCard
-                  icon={item.icon}
-                  title={item.title}
-                  text={item.text}
-                />
-              );
-            })}
+        </div>
+        <div style={{ backgroundColor: "whitesmoke" }}>
+          <div className="container">
+            <div className="py-4 row">
+              {ServiceData.map((item) => {
+                return (
+                  <ServiceCard
+                    icon={item.icon}
+                    title={item.title}
+                    text={item.text}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

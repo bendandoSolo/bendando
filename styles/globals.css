@@ -108,20 +108,8 @@ ul {
 }
 
 .project {
-  background-image: linear-gradient(
-    to right top,
-    #30353d,
-    #4d525e,
-    #6d7281,
-    #8f92a5,
-    #b4b4cb
-  );
+  background-color: #272731;
   color: whitesmoke;
-}
-
-.project-display {
-  /* background-color: #d6d6d6; */
-  /* padding-top: 5rem; */
 }
 
 .project-display img {
@@ -171,23 +159,25 @@ ul {
 /* services */
 
 .services {
-  background-image: linear-gradient(
-    to right top,
-    #30353d,
-    #4d525e,
-    #6d7281,
-    #8f92a5,
-    #b4b4cb
-  );
+  background-color: #272731;
   color: whitesmoke;
 }
 
-.services .card {
-  height: 650px;
-  border-radius: 0;
-  color: white;
-  background-color: transparent;
-  box-shadow: none;
+.services .landing {
+  padding-bottom: 0;
+}
+
+.service-card {
+  color: #272731;
+  border-radius: 0px;
+}
+
+.service-card i {
+  color: #18dca8;
+}
+
+.service-card p {
+  color: gray;
 }
 
 @media screen and (max-width: 992px) {
@@ -201,18 +191,14 @@ ul {
 }
 
 .services .card:hover {
-  background-color: #b4b4cb;
+  background-color: #cacae2;
   color: #30353d;
+  box-shadow: none !important;
 }
 /* connect */
 
 .connect {
-  background: linear-gradient(
-    45deg,
-    rgba(233, 102, 76, 1) 35%,
-    rgba(251, 178, 121, 1) 100%
-  );
-
+  background-color: #272731;
   color: whitesmoke;
 }
 
@@ -270,8 +256,7 @@ ul {
 }
 
 .tenants-hub {
-  background: #5433ff;
-  background: linear-gradient(90deg, #20bdff 0, #5433ff);
+  background: #001529;
   color: whitesmoke;
 }
 
@@ -342,11 +327,11 @@ nav a {
 /* Footer */
 
 .footer {
-  color: rgb(12, 12, 12);
+  background-color: #0c0c0c;
   z-index: 200000;
   position: absolute;
   width: 100%;
-  background-color: whitesmoke;
+  color: whitesmoke;
   text-align: left;
   padding-top: 1.5rem;
 }
@@ -357,13 +342,13 @@ footer h5 {
 
 .footer-links li,
 footer a {
-  color: rgb(12, 12, 12);
+  color: whitesmoke;
 }
 
 .footer-links li:hover,
 footer a:hover {
   opacity: 0.6;
-  color: rgb(12, 12, 12);
+  color: whitesmoke;
 }
 
 /* CONTACT FORM */
@@ -619,4 +604,36 @@ footer a:hover {
 
 .navbar-brand {
   margin-right: 5rem;
+}
+
+.home .project-pane {
+  height: 50vh;
+}
+
+.testing-project-display {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  /* background-color: green; */
+}
+
+.box {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+}
+
+#red {
+  background-color: red;
+}
+
+#purple {
+  background-color: purple;
+}
+
+#blue {
+  background-color: blue;
 }

@@ -1,10 +1,5 @@
 .home {
-  background: rgb(123, 38, 157);
-  background: linear-gradient(
-    45deg,
-    rgba(123, 38, 157, 1) 18%,
-    rgba(214, 66, 118, 1) 54%
-  );
+  background-color: #272731;
   color: whitesmoke;
   position: relative;
   min-height: 100vh;
@@ -12,12 +7,7 @@
 
 @media screen and (max-width: 991px) {
   .home {
-    background: rgb(123, 38, 157);
-    background: linear-gradient(
-      45deg,
-      rgba(123, 38, 157, 1) 41%,
-      rgba(214, 66, 118, 1) 79%
-    );
+    background-color: #272731;
     text-align: center;
   }
   .home h1 {
@@ -93,13 +83,13 @@
 
 @keyframes bounce {
   0% {
-    transform: translateY(0);
+    transform: translateY(5px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(20px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(5px);
   }
 }
 

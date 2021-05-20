@@ -13,7 +13,7 @@ const Carousel = ({ p1, p2, p3 }) => {
           type="button"
           data-mdb-target="#carouselBasicExample"
           data-mdb-slide-to="0"
-          class="active"
+          className="active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -31,7 +31,7 @@ const Carousel = ({ p1, p2, p3 }) => {
         ></button>
       </div>
 
-      <div class="carousel-inner">
+      <div className="carousel-inner">
         <div className={`${p1.cName} active`}>
           <div className="container">
             <div className="row justify-content-center align-items-center">
@@ -55,7 +55,7 @@ const Carousel = ({ p1, p2, p3 }) => {
             </div>
           </div>
         </div>
-        <div class={p2.cName}>
+        <div className={p2.cName}>
           <div className="container">
             <div className="row justify-content-center align-items-center">
               <div className="col-md-6">
@@ -78,7 +78,7 @@ const Carousel = ({ p1, p2, p3 }) => {
             </div>
           </div>
         </div>
-        <div class={p3.cName}>
+        <div className={p3.cName}>
           <div className="container">
             <div className="row justify-content-center align-items-center">
               <div className="col-md-6">
@@ -104,22 +104,22 @@ const Carousel = ({ p1, p2, p3 }) => {
       </div>
 
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-mdb-target="#carouselBasicExample"
         data-mdb-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-mdb-target="#carouselBasicExample"
         data-mdb-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );
