@@ -6,21 +6,34 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import ProjectPane from "../components/ProjectPane";
 
+// react
+import { useState, useEffect } from "react";
+
 export default function Home() {
   let total = 0;
+
+  const [screenSize, setScreenSize] = useState(undefined);
+
+  useEffect(() => {
+    let screenHeight = window.innerHeight;
+    setScreenSize(screenHeight);
+    // console.log(screenHeight);
+  }, []);
 
   return (
     <div
       className="home"
       onWheel={(e) => {
         let boxes = Array.from(document.querySelectorAll(".box"));
-        console.log(boxes);
+        // console.log(boxes);
         if (e.deltaY > 0) {
           total += 20;
         } else {
           total -= 20;
         }
-        boxes.map((box) => (box.style.cssText = `top: ${total}px`));
+        boxes.map((box) => {
+          box.style.cssText = `top: ${total}px`;
+        });
       }}
       style={{ overflow: "hidden" }}
     >
