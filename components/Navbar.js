@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ id }) {
   const [navToggle, setNavToggle] = useState(false);
 
   const toggle = () => {

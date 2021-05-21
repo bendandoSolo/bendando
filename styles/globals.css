@@ -172,6 +172,10 @@ ul {
   border-radius: 0px;
 }
 
+.service-card h5 {
+  text-transform: uppercase;
+}
+
 .service-card i {
   color: #18dca8;
 }
@@ -308,6 +312,7 @@ ul {
 nav {
   position: relative;
   text-align: left;
+  background-color: #272731;
 }
 
 nav ul {
@@ -563,7 +568,7 @@ footer a:hover {
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: purple;
+  background-color: #272731;
   z-index: 100;
   display: flex;
   justify-content: space-evenly;
