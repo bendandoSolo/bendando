@@ -56,7 +56,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="d-flex scroll-option" id="ourprojects">
-                <h5 className="my-4 me-4">Scroll to view our projects</h5>
+                <h5 className="my-4">Scroll to view our projects</h5>
                 <a href="#ourprojects">
                   <i
                     className="fas fa-mouse scroll-point"
@@ -67,11 +67,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="testing-project-display">
+        {/* <div className="testing-project-display">
           <div className="box" id="red"></div>
           <div className="box" id="blue"></div>
           <div className="box" id="purple"></div>
-        </div>
+        </div> */}
         {/* <div className="index-projects-display">
           <div className="test-display">
             <ProjectPane

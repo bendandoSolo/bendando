@@ -78,6 +78,7 @@
   flex-direction: row;
   align-items: center;
   pointer-events: none;
+  margin-left: 2rem;
   animation: bounce 1.5s infinite;
 }
 
@@ -99,21 +100,15 @@
 
 @media screen and (max-width: 992px) {
   .scroll-option {
-    display: block;
     margin-top: 200px;
     pointer-events: none;
+    flex-direction: column;
   }
 
   .scroll-point {
     pointer-events: auto;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .scroll-option {
-    margin-top: 120px;
-    pointer-events: auto;
+    margin-left: 0;
   }
 }
 
