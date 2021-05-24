@@ -1,5 +1,5 @@
 .home {
-  background-color: #272731;
+  background-color: #15313d;
   color: whitesmoke;
   position: relative;
   min-height: 100vh;
@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 991px) {
   .home {
-    background-color: #272731;
+    background-color: #15313d;
     text-align: center;
   }
   .home h1 {

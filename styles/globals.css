@@ -159,7 +159,7 @@ ul {
 /* services */
 
 .services {
-  background-color: #272731;
+  background-color: #15313d;
   color: whitesmoke;
 }
 
@@ -168,7 +168,7 @@ ul {
 }
 
 .service-card {
-  color: #272731;
+  color: #15313d;
   border-radius: 0px;
 }
 
@@ -202,7 +202,7 @@ ul {
 /* connect */
 
 .connect {
-  background-color: #272731;
+  background-color: #15313d;
   color: whitesmoke;
 }
 
@@ -312,7 +312,7 @@ ul {
 nav {
   position: relative;
   text-align: left;
-  background-color: #272731;
+  background-color: #15313d;
 }
 
 nav ul {
@@ -625,14 +625,19 @@ footer a:hover {
 }
 
 .box {
-  height: 500px;
+  height: 50vh;
   width: 50%;
   position: fixed;
   transition: ease;
+  object-fit: cover;
 }
 
 .box img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* height: 100%; */
 }
 
 #img-1 {

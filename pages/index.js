@@ -10,13 +10,11 @@ import ProjectPane from "../components/ProjectPane";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  let total = 0;
-
-  const [screenSize, setScreenSize] = useState(undefined);
-
   useEffect(() => {
-    let screenHeight = window.innerHeight;
-    setScreenSize(screenHeight);
+    function handleResize() {
+      console.log("resized to: ", window.innerWidth, "x", window.innerHeight);
+    }
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
