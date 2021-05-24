@@ -20,7 +20,7 @@ export default function greenAcre() {
 
   return (
     <div className="green-acre">
-      <Navbar />
+      <Navbar bgColor="transparent" />
       <ProjectBanner
         title="Greenacre Capital"
         type="Website and Branding"

@@ -10,12 +10,19 @@ import ProjectPane from "../components/ProjectPane";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    function handleResize() {
-      console.log("resized to: ", window.innerWidth, "x", window.innerHeight);
-    }
-    window.addEventListener("resize", handleResize);
-  }, []);
+  // const [dimensions, setDimensions] = useState({
+  //   height: window.innerHeight,
+  //   width: window.innerWidth,
+  // });
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setDimensions({
+  //       height: window.innerHeight,
+  //       width: window.innerWidth,
+  //     });
+  //   }
+  //   window.addEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <div
@@ -47,7 +54,7 @@ export default function Home() {
       <Head>
         <title>Home | BenDando</title>
       </Head>
-      <Navbar />
+      <Navbar bgColor="#15313d" />
       <div className="landing">
         <div className="container">
           <div className="row ">

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Navbar({ id }) {
+export default function Navbar({ bgColor }) {
   const [navToggle, setNavToggle] = useState(false);
 
   const toggle = () => {
@@ -10,7 +10,10 @@ export default function Navbar({ id }) {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark"
+      style={{ backgroundColor: bgColor }}
+    >
       <div className="container-fluid">
         <Link href="/">
           <a className="navbar-brand ms-2">

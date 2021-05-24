@@ -20,7 +20,7 @@ export default function winflat() {
 
   return (
     <div className="winaflat">
-      <Navbar />
+      <Navbar bgColor="transparent" />
       <ProjectBanner
         title="Win A Flat"
         type="Website Build"

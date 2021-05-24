@@ -19,7 +19,7 @@ export const ServiceData = [
   {
     icon: "fab fa-adn",
     title: "Search Engine Optimiztion",
-    text: "By building your website with us the right way, all our clients already are head and shoulders above the competition. SEO is changing all the time but fortunately google keep us posted on these changes. There is no one fix solution for SEO, as your competitors evolve so should you. Providing valuable content, monitoring web traffic, competitor movement and making incremental improvements to your website and seeing the effect of those alterations is the most cost effective way of improving your SEO.",
+    text: "By building your website with us the right way, all our clients already are head and shoulders above the competition. SEO is changing all the time but fortunately google keep us posted on these changes. There is no one fix solution for SEO, as your competitors evolve so should you.",
   },
   {
     icon: "fas fa-shopping-basket",

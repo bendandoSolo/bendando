@@ -3,12 +3,25 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ServiceCard from "../components/ServiceCard";
 import { ServiceData } from "../components/ServiceData";
+import { useEffect } from "react";
 
 // Next
 import Head from "next/head";
 import Link from "next/link";
 
 export default function Services() {
+  useEffect(() => {
+    let boxHeight = 0;
+    let boxes = Array.from(document.querySelectorAll(".service-card"));
+    boxes.map((box) => {
+      if (box.offsetHeight > boxHeight) {
+        boxHeight = box.offsetHeight;
+        box.style.cssText = `height: ${boxHeight}`;
+      }
+    });
+    console.log(boxHeight);
+  }, []);
+
   return (
     <div className="services">
       <Head>

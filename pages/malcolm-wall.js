@@ -19,7 +19,7 @@ export default function malcolmWall() {
 
   return (
     <div className="malcolm-wall">
-      <Navbar />
+      <Navbar bgColor="transparent" />
       <ProjectBanner
         title="Malcolm Wall Media"
         type="Website Build"

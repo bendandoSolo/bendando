@@ -28,7 +28,7 @@ export default function tenanthub() {
 
   return (
     <div className="tenants-hub">
-      <Navbar />
+      <Navbar bgColor="transparent" />
       <ProjectBanner
         title="Tenants Hub"
         type="App & Website Build"
