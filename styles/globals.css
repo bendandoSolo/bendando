@@ -625,20 +625,28 @@ footer a:hover {
 }
 
 .box {
-  height: 50vh;
+  height: 500px;
+  width: 50%;
+  position: fixed;
+  transition: ease;
+}
+
+.box img {
   width: 100%;
-  position: relative;
-  transition: 0.5s;
 }
 
-#red {
-  background-color: red;
+#img-1 {
+  top: -50%;
 }
 
-#purple {
-  background-color: purple;
+#img-2 {
+  top: 0%;
 }
 
-#blue {
-  background-color: blue;
+#img-3 {
+  top: 50%;
+}
+
+#img-4 {
+  top: 100%;
 }

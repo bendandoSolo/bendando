@@ -17,7 +17,6 @@ export default function Home() {
   useEffect(() => {
     let screenHeight = window.innerHeight;
     setScreenSize(screenHeight);
-    // console.log(screenHeight);
   }, []);
 
   return (
@@ -25,15 +24,25 @@ export default function Home() {
       className="home"
       onWheel={(e) => {
         let boxes = Array.from(document.querySelectorAll(".box"));
-        // console.log(boxes);
         if (e.deltaY > 0) {
-          total += 20;
+          boxes.map((box) => {
+            box.style.cssText = `top: ${box.offsetTop + 40}px`;
+            if (box.offsetTop > window.innerHeight + box.offsetHeight) {
+              box.style.cssText = `top: -${box.offsetHeight}px;`;
+              console.log("up");
+            }
+          });
         } else {
-          total -= 20;
+          boxes.map((box) => {
+            box.style.cssText = `top: ${box.offsetTop - 40}px`;
+            console.log(box.offsetTop);
+            if (box.offsetTop < 0 - box.offsetHeight) {
+              box.style.cssText = `top: ${
+                window.innerHeight + box.offsetHeight
+              }px;`;
+            }
+          });
         }
-        boxes.map((box) => {
-          box.style.cssText = `top: ${total}px`;
-        });
       }}
       style={{ overflow: "hidden" }}
     >
@@ -67,43 +76,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="testing-project-display">
-          <div className="box" id="red"></div>
-          <div className="box" id="blue"></div>
-          <div className="box" id="purple"></div>
-        </div> */}
-        {/* <div className="index-projects-display">
-          <div className="test-display">
-            <ProjectPane
-              title="Tenants Hub"
-              type="App &#183; Website &#183; Database"
-              img="images/screenshots/2.jpg"
-              bgColor="tenants-hub"
-              url="/tenants-hub"
-            />
-            <ProjectPane
-              title="Win A Flat"
-              type="Website &#183; Database &#183; Payments"
-              img="images/screenshots/1.jpg"
-              bgColor="winaflat"
-              url="/win-a-flat"
-            />
-            <ProjectPane
-              title="Green Acre"
-              type="Website &#183; Branding"
-              img="images/screenshots/3.jpg"
-              bgColor="green-acre"
-              url="/green-acre"
-            />
-            <ProjectPane
-              title="Malcolm Wall"
-              type="Website &#183; Branding &#183; Media Feeds"
-              img="images/screenshots/4.jpg"
-              bgColor="malcolm-wall"
-              url="/malcolm-wall"
-            />
+        <div className="col-md-6 testing-project-display">
+          <div className="box" id="img-1">
+            <img src="images/screenshots/1.jpg" />
           </div>
-        </div> */}
+          <div className="box" id="img-2">
+            <img src="images/screenshots/2.jpg" />
+          </div>
+          <div className="box" id="img-3">
+            <img src="images/screenshots/3.jpg" />
+          </div>
+          <div className="box" id="img-4">
+            <img src="images/screenshots/4.jpg" />
+          </div>
+        </div>
       </div>
     </div>
   );
