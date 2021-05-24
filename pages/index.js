@@ -90,6 +90,40 @@ export default function Home() {
             <img src="images/screenshots/4.jpg" />
           </div>
         </div>
+        <div className="mobile-display">
+          <ProjectPane
+            title="Tenants Hub"
+            type="App &#183; Website &#183; Database"
+            img="images/screenshots/2.jpg"
+            bgColor="tenants-hub"
+            url="/tenants-hub"
+            style={{ height: "45vh" }}
+          />
+          <ProjectPane
+            title="Win A Flat"
+            type="Website &#183; Database &#183; Payments"
+            img="images/screenshots/1.jpg"
+            bgColor="winaflat"
+            url="/win-a-flat"
+            style={{ height: "45vh" }}
+          />
+          <ProjectPane
+            title="Green Acre"
+            type="Website &#183; Branding"
+            img="images/screenshots/3.jpg"
+            bgColor="green-acre"
+            url="/green-acre"
+            style={{ height: "45vh" }}
+          />
+          <ProjectPane
+            title="Malcolm Wall"
+            type="Website &#183; Branding &#183; Media Feeds"
+            img="images/screenshots/4.jpg"
+            bgColor="malcolm-wall"
+            url="/malcolm-wall"
+            style={{ height: "45vh" }}
+          />
+        </div>
       </div>
     </div>
   );

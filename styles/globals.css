@@ -650,3 +650,20 @@ footer a:hover {
 #img-4 {
   top: 100%;
 }
+
+.mobile-display {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .testing-project-display {
+    position: relative;
+    width: 100%;
+    display: none;
+  }
+
+  .mobile-display {
+    display: block;
+    margin-top: 200px;
+  }
+}
