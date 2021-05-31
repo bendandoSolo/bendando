@@ -27,10 +27,10 @@ export default function Navbar({ bgColor }) {
 
         <div className={navToggle ? "test-nav-items active" : "test-nav-items"}>
           <li>
-            <Link href="/services">Services</Link>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/services">Services</Link>
           </li>
           <li>
             <Link href="/contact">Contact</Link>

@@ -640,7 +640,7 @@ footer a:hover {
   /* height: 100%; */
 }
 
-#img-1 {
+/* #img-1 {
   top: -50%;
 }
 
@@ -654,7 +654,25 @@ footer a:hover {
 
 #img-4 {
   top: 100%;
+} */
+
+/* .desktop-infinite-scroll-panel{
+   width: 100%;
+  height: 100%;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  transition: all 1s;  
+} */
+
+.desktop-infinite-scroll-panel:hover{
+  /* transform: scale(1.2); 
+  transition: all 1s;  */
+  cursor: pointer;
+  opacity: 0.8;
 }
+
 
 .mobile-display {
   display: none;
