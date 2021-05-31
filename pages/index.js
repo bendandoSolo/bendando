@@ -27,6 +27,8 @@ bottom: "0px"
 
   //should call onresize
   useEffect( () => {
+
+  function handleResize() {
     setPanel1Pos({top: (-1*Math.max(window.innerHeight/2))+"px" ,
     bottom: (2*Math.max(window.innerHeight/2))+"px"
     });
@@ -39,17 +41,17 @@ bottom: "0px"
     setPanel4Pos({top: Math.max(window.innerHeight/2*2)+"px" ,
     bottom: (Math.max(-window.innerHeight/2))+"px"
     });
+  }
+  
+  handleResize();
+  window.addEventListener('resize', handleResize);
+
+  return () => {
+    window.removeEventListener('resize', handleResize)
+  }
+
   },[]);
 
-  // useEffect(() => {
-  //   function handleResize() {
-  //     setDimensions({
-  //       height: window.innerHeight,
-  //       width: window.innerWidth,
-  //     });
-  //   }
-  //   window.addEventListener("resize", handleResize);
-  // }, []);
 
   const mouseWheelEvent = e => {
     let deltaY = e.deltaY;
@@ -58,22 +60,8 @@ bottom: "0px"
     else
     deltaY= -50;
 
-    console.log(panel1Pos.top, panel1Pos.bottom);
-  //   setPanel1Pos({top: (parseInt(panel1Pos.top.substring(0,panel1Pos.top.length-2))+ deltaY) +"px",
-  //   bottom: (parseInt(panel1Pos.bottom.substring(0,panel1Pos.bottom.length-2)) - deltaY) +"px",})
-  //  setPanel2Pos({top: (parseInt(panel2Pos.top.substring(0,panel2Pos.top.length-2))+ deltaY) +"px",
-  //        bottom: (parseInt(panel2Pos.bottom.substring(0,panel2Pos.bottom.length-2)) - deltaY) +"px",})
-  //  setPanel3Pos({top: (parseInt(panel3Pos.top.substring(0,panel3Pos.top.length-2))+ deltaY) +"px",
-  //   bottom: (parseInt(panel3Pos.bottom.substring(0,panel3Pos.bottom.length-2)) - deltaY) +"px",})
-  //  setPanel4Pos({
-  //        top: (parseInt(panel4Pos.top.substring(0,panel4Pos.top.length-2))+ deltaY) +"px",
-  //        bottom: (parseInt(panel4Pos.bottom.substring(0,panel4Pos.bottom.length-2)) - deltaY) +"px",
-  //  })
-
    //infinite scrolling
    if (deltaY < 0){
-    console.log(panel1Pos.top, panel1Pos.bottom);
-         console.log("going up");
         if(parseInt(panel1Pos.bottom.substring(0,panel1Pos.bottom.length-2)) >= 2.5*Math.max(window.innerHeight/2)){
         setPanel1Pos({top: (parseInt(panel1Pos.top.substring(0,panel1Pos.top.length-2)) + Math.max(window.innerHeight/2*4) + deltaY) +"px",
             bottom: (parseInt(panel1Pos.bottom.substring(0,panel1Pos.bottom.length-2))- Math.max(window.innerHeight/2*4) - deltaY) +"px",})

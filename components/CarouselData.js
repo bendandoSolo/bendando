@@ -19,7 +19,7 @@ export const CarouselData = {
     name: "Green Acre",
     type: "Website - Branding",
     cName: "carousel-item py-4 green-acre",
-    url: "/win-a-flat",
+    url: "/green-acre",
     img: "images/green-acre/mockup.png",
   },
   tenantHub: {
