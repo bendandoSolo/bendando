@@ -4,8 +4,8 @@ const ProjectBanner = ({ title, type, text, img }) => {
   return (
     <div className="landing-2">
       <div className="container">
-        <div className="row ">
-          <div className="col-md-6 ">
+        <div className="row d-flex justify-content-between">
+          <div className="col-md-5">
             <h1 className="mb-4">{title}</h1>
             <h4 className="mb-4">{type}</h4>
             <h5 className="mb-4">{text}</h5>

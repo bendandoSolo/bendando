@@ -259,8 +259,10 @@ ul {
   color: whitesmoke;
 }
 
+/* Tenants Hub */
+
 .tenants-hub {
-  background: #001529;
+  background: #3340a7;
   color: whitesmoke;
 }
 
@@ -271,18 +273,25 @@ ul {
 
 .project-desktop {
   margin-top: -8rem;
-  width: 100%;
+  width: 90%;
 }
 
 @media screen and (max-width: 768px) {
   .project-desktop {
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
 }
 
 .project-mobile {
+  margin-top: -8rem;
   width: 100%;
   max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-mobile {
+    margin-top: 0;
+  }
 }
 
 .project-end {

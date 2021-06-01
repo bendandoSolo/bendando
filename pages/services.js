@@ -62,6 +62,7 @@ export default function Services() {
               {ServiceData.map((item) => {
                 return (
                   <ServiceCard
+                    key={item.index}
                     icon={item.icon}
                     title={item.title}
                     text={item.text}
