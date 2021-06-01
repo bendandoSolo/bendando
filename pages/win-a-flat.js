@@ -33,23 +33,12 @@ export default function winflat() {
       <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-6">
+            <div className="col-md-6 text-center">
               <img
                 data-aos="fade-up"
                 className="project-desktop mb-5"
                 src="/images/winaflat/desktop-screenshot.png"
               />
-              <h2>Features</h2>
-              <ul className="mb-5 features">
-                {features.map((item) => {
-                  return (
-                    <li className="mt-5 d-flex align-items-center">
-                      <i className="fas fa-chevron-right me-4 hover"></i>
-                      <h5>{item}</h5>
-                    </li>
-                  );
-                })}
-              </ul>
             </div>
             <div className="col-md-6 text-center">
               <img
@@ -60,17 +49,90 @@ export default function winflat() {
               />
             </div>
           </div>
+          <div className="row justify-content-center mb-5">
+            <h2 className="my-5 text-center">Features</h2>
+            <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[0]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[1]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[2]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[3]}</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[4]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[5]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[6]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[7]}</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="row pb-5 align-items-center">
-            <div className="col-md-6 text-center position-relative my-4">
+            <div className="col-md-12 text-center position-relative my-4">
               <iframe
                 src="https://samvirtualdemo.azurewebsites.net//"
-                height="500px"
+                height="600px"
                 width="90%"
                 title="Iframe Example"
               ></iframe>
             </div>
-            <div className="col-md-6 position-relative">
-              <div className="project-text mx-3">
+          </div>
+          <div className="row justify-content-evenly mb-5">
+            <div className="col-md-5 position-relative">
+              <div className="project-text">
                 <p>
                   Winaflat was fully optimized to load as quickly as possible
                   for the wide variety of devices and users.
@@ -85,16 +147,8 @@ export default function winflat() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="row py-5 align-items-center reverse">
-            <div className="col-md-6">
-              <img
-                className="project-mobile mb-4"
-                src="/images/winaflat/3D-flat.png"
-              />
-            </div>
-            <div className="col-md-6 position-relative">
-              <div className="project-text mx-3">
+            <div className="col-md-5 position-relative">
+              <div className="project-text">
                 <p>
                   We used an ecommerce system accepting card and android and
                   apple pay to make the process as seamless as possible with a

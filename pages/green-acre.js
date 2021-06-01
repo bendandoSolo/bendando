@@ -34,42 +34,26 @@ export default function greenAcre() {
       <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-6">
+            <div className="col-md-6 text-center">
               <img
                 data-aos="fade-up"
-                className="project-desktop mb-5"
+                className="project-desktop"
                 src="/images/green-acre/desktop-screenshot.png"
               />
-              <h2>Features</h2>
-              <ul className="mb-5 features">
-                {features.map((item) => {
-                  return (
-                    <li className="mt-5 d-flex align-items-center">
-                      <i className="fas fa-chevron-right me-4 hover"></i>
-                      <h5>{item}</h5>
-                    </li>
-                  );
-                })}
-              </ul>
             </div>
-            <div className="col-md-6 text-center">
+            <div className="col-md-6 text-center mb-5">
               <img
                 data-aos="fade-up"
                 data-aos-duration="500"
                 className="project-mobile"
                 src="/images/green-acre/mobile-screenshot.png"
+                style={{ width: "60%" }}
               />
             </div>
           </div>
-          <div className="row pb-5 align-items-center reverse mt-5">
-            <div className="col-md-6 text-center">
-              <img
-                className="project-mobile mb-4"
-                src="/images/green-acre/screenshot-1.png"
-              />
-            </div>
+          {/* <div className="row pb-5 align-items-center mt-5">
             <div className="col-md-6 position-relative">
-              <div className="project-text mx-3">
+              <div className="project-text">
                 <p>
                   Greenacre Capital brand needed to reflect their position as a
                   global company investing in environmentally sustainable
@@ -81,6 +65,45 @@ export default function greenAcre() {
                   required in order for the brands neeed to appeal to high net
                   worth individuals.
                 </p>
+              </div>
+            </div>
+          </div> */}
+          <div className="row justify-content-center mb-5">
+            <h2 className="my-5 text-center">Features</h2>
+            <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[0]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[1]}</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[2]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[3]}</p>
+                </div>
               </div>
             </div>
           </div>

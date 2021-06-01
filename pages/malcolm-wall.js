@@ -33,23 +33,12 @@ export default function malcolmWall() {
       <div className="project-content">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-md-6">
+            <div className="col-md-6 text-center">
               <img
                 data-aos="fade-up"
                 className="project-desktop mb-5"
                 src="/images/malcolm-wall/desktop-screenshot.png"
               />
-              <h2>Features</h2>
-              <ul className="mb-5 features">
-                {features.map((item) => {
-                  return (
-                    <li className="mt-5 d-flex align-items-center">
-                      <i className="fas fa-chevron-right me-4 hover"></i>
-                      <h5>{item}</h5>
-                    </li>
-                  );
-                })}
-              </ul>
             </div>
             <div className="col-md-6 text-center">
               <img
@@ -58,6 +47,45 @@ export default function malcolmWall() {
                 className="project-mobile"
                 src="/images/malcolm-wall/mobile-screenshot.png"
               />
+            </div>
+          </div>
+          <div className="row justify-content-center mb-5">
+            <h2 className="my-5 text-center">Features</h2>
+            <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[0]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[1]}</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[2]}</p>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-sm-1">
+                  <i className="fas fa-chevron-right hover me-2"></i>
+                </div>
+                <div className="col-sm-10">
+                  <p>{features[3]}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

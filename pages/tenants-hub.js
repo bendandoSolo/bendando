@@ -61,7 +61,7 @@ export default function tenanthub() {
           </div>
           <div className="row justify-content-center mb-5">
             <h2 className="my-5 text-center">Features</h2>
-            <div className="col-md-5" style={{ fontSize: "18px" }}>
+            <div className="col-md-5">
               <div className="d-flex">
                 <div className="col-sm-1">
                   <i className="fas fa-chevron-right hover me-2"></i>
@@ -111,7 +111,7 @@ export default function tenanthub() {
                 </div>
               </div>
             </div>
-            <div className="col-md-5" style={{ fontSize: "18px" }}>
+            <div className="col-md-5">
               <div className="d-flex">
                 <div className="col-sm-1">
                   <i className="fas fa-chevron-right hover me-2"></i>
