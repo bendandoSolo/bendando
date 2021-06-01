@@ -10,19 +10,7 @@ import ProjectPane from "../components/ProjectPane";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  // const [dimensions, setDimensions] = useState({
-  //   height: window.innerHeight,
-  //   width: window.innerWidth,
-  // });
-  // useEffect(() => {
-  //   function handleResize() {
-  //     setDimensions({
-  //       height: window.innerHeight,
-  //       width: window.innerWidth,
-  //     });
-  //   }
-  //   window.addEventListener("resize", handleResize);
-  // }, []);
+  const [offset, setOffset] = useState(0);
 
   return (
     <div
@@ -31,7 +19,7 @@ export default function Home() {
         let boxes = Array.from(document.querySelectorAll(".box"));
         if (e.deltaY > 0) {
           boxes.map((box) => {
-            box.style.cssText = `top: ${box.offsetTop + 40}px`;
+            box.style.cssText = `top: ${box.offsetTop + 20}px`;
             if (box.offsetTop > window.innerHeight + box.offsetHeight) {
               box.style.cssText = `top: -${box.offsetHeight}px;`;
               console.log("up");
@@ -39,7 +27,7 @@ export default function Home() {
           });
         } else {
           boxes.map((box) => {
-            box.style.cssText = `top: ${box.offsetTop - 40}px`;
+            box.style.cssText = `top: ${box.offsetTop - 20}px`;
             console.log(box.offsetTop);
             if (box.offsetTop < 0 - box.offsetHeight) {
               box.style.cssText = `top: ${
@@ -49,6 +37,19 @@ export default function Home() {
           });
         }
       }}
+      // onWheel={(e) => {
+      //   let boxes = Array.from(document.querySelectorAll(".box"));
+      //   if (e.deltaY > 0) {
+      //     setOffset(offset + 1);
+      //   } else {
+      //     setOffset(offset - 1);
+      //   }
+      //   boxes.map((box) => {
+      //     box.style.cssText = `top: ${offset + box.offsetTop}px`;
+      //     console.log(box.offsetTop);
+      //   });
+      //   console.log(offset);
+      // }}
       style={{ overflow: "hidden" }}
     >
       <Head>
