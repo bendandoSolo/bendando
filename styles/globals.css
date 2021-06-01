@@ -564,8 +564,8 @@ footer a:hover {
 
 .test-nav-items {
   position: fixed;
-  top: -100%;
-  right: 0;
+  top: 0;
+  right: -100%;
   width: 100vw;
   height: 100vh;
   background-color: #15313d;
@@ -602,13 +602,24 @@ footer a:hover {
 }
 
 .test-nav-items.active {
-  top: 0;
+  right: 0;
   transition: 0.5s;
   overflow-y: hidden;
 }
 
 .navbar-brand {
   margin-right: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-brand {
+    position: fixed;
+    top: 10px;
+    z-index: 10000;
+  }
+  #nav-btn-toggle {
+    position: fixed;
+  }
 }
 
 .home .project-pane {
