@@ -11,15 +11,23 @@ import Link from "next/link";
 
 export default function Services() {
   useEffect(() => {
-    let boxHeight = 0;
-    let boxes = Array.from(document.querySelectorAll(".service-card"));
-    boxes.map((box) => {
-      if (box.offsetHeight > boxHeight) {
-        boxHeight = box.offsetHeight;
-        box.style.cssText = `height: ${boxHeight}`;
-      }
-    });
-    console.log(boxHeight);
+    function handleResize() {
+      let serviceBoxArr = document.querySelectorAll(".service-card");
+      let largestBoxHeight = 0;
+      serviceBoxArr.forEach(function (element) {
+        element.style.height = "auto";
+        largestBoxHeight = Math.max(largestBoxHeight, element.offsetHeight);
+      });
+      serviceBoxArr.forEach(function (value) {
+        value.style.height = largestBoxHeight + "px";
+        console.log(value.style.height);
+      });
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (

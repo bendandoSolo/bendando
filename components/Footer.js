@@ -27,6 +27,23 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          <div className="col-md-3">
+            <h5>Projects</h5>
+            <ul>
+              <li>
+                <Link href="/">Tenants Hub</Link>
+              </li>
+              <li>
+                <Link href="/projects">Win A Flat</Link>
+              </li>
+              <li>
+                <Link href="/services">Malcolm Wall</Link>
+              </li>
+              <li>
+                <Link href="/contact">Green Acre</Link>
+              </li>
+            </ul>
+          </div>
           <div className="col-md-3 footer-links">
             <h5>Connect</h5>
             <ul>
