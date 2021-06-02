@@ -351,31 +351,39 @@ const Home = () => {
           style={{ overflow: "hidden" }}
         >
           <HomeProjectPane
+            projectName="Malcolm Wall"
+            projectType="Website - Branding - Media Feeds"
             position={panel1Pos}
             imageURL="images/screenshots/4.jpg"
             backgroundImage={"url('images/screenshots/4.jpg')"}
             link="/malcolm-wall"
           >
-            <img src="images/screenshots/1.jpg" />
+            {/* <img src="images/screenshots/1.jpg" /> */}
           </HomeProjectPane>
 
           <HomeProjectPane
+            projectName="Tenants Hub"
+            projectType="App - Website - Database"
             position={panel2Pos}
             imageURL="images/screenshots/2.jpg"
             backgroundImage={"url('images/screenshots/2.jpg')"}
             link="/tenants-hub"
           />
           <HomeProjectPane
+            projectName="Win A Flat"
+            projectType="Website - Database - Payments"
             position={panel3Pos}
             imageURL="images/screenshots/1.jpg"
             backgroundImage={"url('images/screenshots/1.jpg')"}
             link="/win-a-flat"
           />
           <HomeProjectPane
+            projectName="Green Acre"
+            projectType="Website - Branding"
             position={panel4Pos}
             imageURL="images/screenshots/3.jpg"
             backgroundImage={"url('images/screenshots/3.jpg')"}
-            link="/malcolm-wall"
+            link="/green-acre"
           />
           {/* <div className="box" id="img-1" style={{backgroundColor: '#ff00ff'}}>
             <img src="images/screenshots/1.jpg" />

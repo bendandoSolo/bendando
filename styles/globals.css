@@ -701,13 +701,69 @@ footer a:hover {
   transition: all 1s;  
 } */
 
-.desktop-infinite-scroll-panel:hover {
-  /* transform: scale(1.2); 
-  transition: all 1s;  */
+/* .desktop-infinite-scroll-panel:hover {
   cursor: pointer;
+  opacity: 0.8;
+} */
+
+.mobile-display {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .testing-project-display {
+    position: relative;
+    width: 100%;
+    display: none;
+  }
+
+  .mobile-display {
+    display: block;
+    margin-top: 100px;
+  }
+}
+
+.desktop-infinite-scroll-panel {
+  overflow: hidden;
+}
+
+.desktop-infinite-scroll-panel:hover {
+  cursor: pointer;
+}
+
+.desktop-infinite-scroll-panel img {
+  transition: 0.8s ease;
+}
+
+.desktop-infinite-scroll-panel:hover img {
+  transform: scale(1.1);
+  transition: 0.8s ease;
   opacity: 0.8;
 }
 
+.panel-overlay {
+  z-index: 1000000;
+  background: rgba(39, 39, 49, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.panel-overlay {
+  opacity: 0;
+}
+
+.desktop-infinite-scroll-panel:hover .panel-overlay {
+  opacity: 1;
+}
 .mobile-display {
   display: none;
 }
