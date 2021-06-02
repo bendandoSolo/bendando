@@ -517,7 +517,7 @@ footer a:hover {
 
 @media screen and (max-width: 767px) {
   .project-pane {
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -588,8 +588,8 @@ footer a:hover {
 
 .test-nav-items {
   position: fixed;
-  top: 0;
-  right: -100%;
+  top: -100%;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: #15313d;
@@ -605,6 +605,7 @@ footer a:hover {
 .test-nav-items a {
   color: whitesmoke;
   margin-right: 0;
+  opacity: 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -621,20 +622,27 @@ footer a:hover {
   .test-nav-items a {
     color: whitesmoke;
     margin-right: 4rem;
+    opacity: 1;
   }
 }
 
 .test-nav-items.active {
-  right: 0;
+  top: 0;
   transition: 0.5s;
   overflow-y: hidden;
+}
+
+.test-nav-items.active a {
+  transition-delay: 2s;
+  transition: 1s;
+  opacity: 1;
 }
 
 .navbar-brand {
   margin-right: 5rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .navbar-brand {
     position: fixed;
     top: 10px;
