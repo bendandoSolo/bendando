@@ -548,7 +548,8 @@ footer a:hover {
     align-items: flex-start;
     padding-left: 1rem;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
+    background: rgba(39, 39, 49, 1);
   }
   .project-pane .panel-overlay h2 {
     font-size: 20px;
