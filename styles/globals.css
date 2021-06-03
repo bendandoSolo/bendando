@@ -1,7 +1,7 @@
-@import "./Home.css";
-@import "./Components.css";
-@import "./Buttons.css";
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Titillium+Web:wght@300;400&display=swap");
+@import './Home.css';
+@import './Components.css';
+@import './Buttons.css';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Titillium+Web:wght@300;400&display=swap');
 
 /* GLOBAL */
 * {
@@ -9,7 +9,7 @@
   padding: 0;
   margin: 0;
   background-color: transparent;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .row {
@@ -246,28 +246,14 @@ ul {
 /* Malcolm Wall */
 
 .malcolm-wall {
-  background-image: linear-gradient(
-    to right top,
-    #55099a,
-    #590f9c,
-    #5d149d,
-    #60199f,
-    #641da1
-  );
+  background-image: linear-gradient(to right top, #55099a, #590f9c, #5d149d, #60199f, #641da1);
   color: whitesmoke;
 }
 
 /* Green-Acre */
 
 .green-acre {
-  background-image: linear-gradient(
-    to right top,
-    #205b45,
-    #34734a,
-    #528a4a,
-    #77a047,
-    #a2b541
-  );
+  background-image: linear-gradient(to right top, #205b45, #34734a, #528a4a, #77a047, #a2b541);
   color: whitesmoke;
 }
 
@@ -350,7 +336,7 @@ nav a {
 .navbar {
   box-shadow: none;
   position: fixed;
-  z-index: 1000000;
+  z-index: 1;
 }
 
 @media screen and (max-width: 992px) {
