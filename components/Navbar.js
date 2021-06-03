@@ -11,10 +11,10 @@ export default function Navbar({ bgColor }) {
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark"
-      style={{ backgroundColor: bgColor }}
+      className="navbar navbar-expand-lg"
+      style={{ backgroundColor: "#15313d", width: "100%", height: "80px" }}
     >
-      <div className="container-fluid">
+      <div className="container-fluid" style={{ backgroundColor: "#15313d" }}>
         <Link href="/">
           <a className="navbar-brand ms-2">
             <img className="landing-img" src="/images/logo.png" />
@@ -36,36 +36,6 @@ export default function Navbar({ bgColor }) {
             <Link href="/contact">Contact</Link>
           </li>
         </div>
-        {/* <button
-          className="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars"></i>
-        </button> */}
-        {/* <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link href="/projects">
-                <a className="nav-link">Projects</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/services">
-                <a className="nav-link">Services</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/contact">
-                <a className="nav-link">Contact</a>
-              </Link>
-            </li>
-          </ul>
-        </div> */}
       </div>
     </nav>
   );

@@ -45,7 +45,7 @@ ul {
 /* Layout */
 
 .landing {
-  padding: 7rem 0;
+  padding: 12rem 0 10rem 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -331,9 +331,10 @@ ul {
 /* Navbar */
 
 nav {
-  position: relative;
+  position: fixed;
   text-align: left;
   background-color: #15313d;
+  height: 80px;
 }
 
 nav ul {
@@ -348,6 +349,8 @@ nav a {
 
 .navbar {
   box-shadow: none;
+  position: fixed;
+  z-index: 1000000;
 }
 
 @media screen and (max-width: 992px) {
@@ -517,7 +520,7 @@ footer a:hover {
 
 @media screen and (max-width: 767px) {
   .project-pane {
-    height: 90vh;
+    height: 46vh;
   }
 }
 
@@ -540,9 +543,18 @@ footer a:hover {
 @media screen and (max-width: 992px) {
   .project-pane .panel-overlay {
     opacity: 1;
-    height: 100px;
+    height: 80px;
+    width: 250px;
+    align-items: flex-start;
+    padding-left: 1rem;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+  }
+  .project-pane .panel-overlay h2 {
+    font-size: 20px;
+  }
+  .project-pane .panel-overlay h5 {
+    font-size: 16px;
   }
 }
 
@@ -633,8 +645,8 @@ footer a:hover {
 }
 
 .test-nav-items.active a {
-  transition-delay: 2s;
-  transition: 1s;
+  transition-delay: 1s;
+  transition: 0.5s;
   opacity: 1;
 }
 
@@ -650,6 +662,7 @@ footer a:hover {
   }
   #nav-btn-toggle {
     position: fixed;
+    top: 15px;
   }
 }
 
