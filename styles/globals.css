@@ -107,7 +107,7 @@ ul {
 
 .landing-2 {
   padding-top: 12rem;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 @media screen and (max-width: 992px) {
@@ -270,8 +270,9 @@ ul {
 }
 
 .project-desktop {
-  margin-top: -11rem;
   width: 90%;
+  position: relative;
+  top: -32px;
 }
 
 @media screen and (max-width: 768px) {
@@ -281,9 +282,10 @@ ul {
 }
 
 .project-mobile {
-  margin-top: -8rem;
   width: 100%;
   max-width: 500px;
+  position: relative;
+  top: -32px;
 }
 
 @media screen and (max-width: 768px) {
@@ -783,5 +785,11 @@ footer a:hover {
   .mobile-display {
     display: block;
     margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-pane {
+    text-align: center;
   }
 }

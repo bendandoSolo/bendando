@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ProjectBanner = ({ title, type, text, img }) => {
   return (
@@ -8,7 +8,7 @@ const ProjectBanner = ({ title, type, text, img }) => {
           <div className="col-md-5">
             <h1 className="mb-4">{title}</h1>
             <h4 className="mb-4">{type}</h4>
-            <h5 className="mb-4">{text}</h5>
+            <p className="mb-4">{text}</p>
           </div>
           <div className="col-md-6">
             <img

@@ -1,29 +1,29 @@
 // Components
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProjectBanner from "../components/ProjectBanner";
-import ViewSite from "../components/ViewSite";
-import Carousel from "../components/Carousel";
-import { CarouselData } from "../components/CarouselData";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ProjectBanner from '../components/ProjectBanner';
+import ViewSite from '../components/ViewSite';
+import Carousel from '../components/Carousel';
+import { CarouselData } from '../components/CarouselData';
 
 // Next
-import Head from "next/head";
-import Link from "next/link";
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function tenanthub() {
   let features = [
-    "Web application and app design and creation",
-    "Saas sign up website",
-    "Automated service for logging and managing building faults",
-    "White label application",
-    "Payment system",
-    "User Accounts and management",
-    "Database of faults and associated pictures",
-    "Automatic email and SMS notification service",
-    "Automatic progress reports",
-    "Real time messaging service",
-    "Calendar Management integrated with Google Calendar",
-    "Customized pluggins for individual clients",
+    'Web application and app design and creation',
+    'Saas sign up website',
+    'Automated service for logging and managing building faults',
+    'White label application',
+    'Payment system',
+    'User Accounts and management',
+    'Database of faults and associated pictures',
+    'Automatic email and SMS notification service',
+    'Automatic progress reports',
+    'Real time messaging service',
+    'Calendar Management integrated with Google Calendar',
+    'Customized pluggins for individual clients',
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function tenanthub() {
             <div className="col-md-6 text-center">
               <img
                 data-aos="fade-up"
-                className="project-desktop mb-5"
+                className="project-desktop"
                 src="/images/tenant-hub/desktop-screenshot.png"
               />
             </div>
