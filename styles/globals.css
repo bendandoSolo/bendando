@@ -509,6 +509,7 @@ footer a:hover {
   overflow: hidden;
   transition: 0.8s ease;
   cursor: pointer;
+  z-index: 6;
 }
 
 @media screen and (max-width: 992px) {

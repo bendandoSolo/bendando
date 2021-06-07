@@ -22,6 +22,7 @@ const HomeProjectPane = ({
           bottom: position.bottom,
           position: "absolute",
           //   backgroundImage: backgroundImage,
+          zIndex: 1000000,
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
