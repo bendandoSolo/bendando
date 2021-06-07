@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Carousel = ({ p1, p2, p3 }) => {
   return (
@@ -34,8 +34,8 @@ const Carousel = ({ p1, p2, p3 }) => {
       <div className="carousel-inner">
         <div className={`${p1.cName} active`}>
           <div className="container">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-md-6">
+            <div className="row d-flex justify-content-center align-items-center">
+              <div className="col-md-4 carousel-pane">
                 <h2>{p1.name}</h2>
                 <h5>{p1.type}</h5>
                 <Link href={p1.url}>
@@ -46,19 +46,16 @@ const Carousel = ({ p1, p2, p3 }) => {
                   </a>
                 </Link>
               </div>
-              <div className="col-md-6">
-                <img
-                  src={p1.img}
-                  style={{ height: "40vh", marginTop: "20px" }}
-                />
+              <div className="col-md-4 text-center">
+                <img src={p1.img} style={{ height: '40vh', marginTop: '20px' }} />
               </div>
             </div>
           </div>
         </div>
         <div className={p2.cName}>
           <div className="container">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-md-6">
+            <div className="row d-flex justify-content-center align-items-center">
+              <div className="col-md-4 carousel-pane">
                 <h2>{p2.name}</h2>
                 <h5>{p2.type}</h5>
                 <Link href={p2.url}>
@@ -69,19 +66,16 @@ const Carousel = ({ p1, p2, p3 }) => {
                   </a>
                 </Link>
               </div>
-              <div className="col-md-6">
-                <img
-                  src={p2.img}
-                  style={{ height: "40vh", marginTop: "20px" }}
-                />
+              <div className="col-md-4">
+                <img src={p2.img} style={{ height: '40vh', marginTop: '20px' }} />
               </div>
             </div>
           </div>
         </div>
         <div className={p3.cName}>
           <div className="container">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-md-6">
+            <div className="row d-flex justify-content-center align-items-center">
+              <div className="col-md-4 carousel-pane">
                 <h2>{p3.name}</h2>
                 <h5>{p3.type}</h5>
                 <Link href={p3.url}>
@@ -92,11 +86,8 @@ const Carousel = ({ p1, p2, p3 }) => {
                   </a>
                 </Link>
               </div>
-              <div className="col-md-6">
-                <img
-                  src={p3.img}
-                  style={{ height: "40vh", marginTop: "20px" }}
-                />
+              <div className="col-md-4">
+                <img src={p3.img} style={{ height: '40vh', marginTop: '20px' }} />
               </div>
             </div>
           </div>
