@@ -41,7 +41,7 @@ export const ServiceData = [
     index: 7,
     icon: "fas fa-tasks",
     title: "CRM Management",
-    text: "Coronavirus changed the world forever in 2020. With everyone moving online it is more vital than ever to keep in touch with your digital customers and potential clients than before. Our CRM experts can help you quickly setup and manage you company CRM to facilite efficient communication and targeting of your most important clients and potential customers.",
+    text: "Coronavirus changed the world forever in 2020. With everyone moving online it is more vital than ever to keep in touch with your digital customers and potential clients than before. Our CRM experts can help you quickly setup and manage you company CRM to facilitate efficient communication and targeting of your most important clients and potential customers.",
   },
   {
     index: 8,
