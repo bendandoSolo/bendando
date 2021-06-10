@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 // Next Links
 import Head from "next/head";
@@ -8,12 +9,24 @@ import Head from "next/head";
 // Components
 import Contact from "../components/Contact";
 
-
 // DATA AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
+  const nextRouter = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    //unimplement analytics boilerplate code
+    nextRouter.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      nextRouter.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [nextRouter.events]);
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -36,7 +49,7 @@ function MyApp({ Component, pageProps }) {
           src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
         ></script>
       </Head>
-      <Component {...pageProps} />
+      <Component {...pageProps} key={router.route} />
     </div>
   );
 }

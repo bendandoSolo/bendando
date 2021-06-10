@@ -46,10 +46,6 @@ const Home = () => {
   }, []);
 
   const mouseWheelEvent = (e) => {
-    // let e.deltaY = e.e.deltaY;
-    // if (e.e.deltaY > 0) e.deltaY = 50;
-    // else e.deltaY = -50;
-
     //infinite scrolling
     if (e.deltaY < 0) {
       if (
