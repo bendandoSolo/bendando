@@ -20,7 +20,7 @@ export default function Services() {
       });
       serviceBoxArr.forEach(function (value) {
         value.style.height = largestBoxHeight + "px";
-        console.log(value.style.height);
+        // console.log(value.style.height);
       });
     }
     handleResize();

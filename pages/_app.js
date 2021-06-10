@@ -6,6 +6,8 @@ import { useRouter } from "next/router";
 // Next Links
 import Head from "next/head";
 
+import * as gtag from "../lib/gtag";
+
 // Components
 import Contact from "../components/Contact";
 
