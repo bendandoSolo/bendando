@@ -7,7 +7,7 @@ import Carousel from "../components/Carousel";
 import { CarouselData } from "../components/CarouselData";
 
 // Next
-import Link from "next/link";
+import Head from "next/head";
 
 export default function greenAcre() {
   let features = [
@@ -19,39 +19,47 @@ export default function greenAcre() {
   ];
 
   return (
-    <div className="green-acre">
-      <Navbar bgColor="transparent" />
-      <ProjectBanner
-        title="Greenacre Capital"
-        type="Website and Branding"
-        text="  Greenacre Energy is a company whose mission is to identify and
+    <>
+      <Head>
+        <title>Green Acre | BenDando</title>
+        <meta
+          name="description"
+          content="Greenacre Energy is a company whose mission is to identify and invest in environmentally sustainable solutions for the disposal of all waste. They work alongside governments and experts across the UK and South East Asia. They approached us to brand their organisation and design their website."
+        />
+      </Head>
+      <div className="green-acre">
+        <Navbar bgColor="green-acre" />
+        <ProjectBanner
+          title="Greenacre Capital"
+          type="Website and Branding"
+          text="  Greenacre Energy is a company whose mission is to identify and
                 invest in environmentally sustainable solutions for the disposal
                 of all waste. They work alongside governments and experts across
                 the UK and South East Asia. They approached us to brand their
                 organisation and design their website."
-        img="/images/green-acre/mockup.png"
-      />
-      <div className="project-content">
-        <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-md-6 text-center">
-              <img
-                data-aos="fade-up"
-                className="project-desktop"
-                src="/images/green-acre/desktop-screenshot.png"
-              />
+          img="/images/green-acre/mockup.png"
+        />
+        <div className="project-content">
+          <div className="container">
+            <div className="row justify-content-between">
+              <div className="col-md-6 text-center">
+                <img
+                  data-aos="fade-up"
+                  className="project-desktop"
+                  src="/images/green-acre/desktop-screenshot.png"
+                />
+              </div>
+              <div className="col-md-6 text-center mb-5">
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  className="project-mobile"
+                  src="/images/green-acre/mobile-screenshot.png"
+                  style={{ width: "60%" }}
+                />
+              </div>
             </div>
-            <div className="col-md-6 text-center mb-5">
-              <img
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className="project-mobile"
-                src="/images/green-acre/mobile-screenshot.png"
-                style={{ width: "60%" }}
-              />
-            </div>
-          </div>
-          {/* <div className="row pb-5 align-items-center mt-5">
+            {/* <div className="row pb-5 align-items-center mt-5">
             <div className="col-md-6 position-relative">
               <div className="project-text">
                 <p>
@@ -68,54 +76,55 @@ export default function greenAcre() {
               </div>
             </div>
           </div> */}
-          <div className="row justify-content-center mb-5">
-            <h2 className="my-5 text-center">Features</h2>
-            <div className="col-md-4">
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
+            <div className="row justify-content-center mb-5">
+              <h2 className="my-5 text-center">Features</h2>
+              <div className="col-md-4">
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[0]}</p>
+                  </div>
                 </div>
-                <div className="col-sm-10">
-                  <p>{features[0]}</p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[1]}</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[2]}</p>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[1]}</p>
+                  </div>
                 </div>
               </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
+              <div className="col-md-4">
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[2]}</p>
+                  </div>
                 </div>
-                <div className="col-sm-10">
-                  <p>{features[3]}</p>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[3]}</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <ViewSite url="/" cName="green-acre" />
+          <Carousel
+            p1={CarouselData.malcolmWall}
+            p2={CarouselData.tenantHub}
+            p3={CarouselData.winAFlat}
+          />
         </div>
-        <ViewSite url="/" cName="green-acre" />
-        <Carousel
-          p1={CarouselData.malcolmWall}
-          p2={CarouselData.tenantHub}
-          p3={CarouselData.winAFlat}
-        />
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }

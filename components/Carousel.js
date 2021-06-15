@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const Carousel = ({ p1, p2, p3 }) => {
   return (
@@ -47,7 +47,10 @@ const Carousel = ({ p1, p2, p3 }) => {
                 </Link>
               </div>
               <div className="col-md-4 text-center">
-                <img src={p1.img} style={{ height: '40vh', marginTop: '20px' }} />
+                <img
+                  src={p1.img}
+                  style={{ height: "40vh", marginTop: "20px" }}
+                />
               </div>
             </div>
           </div>
@@ -67,7 +70,10 @@ const Carousel = ({ p1, p2, p3 }) => {
                 </Link>
               </div>
               <div className="col-md-4">
-                <img src={p2.img} style={{ height: '40vh', marginTop: '20px' }} />
+                <img
+                  src={p2.img}
+                  style={{ height: "40vh", marginTop: "20px" }}
+                />
               </div>
             </div>
           </div>
@@ -87,7 +93,10 @@ const Carousel = ({ p1, p2, p3 }) => {
                 </Link>
               </div>
               <div className="col-md-4">
-                <img src={p3.img} style={{ height: '40vh', marginTop: '20px' }} />
+                <img
+                  src={p3.img}
+                  style={{ height: "40vh", marginTop: "20px" }}
+                />
               </div>
             </div>
           </div>

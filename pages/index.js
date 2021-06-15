@@ -314,8 +314,12 @@ const Home = () => {
     <div className="home" onWheel={mouseWheelEvent}>
       <Head>
         <title>Home | BenDando</title>
+        <meta
+          name="description"
+          content="We are a web agency who builds beautiful websites and applications."
+        />
       </Head>
-      <Navbar bgColor="#15313d" />
+      <Navbar bgColor="index" />
       <div className="landing">
         <div className="container">
           <div className="row ">

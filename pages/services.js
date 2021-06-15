@@ -34,8 +34,12 @@ export default function Services() {
     <div className="services">
       <Head>
         <title>Services | BenDando</title>
+        <meta
+          name="description"
+          content="We understand all projects are different, and technology is changing all the time. We pride ourselves on being ahead of the game and keeping up to date with the latest software trends. Whatever your requirements and budget we can offer you a solution that will suit your needs."
+        />
       </Head>
-      <Navbar />
+      <Navbar bgColor="services" />
       <div className="landing">
         <div className="container">
           <div

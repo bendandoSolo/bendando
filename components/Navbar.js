@@ -12,12 +12,12 @@ export default function Navbar({ bgColor }) {
   return (
     <nav
       className="navbar navbar-expand-lg"
-      style={{ backgroundColor: "#15313d", width: "100%", height: "80px" }}
+      style={{ width: "100%", height: "80px" }}
     >
-      <div className="container-fluid" style={{ backgroundColor: "#15313d" }}>
+      <div className={`container-fluid ${bgColor}`}>
         <Link href="/">
           <a className="navbar-brand ms-2">
-            <img className="landing-img" src="/images/logo.png" />
+            <img style={{ width: "100%" }} src="/images/logo.png" />
           </a>
         </Link>
 

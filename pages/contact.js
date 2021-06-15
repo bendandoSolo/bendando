@@ -90,8 +90,14 @@ export default function Connect() {
     <div className="connect">
       <Head>
         <title>Contact | BenDando</title>
+        <meta
+          name="description"
+          content="We love talking about website and applications, we do it all
+                day! Give us a call or drop us an email we will get right back to
+                you."
+        />
       </Head>
-      <Navbar />
+      <Navbar bgColor="connect" />
       <div className="landing">
         <div className="container">
           <div className="row justify-content-between">

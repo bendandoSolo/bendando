@@ -11,8 +11,9 @@ export default function Projects() {
     <div className="project">
       <Head>
         <title>Projects | BenDando</title>
+        <meta name="description" content="" />
       </Head>
-      <Navbar />
+      <Navbar bgColor="project" />
       <div style={{ paddingTop: "80px" }}>
         <div className="row">
           <div className="col-lg-6" data-aos="fade-up">

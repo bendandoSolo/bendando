@@ -6,6 +6,8 @@ import ViewSite from "../components/ViewSite";
 import Carousel from "../components/Carousel";
 import { CarouselData } from "../components/CarouselData";
 
+import Head from "next/head";
+
 export default function winflat() {
   let features = [
     "Website design and creation",
@@ -19,161 +21,170 @@ export default function winflat() {
   ];
 
   return (
-    <div className="winaflat">
-      <Navbar bgColor="transparent" />
-      <ProjectBanner
-        title="Win A Flat"
-        type="Website Build"
-        text="A competition website for Equinox Living promoted by Uri Geller
+    <>
+      <Head>
+        <title>Win A Flat | BenDando</title>
+        <meta
+          name="description"
+          content="A competition website for Equinox Living promoted by Uri Geller and the national press allowing UK residents who successfully answer 3 questions to be entered into a prize draw to win a brand new flat!"
+        />
+      </Head>
+      <div className="winaflat">
+        <Navbar bgColor="winaflat" />
+        <ProjectBanner
+          title="Win A Flat"
+          type="Website Build"
+          text="A competition website for Equinox Living promoted by Uri Geller
               and the national press allowing UK residents who successfully
               answer 3 questions to be entered into a prize draw to win a brand
               new flat!"
-        img="/images/winaflat/mockup.png"
-      />
-      <div className="project-content">
-        <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-md-6 text-center">
-              <img
-                data-aos="fade-up"
-                className="project-desktop mb-5"
-                src="/images/winaflat/desktop-screenshot.png"
-              />
+          img="/images/winaflat/mockup.png"
+        />
+        <div className="project-content">
+          <div className="container">
+            <div className="row justify-content-between">
+              <div className="col-md-6 text-center">
+                <img
+                  data-aos="fade-up"
+                  className="project-desktop mb-5"
+                  src="/images/winaflat/desktop-screenshot.png"
+                />
+              </div>
+              <div className="col-md-6 text-center">
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  className="project-mobile"
+                  src="/images/winaflat/mobile-screenshot.png"
+                />
+              </div>
             </div>
-            <div className="col-md-6 text-center">
-              <img
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className="project-mobile"
-                src="/images/winaflat/mobile-screenshot.png"
-              />
+            <div className="row justify-content-center mb-5">
+              <h2 className="my-5 text-center">Features</h2>
+              <div className="col-md-4">
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[0]}</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[1]}</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[2]}</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[3]}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[4]}</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[5]}</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[6]}</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="col-sm-1">
+                    <i className="fas fa-chevron-right hover me-2"></i>
+                  </div>
+                  <div className="col-sm-10">
+                    <p>{features[7]}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row pb-5 align-items-center">
+              <div className="col-md-12 text-center position-relative my-4">
+                <iframe
+                  src="https://samvirtualdemo.azurewebsites.net//"
+                  height="600px"
+                  width="90%"
+                  title="Iframe Example"
+                ></iframe>
+              </div>
+            </div>
+            <div className="row justify-content-evenly mb-5">
+              <div className="col-md-5 position-relative">
+                <div className="project-text">
+                  <p>
+                    Winaflat was fully optimized to load as quickly as possible
+                    for the wide variety of devices and users.
+                  </p>
+                  <p>
+                    With heavy use of analytics we analysed and modified the
+                    website to reach the largest audience.
+                  </p>
+                  <p>
+                    Containers a Panorama viewer allowing users to move round
+                    the interior of the flat to really get a feel for the prize.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-5 position-relative">
+                <div className="project-text">
+                  <p>
+                    We used an ecommerce system accepting card and android and
+                    apple pay to make the process as seamless as possible with a
+                    custom database storing user details.
+                  </p>
+                  <p>
+                    We also created random selection software for the prize draw
+                    to be live streamed from the website when Uri Geller
+                    announces the winner.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="row justify-content-center mb-5">
-            <h2 className="my-5 text-center">Features</h2>
-            <div className="col-md-4">
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[0]}</p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[1]}</p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[2]}</p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[3]}</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[4]}</p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[5]}</p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[6]}</p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="col-sm-1">
-                  <i className="fas fa-chevron-right hover me-2"></i>
-                </div>
-                <div className="col-sm-10">
-                  <p>{features[7]}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row pb-5 align-items-center">
-            <div className="col-md-12 text-center position-relative my-4">
-              <iframe
-                src="https://samvirtualdemo.azurewebsites.net//"
-                height="600px"
-                width="90%"
-                title="Iframe Example"
-              ></iframe>
-            </div>
-          </div>
-          <div className="row justify-content-evenly mb-5">
-            <div className="col-md-5 position-relative">
-              <div className="project-text">
-                <p>
-                  Winaflat was fully optimized to load as quickly as possible
-                  for the wide variety of devices and users.
-                </p>
-                <p>
-                  With heavy use of analytics we analysed and modified the
-                  website to reach the largest audience.
-                </p>
-                <p>
-                  Containers a Panorama viewer allowing users to move round the
-                  interior of the flat to really get a feel for the prize.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-5 position-relative">
-              <div className="project-text">
-                <p>
-                  We used an ecommerce system accepting card and android and
-                  apple pay to make the process as seamless as possible with a
-                  custom database storing user details.
-                </p>
-                <p>
-                  We also created random selection software for the prize draw
-                  to be live streamed from the website when Uri Geller announces
-                  the winner.
-                </p>
-              </div>
-            </div>
-          </div>
+          <ViewSite
+            url="http://winaflatdemo.azurewebsites.net/Home"
+            cName="winaflat"
+          />
+          <Carousel
+            p1={CarouselData.greenAcre}
+            p2={CarouselData.malcolmWall}
+            p3={CarouselData.tenantHub}
+          />
         </div>
-        <ViewSite
-          url="http://winaflatdemo.azurewebsites.net/Home"
-          cName="winaflat"
-        />
-        <Carousel
-          p1={CarouselData.greenAcre}
-          p2={CarouselData.malcolmWall}
-          p3={CarouselData.tenantHub}
-        />
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
