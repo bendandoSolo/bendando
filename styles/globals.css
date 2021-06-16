@@ -816,3 +816,15 @@ footer a:hover {
     text-align: center;
   }
 }
+
+.services .landing,
+.connect .landing {
+  padding-top: 6rem;
+}
+
+@media screen and (min-width: 991px) {
+  .services .landing,
+  .connect .landing {
+    padding-top: 12rem;
+  }
+}
