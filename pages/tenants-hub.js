@@ -30,9 +30,17 @@ export default function tenanthub() {
       <Head>
         <title>Tenants Hub | BenDando</title>
         <meta
+          name="title"
+          content="Tenants Hub | Property Management Websites and App"
+        />
+        <meta
           name="description"
           content="A Property Management app used to connect Block and Letting Managers, Owners, Surveyors, Maintenance Personnel and Residents. It's built for your tenants to manage all their building related needs, maintenance personnel to manage their work and building managers and owners to manage all your building services."
         />
+         <meta
+          name="keywords"
+          content="property, management, website, app, connect, block, letting, managers, owners, surveyors, maintenance, residents, tenants, building, services"
+          />
       </Head>
       <div className="tenants-hub">
         <Navbar bgColor="tenants-hub" />

@@ -315,9 +315,17 @@ const Home = () => {
       <Head>
         <title>Home | BenDando</title>
         <meta
-          name="description"
-          content="We are a web agency who builds beautiful websites and applications."
+          name="title"
+          content="Bendando | Websites , Apps and Digital Products, London"
         />
+        <meta
+          name="description"
+          content="We create websites and apps using the most modern technology. Ensuring our clients stand out from the crowd and connect with people in a meaningful way."
+        />
+         <meta
+          name="keywords"
+          content="create, websites, apps ,modern, technology,clients"
+          />
       </Head>
       <Navbar bgColor="index" />
       <div className="landing">

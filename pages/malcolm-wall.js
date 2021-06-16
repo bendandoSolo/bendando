@@ -22,8 +22,16 @@ export default function malcolmWall() {
       <Head>
         <title>Malcolm Wall | BenDando</title>
         <meta
-          name="description"
+          name="title"
+          content="Malcolm Wall | Malcolm Wall Media Website"
+        />
+         <meta
+         name="description"
           content="Malcolm Wall is a giant in the media industry a truly charming client and a pleasure to work with. As CEO for Virgin Media, Pinewood and involved with various Media companies around the world, he required an online resume for attracting potential partners."
+          />
+        <meta
+           name="keywords"
+          content="Malcolm, Wall,media, industry, CEO, Virgin Media, Pinewood, companiesworld"
         />
       </Head>
       <div className="malcolm-wall">

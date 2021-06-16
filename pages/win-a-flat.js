@@ -25,8 +25,16 @@ export default function winflat() {
       <Head>
         <title>Win A Flat | BenDando</title>
         <meta
+          name="title"
+          content="Winaflat | Win a flat with Uri Geller and Equinox Living"
+        />
+        <meta
           name="description"
           content="A competition website for Equinox Living promoted by Uri Geller and the national press allowing UK residents who successfully answer 3 questions to be entered into a prize draw to win a brand new flat!"
+        />
+        <meta
+          name="keywords"
+          content="competition, website ,Equinox Living, Uri Geller, national, UK, residents, prize, win ,flat"
         />
       </Head>
       <div className="winaflat">

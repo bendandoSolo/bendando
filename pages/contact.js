@@ -91,11 +91,17 @@ export default function Connect() {
       <Head>
         <title>Contact | BenDando</title>
         <meta
-          name="description"
-          content="We love talking about website and applications, we do it all
-                day! Give us a call or drop us an email we will get right back to
-                you."
+          name="title"
+          content="Bendando | Contact us"
         />
+        <meta
+          name="description"
+          content="We love talking about websites, Apps and other digital solutions, we do it all day. Get in touch to see what we can do for you."
+        />
+         <meta
+          name="keywords"
+          content="contact, websites, apps,digital, solutions, email, phone"
+          />
       </Head>
       <Navbar bgColor="connect" />
       <div className="landing">
@@ -106,7 +112,7 @@ export default function Connect() {
                 Contact
               </h1>
               <h5 className="mb-2">
-                We love talking about website and applications, we do it all
+                We love talking about websites, apps and other digital solutions, we do it all
                 day!
               </h5>
               <h5 className="mb-4">

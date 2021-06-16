@@ -11,7 +11,18 @@ export default function Projects() {
     <div className="project">
       <Head>
         <title>Projects | BenDando</title>
-        <meta name="description" content="" />
+        <meta
+          name="title"
+          content="Bendando | Examples of our Apps and Websites"
+        />
+        <meta
+          name="description"
+          content="We create websites and apps using the most modern technology. Ensuring our clients stand out from the crowd and connect with people in a meaningful way."
+        />
+         <meta
+          name="keywords"
+          content="build, create, websites,apps, modern, technology"
+          />
       </Head>
       <Navbar bgColor="project" />
       <div style={{ paddingTop: "80px" }}>
