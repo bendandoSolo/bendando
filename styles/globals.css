@@ -834,15 +834,25 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 1;
+  color: #007ca1;
   width: 90%;
   height: 90%;
   animation: 1.5s infinite scaleUp linear;
-  transition: 0.8s;
+  transition: 0.2s;
+}
+
+.iframe {
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 #spin-logo {
   animation: 2s infinite spinning linear;
   margin-bottom: 8px;
+  transition: 0.2s;
 }
 
 @keyframes spinning {
@@ -862,7 +872,7 @@ footer a:hover {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);

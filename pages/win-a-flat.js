@@ -151,21 +151,24 @@ export default function winflat() {
                 className="col-md-12 text-center position-relative my-4 rsvp-wrapper d-flex justify-content-center align-items-center"
                 style={{ height: "600px", width: "100%" }}
               >
+                <div className="iframe">
+                  <iframe
+                    src="https://samvirtualdemo.azurewebsites.net//"
+                    height="600px"
+                    width="90%"
+                    title="Iframe Example"
+                    onLoad={hideSpinner}
+                  ></iframe>
+                </div>
+
                 {loading ? (
                   <>
-                    <div className="spinner winaflat">
+                    <div className="spinner">
                       <img id="spin-logo" src="images/logo.png" />
                       <h3>Loading...</h3>
                     </div>
                   </>
                 ) : null}
-                <iframe
-                  src="https://samvirtualdemo.azurewebsites.net//"
-                  height="600px"
-                  width="90%"
-                  title="Iframe Example"
-                  onLoad={hideSpinner}
-                ></iframe>
               </div>
             </div>
             <div className="row justify-content-evenly mb-5">
