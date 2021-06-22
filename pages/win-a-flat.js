@@ -8,6 +8,8 @@ import { CarouselData } from "../components/CarouselData";
 
 import Head from "next/head";
 
+import { useState } from "react";
+
 export default function winflat() {
   let features = [
     "Website design and creation",
@@ -19,6 +21,12 @@ export default function winflat() {
     "Randomized winner selection software",
     "Analytics",
   ];
+
+  const [loading, setLoading] = useState(true);
+
+  const hideSpinner = () => {
+    setLoading(false);
+  };
 
   return (
     <>
@@ -131,12 +139,24 @@ export default function winflat() {
               </div>
             </div>
             <div className="row pb-5 align-items-center">
-              <div className="col-md-12 text-center position-relative my-4">
+              <div
+                className="col-md-12 text-center position-relative my-4 rsvp-wrapper d-flex justify-content-center align-items-center"
+                style={{ height: "600px", width: "100%" }}
+              >
+                {loading ? (
+                  <>
+                    <div className="spinner winaflat">
+                      <img id="spin-logo" src="images/logo.png" />
+                      <h3>Loading...</h3>
+                    </div>
+                  </>
+                ) : null}
                 <iframe
                   src="https://samvirtualdemo.azurewebsites.net//"
                   height="600px"
                   width="90%"
                   title="Iframe Example"
+                  onLoad={hideSpinner}
                 ></iframe>
               </div>
             </div>
