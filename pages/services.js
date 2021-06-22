@@ -35,9 +35,17 @@ export default function Services() {
       <Head>
         <title>Services | BenDando</title>
         <meta
-          name="description"
-          content="We understand all projects are different, and technology is changing all the time. We pride ourselves on being ahead of the game and keeping up to date with the latest software trends. Whatever your requirements and budget we can offer you a solution that will suit your needs."
+          name="title"
+          content="Bendando | Services, Digital Design, Websites and Apps"
         />
+        <meta
+         name="keywords"
+          content="We offer Digital Design Services, Website Development, App Development, SEO, Ecommerce, Digital Marketing, CRM and Customer Data Collection"
+        />
+        <meta
+          name="description"
+          content="digital, design, services, website, development, app, SEO, scommerce, marketing, CRM, customer, data, collection"
+          />
       </Head>
       <Navbar bgColor="services" />
       <div className="landing">

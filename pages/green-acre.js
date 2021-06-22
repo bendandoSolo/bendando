@@ -23,8 +23,16 @@ export default function greenAcre() {
       <Head>
         <title>Green Acre | BenDando</title>
         <meta
-          name="description"
-          content="Greenacre Energy is a company whose mission is to identify and invest in environmentally sustainable solutions for the disposal of all waste. They work alongside governments and experts across the UK and South East Asia. They approached us to brand their organisation and design their website."
+          name="title"
+          content="Greenacre Capital | Private Investment Company"
+        />
+         <meta
+         name="description"
+          content="Greenacre Capital Ltd is a private investment company working across three divisions: property, independent living and clean energy."
+          />
+        <meta
+         name="keywords"
+          content="Greenacre, Capital, private, investment, company,property, independent, living ,clean, energy."
         />
       </Head>
       <div className="green-acre">
