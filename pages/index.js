@@ -6,6 +6,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import ProjectPane from "../components/ProjectPane";
 import HomeProjectPane from "../components/HomeProjectPane";
+import Contact from "../components/Contact";
 
 // react
 import { useState, useEffect, useCallback } from "react";
@@ -322,10 +323,10 @@ const Home = () => {
           name="description"
           content="We create websites and apps using the most modern technology. Ensuring our clients stand out from the crowd and connect with people in a meaningful way."
         />
-         <meta
+        <meta
           name="keywords"
           content="create, websites, apps ,modern, technology,clients"
-          />
+        />
       </Head>
       <Navbar bgColor="index" />
       <div className="landing">
@@ -441,6 +442,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Contact />
     </div>
   );
 };

@@ -54,7 +54,7 @@ const Contact = () => {
           <input type="text" />
           <label htmlFor="name">Message:</label>
           <textarea name="" id="" cols="30" rows="7"></textarea>
-          <button className="global-btn btn" type="submit">
+          <button className="btn green-btn" type="submit">
             Send
           </button>
         </div>

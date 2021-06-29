@@ -950,16 +950,6 @@ footer a:hover {
   outline: none;
 }
 
-.prompt-body button {
-  background-color: #18dca8;
-  color: whitesmoke;
-}
-
-.prompt-body button:hover {
-  color: #18dca8;
-  border-color: #18dca8;
-}
-
 .prompt-animate-open {
   animation: prompt-animate-out 2s both;
 }
@@ -1036,4 +1026,21 @@ footer a:hover {
   100% {
     opacity: 0;
   }
+}
+
+.green-btn {
+  background-color: #18dca8;
+  color: whitesmoke;
+  position: relative;
+  border: 2px solid white;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.green-btn:hover {
+  color: #18dca8;
+  background-color: whitesmoke;
+  border-color: #18dca8;
 }
