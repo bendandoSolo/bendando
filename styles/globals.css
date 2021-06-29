@@ -878,3 +878,162 @@ footer a:hover {
     transform: scale(1);
   }
 }
+
+.prompt-btn {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15313d;
+  z-index: 5;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.prompt {
+  position: fixed;
+  top: 100px;
+  right: -150px;
+  width: 250px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15313d;
+  z-index: 4;
+  font-size: 20px;
+  transition: 0.6s;
+}
+
+.prompt.active {
+  right: 100px;
+}
+
+.prompt-form {
+  position: fixed;
+  top: 180px;
+  right: -350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  color: #15313d;
+  z-index: 3;
+}
+
+.prompt-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-color: whitesmoke;
+  color: #15313d;
+  z-index: 4;
+  opacity: 0;
+}
+
+.prompt-body input,
+.prompt-body textarea {
+  margin-bottom: 1rem;
+  border: 0;
+  border-bottom: #18dca8 2px solid;
+  background-color: rgba(21, 49, 61, 0.1);
+  padding: 4px 8px;
+  outline: none;
+}
+
+.prompt-body button {
+  background-color: #18dca8;
+  color: whitesmoke;
+}
+
+.prompt-body button:hover {
+  color: #18dca8;
+  border-color: #18dca8;
+}
+
+.prompt-animate-open {
+  animation: prompt-animate-out 2s both;
+}
+
+@keyframes prompt-animate-out {
+  0% {
+    top: 100px;
+    padding-top: 80px;
+    height: 80px;
+    right: -350px;
+  }
+  25% {
+    top: 100px;
+    padding-top: 80px;
+    height: 80px;
+    right: 0;
+  }
+  100% {
+    top: 100px;
+    padding-top: 80px;
+    height: 500px;
+    right: 0;
+  }
+}
+
+.prompt-animate-close {
+  animation: prompt-animate-in 2s both;
+}
+
+@keyframes prompt-animate-in {
+  0% {
+    top: 100px;
+    padding-top: 80px;
+    height: 500px;
+    right: 0;
+  }
+  25% {
+    top: 100px;
+    padding-top: 80px;
+    height: 80px;
+    right: 0;
+  }
+  100% {
+    top: 100px;
+    padding-top: 80px;
+    height: 80px;
+    right: -350px;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.6s both;
+  animation-delay: 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation-delay: 1s;
+  animation: fade-out 0.2s both;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
