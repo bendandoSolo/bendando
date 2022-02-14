@@ -86,6 +86,9 @@ export default function Services() {
                     icon={item.icon}
                     title={item.title}
                     text={item.text}
+                    text2={item.text2}
+                    link={item.link}
+                    linkText={item.linkText}
                   />
                 );
               })}

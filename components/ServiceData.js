@@ -4,32 +4,39 @@ export const ServiceData = [
   {
     index: 1,
     icon: "far fa-object-ungroup",
-    title: "DIGITAL DESIGN SERVICES",
-    text: "Whether you have a simple website that requires nothing more than a few alterations to a template to stand out or a larger website or application that requires branding we have solution for you.",
-  },
+    title: "WEBSITE DESIGN",
+    text: "We design responsive websites and mobile apps. We offer 3 types of web design services.", 
+    text2: "For basic websites we work with you and our in house designer to choose the right template for your content. For more advanced websites we customize the template, design additional webpages add animation and special touches. We work closely with an world class ethical design agency for branding and complete website or application design, check them out:",
+    link: "https://prettycleverstudio.com/",
+    linkText: "Pretty Clever Studio"  },
   {
     index: 2,
     icon: "fas fa-desktop",
     title: "WEBSITE DEVELOPMENT",
-    text: "We use modern Javascript frameworks to deliver speed optimized websites vastly improving website load times and SEO without the need for pay for click or advertising. Built it right from the start to stand out from your competitors. We do not use WordPress, Wixs or Squarespace.",
+    text: "We prefer modern Javascript frameworks such as Next and headless CMS systems to deliver super fast optimized websites. Ensuring fast load times improves SEO we help small businesses stand out from the competition.",
+    text2: "For more advanced websites or web based applications we review your requirements and architect an optimal solution for you. Often an off the shelf solution can be adapted to avoid the need to create applications from scratch, our network of developers have the experience to provide the right solution for you."
   },
   {
     index: 3,
     icon: "fas fa-mobile-alt",
     title: "APP DEVELOPMENT",
-    text: "With experience working for Microsoft, Vodaphone, the NHS, PWC and Fintech startups we have the skills to deliver an on time on budget solution for whatever your needs. Rather than hire us through an agency, come to us directly and we can deliver your product at a fraction of the price.",
+    text: "We are the developers that agencies hire to get your project running, so why not come directly to us? ",
+    text2: "Our network of developers have decades of experience building large scale applications. Previous clients include Microsoft, Vodaphone, the NHS, PWC. We have worked with start ups such a Qbit and Predictive Black, we have created a property management application used throughout London.",
   },
   {
     index: 4,
     icon: "fas fa-search",
     title: "Search Engine Optimiztion",
-    text: "By building your website with us the right way, all our clients already are head and shoulders above the competition. SEO is changing all the time but fortunately google keep us posted on these changes. There is no one fix solution for SEO, as your competitors evolve so should you.",
+    text: "We improve your online presence by targeting your potential customers with your specific message. We use advanced tools to compare competitors and find the best opportunities in your space, for your budget. Perhaps because of our experience as website developers we consistently outperform the competition.",
+    text2: "Our latest success story is with Mexican Mamma. an importer of Mexican food into the UK. We have more than doubled their traffic, is a matter of months. We look forward to amazing you with our results.",
+    link: "https://mexican-mama.com/",
+    linkText: "Mexican Mama"
   },
   {
     index: 5,
     icon: "fas fa-shopping-basket",
     title: "E-COMMERCE SOLUTIONS",
-    text: "We recommend customizing the Shopify Platform for most of our small clients, however can build you a complete E-Commerce solution should that be required. In addition to credit card payments we allow your customers to pay with one click, android pay and apple pay and Crypto Currency. Never has it been easier for payments to be accepted.",
+    text: "We recommend using Shopify for most of our small clients, its a fast modern  however we can build you a complete E-Commerce solution should that be required. In addition to credit card payments we allow your customers to pay with one click, Android pay and Apple pay and even crypto currency. Never has it been easier for payments to be accepted.",
   },
   {
     index: 6,

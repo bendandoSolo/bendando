@@ -190,3 +190,18 @@
     border-bottom: 5px solid rgb(123, 38, 157);
   }
 }
+
+
+.service-link{
+  font-weight: 500;
+  color: #000000 !important;
+  transition: 2.5s;
+}
+
+.service-link:hover{
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: underline;
+  /* color: #18dca8 !important; */
+  
+}

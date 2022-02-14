@@ -13,7 +13,7 @@ export default function Projects() {
         <title>Projects | BenDando</title>
         <meta
           name="title"
-          content="Bendando | Examples of our Apps and Websites"
+          content="Bendando | Projects"
         />
         <meta
           name="description"
