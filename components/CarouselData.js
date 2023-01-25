@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const CarouselData = {
   winAFlat: {
@@ -25,6 +25,20 @@ export const CarouselData = {
   tenantHub: {
     name: "Tenants Hub",
     type: "App - Website - Database",
+    cName: "carousel-item py-4 tenants-hub",
+    url: "/tenants-hub",
+    img: "images/tenant-hub/mockup.png",
+  },
+  hurnRecycling: {
+    name: "Hurn Recycling",
+    type: "Website - SEO",
+    cName: "carousel-item py-4 hurn-recycling",
+    url: "/hurn-recycling",
+    img: "images/tenant-hub/mockup.png",
+  },
+  tenantHub: {
+    name: "Mexican Mama",
+    type: "ECommerce - Website",
     cName: "carousel-item py-4 tenants-hub",
     url: "/tenants-hub",
     img: "images/tenant-hub/mockup.png",

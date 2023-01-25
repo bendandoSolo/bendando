@@ -54,14 +54,6 @@
   }
 }
 
-/* Grid */
-
-.grid {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100px;
-}
 /* Mask */
 
 .mask {
@@ -95,8 +87,8 @@
 }
 
 /* .scroll-option {
-  display: none;
-} */
+    display: none;
+  } */
 
 @media screen and (max-width: 992px) {
   .scroll-option {
@@ -191,17 +183,15 @@
   }
 }
 
-
-.service-link{
+.service-link {
   font-weight: 500;
   color: #000000 !important;
   transition: 2.5s;
 }
 
-.service-link:hover{
+.service-link:hover {
   font-weight: 700;
   font-size: 20px;
   text-decoration: underline;
   /* color: #18dca8 !important; */
-  
 }

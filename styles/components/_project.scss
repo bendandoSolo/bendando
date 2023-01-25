@@ -1,0 +1,46 @@
+.project {
+  &-grid {
+    display: grid;
+    gap: 15px;
+
+    &-item {
+      align-self: center;
+      justify-self: center;
+
+      img {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    &-grid {
+      grid-template-columns: repeat(2, 1fr);
+
+      &-item {
+        align-self: start;
+        justify-self: start;
+
+        img {
+          max-width: unset;
+        }
+
+        &:first-child {
+          img {
+            position: relative;
+            top: -100px;
+          }
+        }
+
+        &:nth-child(2) {
+          grid-row: 1/4;
+          grid-column: 2/3;
+          justify-self: end;
+        }
+      }
+    }
+  }
+}
