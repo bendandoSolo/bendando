@@ -11,18 +11,15 @@ export default function Projects() {
     <div className="project">
       <Head>
         <title>Projects | BenDando</title>
-        <meta
-          name="title"
-          content="Bendando | Projects"
-        />
+        <meta name="title" content="Bendando | Projects" />
         <meta
           name="description"
           content="We create websites and apps using the most modern technology. Ensuring our clients stand out from the crowd and connect with people in a meaningful way."
         />
-         <meta
+        <meta
           name="keywords"
           content="build, create, websites,apps, modern, technology"
-          />
+        />
       </Head>
       <Navbar bgColor="project" />
       <div style={{ paddingTop: "80px" }}>
@@ -65,6 +62,26 @@ export default function Projects() {
               type="Website &#183; Branding &#183; Media Feeds"
               img="images/screenshots/4.jpg"
               bgColor="malcolm-wall"
+              url="/malcolm-wall"
+              style={{ height: "45vh" }}
+            />
+          </div>
+          <div className="col-lg-6" data-aos="fade-up">
+            <ProjectPane
+              title="Mexican Mama"
+              type="Website &#183; Branding &#183; Media Feeds"
+              img="images/screenshots/4.jpg"
+              bgColor="mexican-mama"
+              url="/malcolm-wall"
+              style={{ height: "45vh" }}
+            />
+          </div>
+          <div className="col-lg-6" data-aos="fade-up">
+            <ProjectPane
+              title="Hurn Recycling"
+              type="Website &#183; Branding &#183; Media Feeds"
+              img="images/screenshots/4.jpg"
+              bgColor="hurn-recycling"
               url="/malcolm-wall"
               style={{ height: "45vh" }}
             />
