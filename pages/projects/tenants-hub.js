@@ -1,10 +1,10 @@
 // Components
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProjectBanner from "../components/ProjectBanner";
-import ViewSite from "../components/ViewSite";
-import Carousel from "../components/Carousel";
-import { CarouselData } from "../components/CarouselData";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import ProjectBanner from "../../components/ProjectBanner";
+import ViewSite from "../../components/ViewSite";
+import Carousel from "../../components/Carousel";
+import { CarouselData } from "../../components/CarouselData";
 
 // Next
 import Head from "next/head";
@@ -28,14 +28,14 @@ export default function tenanthub() {
   return (
     <>
       <Head>
-        <title>Tenants Hub | BenDando</title>
+        <title>Tenants Hub Property App</title>
         <meta
           name="title"
-          content="Tenants Hub | Property Management Websites and App"
+          content="Tenants Hub | Property Management Website and App"
         />
         <meta
           name="description"
-          content="A Property Management app used to connect Block and Letting Managers, Owners, Surveyors, Maintenance Personnel and Residents. It's built for your tenants to manage all their building related needs, maintenance personnel to manage their work and building managers and owners to manage all your building services."
+          content="A Property Management Website and Mobile App to automate building fault reporting used through the UK and America."
         />
          <meta
           name="keywords"

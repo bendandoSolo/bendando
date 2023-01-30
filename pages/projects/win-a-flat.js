@@ -1,10 +1,10 @@
 // Components
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProjectBanner from "../components/ProjectBanner";
-import ViewSite from "../components/ViewSite";
-import Carousel from "../components/Carousel";
-import { CarouselData } from "../components/CarouselData";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import ProjectBanner from "../../components/ProjectBanner";
+import ViewSite from "../../components/ViewSite";
+import Carousel from "../../components/Carousel";
+import { CarouselData } from "../../components/CarouselData";
 
 import Head from "next/head";
 
@@ -31,14 +31,14 @@ export default function winflat() {
   return (
     <>
       <Head>
-        <title>Win A Flat | BenDando</title>
+        <title>Win A Flat Competition Website</title>
         <meta
           name="title"
-          content="Winaflat | Win a flat with Uri Geller and Equinox Living"
+          content="Win a flat Competition Website with Uri Geller "
         />
         <meta
           name="description"
-          content="A competition website for Equinox Living promoted by Uri Geller and the national press allowing UK residents who successfully answer 3 questions to be entered into a prize draw to win a brand new flat!"
+          content="Uri Geller's competition website to win a flat, featured in the national press"
         />
         <meta
           name="keywords"

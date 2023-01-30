@@ -1,10 +1,10 @@
 // Components
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProjectBanner from "../components/ProjectBanner";
-import ViewSite from "../components/ViewSite";
-import Carousel from "../components/Carousel";
-import { CarouselData } from "../components/CarouselData";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import ProjectBanner from "../../components/ProjectBanner";
+import ViewSite from "../../components/ViewSite";
+import Carousel from "../../components/Carousel";
+import { CarouselData } from "../../components/CarouselData";
 
 // Next
 import Head from "next/head";
@@ -27,7 +27,7 @@ export default function malcolmWall() {
         />
          <meta
          name="description"
-          content="Malcolm Wall is a giant in the media industry a truly charming client and a pleasure to work with. As CEO for Virgin Media, Pinewood and involved with various Media companies around the world, he required an online resume for attracting potential partners."
+          content="Malcolm Wall Media Website, designed by Pretty Clever Studios, build by Bendando."
           />
         <meta
            name="keywords"

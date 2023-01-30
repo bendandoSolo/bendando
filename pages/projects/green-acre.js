@@ -1,10 +1,10 @@
 // Components
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProjectBanner from "../components/ProjectBanner";
-import ViewSite from "../components/ViewSite";
-import Carousel from "../components/Carousel";
-import { CarouselData } from "../components/CarouselData";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import ProjectBanner from "../../components/ProjectBanner";
+import ViewSite from "../../components/ViewSite";
+import Carousel from "../../components/Carousel";
+import { CarouselData } from "../../components/CarouselData";
 
 // Next
 import Head from "next/head";
@@ -28,7 +28,7 @@ export default function greenAcre() {
         />
          <meta
          name="description"
-          content="Greenacre Capital Ltd is a private investment company working across three divisions: property, independent living and clean energy."
+          content="Greenacre Capital Ltd private investment company working, Website, Designed from Scratch."
           />
         <meta
          name="keywords"

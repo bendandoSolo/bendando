@@ -33,7 +33,7 @@ export default function Projects() {
               type="App &#183; Website &#183; Database"
               img="images/screenshots/2.jpg"
               bgColor="tenants-hub"
-              url="/tenants-hub"
+              url="/projects/tenants-hub"
               style={{ height: "45vh" }}
             />
           </div>
@@ -43,7 +43,7 @@ export default function Projects() {
               type="Website &#183; Database &#183; Payments"
               img="images/screenshots/1.jpg"
               bgColor="winaflat"
-              url="/win-a-flat"
+              url="/projects/win-a-flat"
               style={{ height: "45vh" }}
             />
           </div>
@@ -55,7 +55,7 @@ export default function Projects() {
               type="Website &#183; Branding"
               img="images/screenshots/3.jpg"
               bgColor="green-acre"
-              url="/green-acre"
+              url="/projects/green-acre"
               style={{ height: "45vh" }}
             />
           </div>
@@ -65,7 +65,7 @@ export default function Projects() {
               type="Website &#183; Branding &#183; Media Feeds"
               img="images/screenshots/4.jpg"
               bgColor="malcolm-wall"
-              url="/malcolm-wall"
+              url="/projects/malcolm-wall"
               style={{ height: "45vh" }}
             />
           </div>

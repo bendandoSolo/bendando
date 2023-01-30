@@ -96,11 +96,11 @@ export default function Connect() {
         />
         <meta
           name="description"
-          content="We love talking about websites, Apps and other digital solutions, we do it all day. Get in touch to see what we can do for you."
+          content="Get in touch by phone email or our contact form to discuss your next digital project"
         />
          <meta
           name="keywords"
-          content="contact, websites, apps,digital, solutions, email, phone"
+          content="contact, websites, apps, digital marketing, solutions, email, phone"
           />
       </Head>
       <Navbar bgColor="connect" />

@@ -25,22 +25,25 @@ export default function Footer() {
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
+              <li>
+                <Link href="/privacy-policy">Privacy Policy</Link>
+              </li>
             </ul>
           </div>
           <div className="col-md-3">
             <h5>Projects</h5>
             <ul>
               <li>
-                <Link href="/">Tenants Hub</Link>
+                <Link href="/projects/tenants-hub">Tenants Hub</Link>
               </li>
               <li>
-                <Link href="/projects">Win A Flat</Link>
+                <Link href="/projects/win-a-flat">Win A Flat</Link>
               </li>
               <li>
-                <Link href="/services">Malcolm Wall</Link>
+                <Link href="/projects/malcolm-wall">Malcolm Wall</Link>
               </li>
               <li>
-                <Link href="/contact">Green Acre</Link>
+                <Link href="/projects/green-acre">Green Acre</Link>
               </li>
             </ul>
           </div>

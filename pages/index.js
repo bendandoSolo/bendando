@@ -316,7 +316,7 @@ const Home = () => {
         <title>Home | BenDando</title>
         <meta
           name="title"
-          content="Bendando | Websites , Apps and Digital Products, London"
+          content="Bendando | Websites & Apps | London"
         />
         <meta
           name="description"
@@ -364,7 +364,7 @@ const Home = () => {
             position={panel1Pos}
             imageURL="images/screenshots/4.jpg"
             backgroundImage={"url('images/screenshots/4.jpg')"}
-            link="/malcolm-wall"
+            link="/projects/malcolm-wall"
           >
             {/* <img src="images/screenshots/1.jpg" /> */}
           </HomeProjectPane>
@@ -375,7 +375,7 @@ const Home = () => {
             position={panel2Pos}
             imageURL="images/screenshots/2.jpg"
             backgroundImage={"url('images/screenshots/2.jpg')"}
-            link="/tenants-hub"
+            link="/projects/tenants-hub"
           />
           <HomeProjectPane
             projectName="Win A Flat"
@@ -383,7 +383,7 @@ const Home = () => {
             position={panel3Pos}
             imageURL="images/screenshots/1.jpg"
             backgroundImage={"url('images/screenshots/1.jpg')"}
-            link="/win-a-flat"
+            link="/projects/win-a-flat"
           />
           <HomeProjectPane
             projectName="Green Acre"
@@ -391,7 +391,7 @@ const Home = () => {
             position={panel4Pos}
             imageURL="images/screenshots/3.jpg"
             backgroundImage={"url('images/screenshots/3.jpg')"}
-            link="/green-acre"
+            link="/projects/green-acre"
           />
           {/* <div className="box" id="img-1" style={{backgroundColor: '#ff00ff'}}>
             <img src="images/screenshots/1.jpg" />
