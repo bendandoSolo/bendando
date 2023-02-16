@@ -72,7 +72,7 @@ export default function Projects() {
               type="Website &#183; Branding &#183; Media Feeds"
               img="images/screenshots/4.jpg"
               bgColor="mexican-mama"
-              url="/malcolm-wall"
+              url="/mexican-mama"
               style={{ height: "45vh" }}
             />
           </div>
@@ -82,7 +82,7 @@ export default function Projects() {
               type="Website &#183; Branding &#183; Media Feeds"
               img="images/screenshots/4.jpg"
               bgColor="hurn-recycling"
-              url="/malcolm-wall"
+              url="/hurn-recycling"
               style={{ height: "45vh" }}
             />
           </div>
