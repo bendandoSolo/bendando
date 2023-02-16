@@ -1,0 +1,33 @@
+.img {
+  &-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+    img {
+      transition: 0.25s;
+      opacity: 0;
+
+      &.loaded {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-loader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.25s;
+
+    &.loading {
+      opacity: 1;
+    }
+  }
+}

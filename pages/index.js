@@ -6,6 +6,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import ProjectPane from "../components/ProjectPane";
 import HomeProjectPane from "../components/HomeProjectPane";
+import Img from "../components/Img";
 
 // react
 import { useState, useEffect, useCallback } from "react";
@@ -322,10 +323,10 @@ const Home = () => {
           name="description"
           content="We create websites and apps using the most modern technology. Ensuring our clients stand out from the crowd and connect with people in a meaningful way."
         />
-         <meta
+        <meta
           name="keywords"
           content="create, websites, apps ,modern, technology,clients"
-          />
+        />
       </Head>
       <Navbar bgColor="index" />
       <div className="landing">
@@ -362,7 +363,7 @@ const Home = () => {
             projectName="Malcolm Wall"
             projectType="Website - Branding - Media Feeds"
             position={panel1Pos}
-            imageURL="images/screenshots/4.jpg"
+            imageURL="/images/screenshots/4.jpg"
             backgroundImage={"url('images/screenshots/4.jpg')"}
             link="/malcolm-wall"
           >
@@ -373,7 +374,7 @@ const Home = () => {
             projectName="Tenants Hub"
             projectType="App - Website - Database"
             position={panel2Pos}
-            imageURL="images/screenshots/2.jpg"
+            imageURL="/images/screenshots/2.jpg"
             backgroundImage={"url('images/screenshots/2.jpg')"}
             link="/tenants-hub"
           />
@@ -381,7 +382,7 @@ const Home = () => {
             projectName="Win A Flat"
             projectType="Website - Database - Payments"
             position={panel3Pos}
-            imageURL="images/screenshots/1.jpg"
+            imageURL="/images/screenshots/1.jpg"
             backgroundImage={"url('images/screenshots/1.jpg')"}
             link="/win-a-flat"
           />
@@ -389,22 +390,10 @@ const Home = () => {
             projectName="Green Acre"
             projectType="Website - Branding"
             position={panel4Pos}
-            imageURL="images/screenshots/3.jpg"
+            imageURL="/images/screenshots/3.jpg"
             backgroundImage={"url('images/screenshots/3.jpg')"}
             link="/green-acre"
           />
-          {/* <div className="box" id="img-1" style={{backgroundColor: '#ff00ff'}}>
-            <img src="images/screenshots/1.jpg" />
-          </div>
-          <div className="box"  style={{backgroundColor: '#ff0000'}}>
-            <img src="images/screenshots/2.jpg" />
-          </div>
-          <div className="box" id="img-3" style={{backgroundColor: '#ff00ff'}}>
-            <img src="images/screenshots/3.jpg" />
-          </div>
-          <div className="box" id="img-4" style={{backgroundColor: '#ffff00'}}>
-            <img src="images/screenshots/4.jpg" /> 
-          </div> */}
         </div>
         <div className="mobile-display">
           <ProjectPane

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
+import Img from "./Img";
 
 const HomeProjectPane = ({
   projectName,
@@ -21,16 +22,19 @@ const HomeProjectPane = ({
           top: position.top,
           bottom: position.bottom,
           position: "absolute",
-          //   backgroundImage: backgroundImage,
           zIndex: 1000000,
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
       >
         <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
-          <img
+          <Img
             src={imageURL}
-            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            alt="This is a description of the following image"
+            lazy
+            className={""}
+            fill
+            hgt="50vh"
           />
           <div className="panel-overlay">
             <h2>{projectName}</h2>

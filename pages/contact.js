@@ -1,10 +1,10 @@
 // Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Img from "../components/Img";
 
 // Next
 import Head from "next/head";
-import Link from "next/link";
 
 // Imports
 import { Formik, Form, Field } from "formik";
@@ -86,22 +86,20 @@ export default function Connect() {
       contactFormBtn.classList.remove("disable-click");
     }, 2500);
   }
+
   return (
     <div className="connect">
       <Head>
         <title>Contact | BenDando</title>
-        <meta
-          name="title"
-          content="Bendando | Contact us"
-        />
+        <meta name="title" content="Bendando | Contact us" />
         <meta
           name="description"
           content="We love talking about websites, Apps and other digital solutions, we do it all day. Get in touch to see what we can do for you."
         />
-         <meta
+        <meta
           name="keywords"
           content="contact, websites, apps,digital, solutions, email, phone"
-          />
+        />
       </Head>
       <Navbar bgColor="connect" />
       <div className="landing">
@@ -112,8 +110,8 @@ export default function Connect() {
                 Contact
               </h1>
               <h5 className="mb-2">
-                We love talking about websites, apps and other digital solutions, we do it all
-                day!
+                We love talking about websites, apps and other digital
+                solutions, we do it all day!
               </h5>
               <h5 className="mb-4">
                 Give us a call or drop us an email we will get right back to
@@ -240,6 +238,13 @@ export default function Connect() {
           </div>
         </div>
       </div>
+      <Img
+        src="/images/screenshots/4.jpg"
+        alt="test"
+        lazy
+        className={""}
+        fill
+      />
       <Footer />
     </div>
   );

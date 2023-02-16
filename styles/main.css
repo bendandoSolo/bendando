@@ -67,20 +67,7 @@
   align-items: center;
   pointer-events: none;
   margin-left: 2rem;
-  -webkit-animation: bounce 1.5s infinite;
-          animation: bounce 1.5s infinite;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    transform: translateY(5px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(5px);
-  }
+  animation: bounce 1.5s infinite;
 }
 
 @keyframes bounce {
@@ -496,14 +483,6 @@ ul {
 }
 
 /* COMPONENTS */
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes appear {
   0% {
     opacity: 0;
@@ -614,15 +593,6 @@ footer a:hover {
   font-weight: 500;
 }
 
-@-webkit-keyframes pop-down {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 50px;
-  }
-}
-
 @keyframes pop-down {
   0% {
     height: 0;
@@ -632,17 +602,7 @@ footer a:hover {
   }
 }
 .pop-down {
-  -webkit-animation: 0.8s pop-down both;
-          animation: 0.8s pop-down both;
-}
-
-@-webkit-keyframes pop-up {
-  0% {
-    height: 50px;
-  }
-  100% {
-    height: 0;
-  }
+  animation: 0.8s pop-down both;
 }
 
 @keyframes pop-up {
@@ -654,19 +614,7 @@ footer a:hover {
   }
 }
 .pop-up {
-  -webkit-animation: 0.8s pop-up both;
-          animation: 0.8s pop-up both;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
+  animation: 0.8s pop-up both;
 }
 
 @keyframes fade-in {
@@ -680,19 +628,7 @@ footer a:hover {
   }
 }
 .fade-in {
-  -webkit-animation: 1s fade-in both;
-          animation: 1s fade-in both;
-}
-
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+  animation: 1s fade-in both;
 }
 
 @keyframes fade-out {
@@ -706,8 +642,7 @@ footer a:hover {
   }
 }
 .fade-out {
-  -webkit-animation: 1s fade-out both;
-          animation: 1s fade-out both;
+  animation: 1s fade-out both;
 }
 
 .message-sent {
@@ -1023,7 +958,7 @@ footer a:hover {
 
 @media screen and (min-width: 991px) {
   .services .landing,
-.connect .landing {
+  .connect .landing {
     padding-top: 12rem;
   }
 }
@@ -1037,8 +972,7 @@ footer a:hover {
   color: #007ca1;
   width: 90%;
   height: 90%;
-  -webkit-animation: 1.5s infinite scaleUp linear;
-          animation: 1.5s infinite scaleUp linear;
+  animation: 1.5s infinite scaleUp linear;
   transition: 0.2s;
 }
 
@@ -1049,22 +983,9 @@ footer a:hover {
 }
 
 #spin-logo {
-  -webkit-animation: 2s infinite spinning linear;
-          animation: 2s infinite spinning linear;
+  animation: 2s infinite spinning linear;
   margin-bottom: 8px;
   transition: 0.2s;
-}
-
-@-webkit-keyframes spinning {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes spinning {
@@ -1076,17 +997,6 @@ footer a:hover {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 @keyframes scaleUp {
@@ -1183,4 +1093,31 @@ footer a:hover {
   .section {
     padding: 80px 0;
   }
+}
+.img-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+.img-container img {
+  transition: 0.25s;
+  opacity: 0;
+}
+.img-container img.loaded {
+  opacity: 1;
+}
+.img-loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.25s;
+}
+.img-loader.loading {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
