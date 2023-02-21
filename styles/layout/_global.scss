@@ -378,6 +378,13 @@ nav a {
   box-shadow: none;
   position: fixed;
   z-index: 10000;
+
+  &-brand {
+    img {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -681,7 +688,7 @@ footer a:hover {
 }
 
 .navbar-brand {
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 
 @media screen and (max-width: 991px) {

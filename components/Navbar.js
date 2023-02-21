@@ -18,7 +18,7 @@ export default function Navbar({ bgColor }) {
         <Link href="/">
           <a className="navbar-brand ms-2" aria-label="Homepage Logo Link">
             <img
-              src="/images/logo.png"
+              src="/images/bendando-logo.svg"
               alt="Bendando brand logo"
               width="48px"
               height="48px"
