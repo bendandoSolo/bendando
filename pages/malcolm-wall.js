@@ -25,12 +25,12 @@ export default function malcolmWall() {
           name="title"
           content="Malcolm Wall | Malcolm Wall Media Website"
         />
-         <meta
-         name="description"
-          content="Malcolm Wall is a giant in the media industry a truly charming client and a pleasure to work with. As CEO for Virgin Media, Pinewood and involved with various Media companies around the world, he required an online resume for attracting potential partners."
-          />
         <meta
-           name="keywords"
+          name="description"
+          content="Malcolm Wall is a giant in the media industry a truly charming client and a pleasure to work with. As CEO for Virgin Media, Pinewood and involved with various Media companies around the world, he required an online resume for attracting potential partners."
+        />
+        <meta
+          name="keywords"
           content="Malcolm, Wall,media, industry, CEO, Virgin Media, Pinewood, companiesworld"
         />
       </Head>
@@ -54,6 +54,7 @@ export default function malcolmWall() {
                   data-aos="fade-up"
                   className="project-desktop mb-5"
                   src="/images/malcolm-wall/desktop-screenshot.png"
+                  alt="Malcolm Wall desktop protoype"
                 />
               </div>
               <div className="col-md-6 text-center">
@@ -62,6 +63,7 @@ export default function malcolmWall() {
                   data-aos-duration="500"
                   className="project-mobile"
                   src="/images/malcolm-wall/mobile-screenshot.png"
+                  alt="Malcolm Wall mobile protoype"
                 />
               </div>
             </div>

@@ -17,7 +17,12 @@ export default function Navbar({ bgColor }) {
       <div className={`container-fluid ${bgColor}`}>
         <Link href="/">
           <a className="navbar-brand ms-2">
-            <img style={{ width: "100%" }} src="/images/logo.png" />
+            <img
+              src="/images/logo.png"
+              alt="Bendando brand logo"
+              width="48px"
+              height="48px"
+            />
           </a>
         </Link>
 

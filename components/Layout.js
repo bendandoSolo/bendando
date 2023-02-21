@@ -24,7 +24,11 @@ export default function Home() {
             </div>
           </div>
           <div className="col-md-6 my-5">
-            <img className="landing-img" src="/images/macbook.png" />
+            <img
+              className="landing-img"
+              src="/images/macbook.png"
+              alt="Test layout component image"
+            />
           </div>
         </div>
       </div>

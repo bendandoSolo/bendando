@@ -45,6 +45,7 @@ const hurnRecycling = () => {
                   data-aos="fade-up"
                   className=""
                   src="/images/malcolm-wall/desktop-screenshot.png"
+                  alt="Hurn Recycling desktop protoype"
                 />
               </div>
               <div className="project-grid-item">
@@ -53,6 +54,7 @@ const hurnRecycling = () => {
                   data-aos-duration="500"
                   className=""
                   src="/images/malcolm-wall/mobile-screenshot.png"
+                  alt="Hurn Recycling mobile protoype"
                 />
               </div>
               <div className="project-grid-item">

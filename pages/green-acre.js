@@ -26,12 +26,12 @@ export default function greenAcre() {
           name="title"
           content="Greenacre Capital | Private Investment Company"
         />
-         <meta
-         name="description"
-          content="Greenacre Capital Ltd is a private investment company working across three divisions: property, independent living and clean energy."
-          />
         <meta
-         name="keywords"
+          name="description"
+          content="Greenacre Capital Ltd is a private investment company working across three divisions: property, independent living and clean energy."
+        />
+        <meta
+          name="keywords"
           content="Greenacre, Capital, private, investment, company,property, independent, living ,clean, energy."
         />
       </Head>
@@ -55,6 +55,7 @@ export default function greenAcre() {
                   data-aos="fade-up"
                   className="project-desktop"
                   src="/images/green-acre/desktop-screenshot.png"
+                  alt="Green Acre desktop protoype"
                 />
               </div>
               <div className="col-md-6 text-center mb-5">
@@ -63,6 +64,7 @@ export default function greenAcre() {
                   data-aos-duration="500"
                   className="project-mobile"
                   src="/images/green-acre/mobile-screenshot.png"
+                  alt="Green Acre mobile protoype"
                   style={{ width: "60%" }}
                 />
               </div>

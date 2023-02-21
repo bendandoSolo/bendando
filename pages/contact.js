@@ -238,13 +238,6 @@ export default function Connect() {
           </div>
         </div>
       </div>
-      <Img
-        src="/images/screenshots/4.jpg"
-        alt="test"
-        lazy
-        className={""}
-        fill
-      />
       <Footer />
     </div>
   );

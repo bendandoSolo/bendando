@@ -28,13 +28,10 @@ const HomeProjectPane = ({
         }}
       >
         <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
-          <Img
+          <img
             src={imageURL}
-            alt="This is a description of the following image"
-            lazy
-            className={""}
-            fill
-            hgt="50vh"
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            alt={`${projectName} prototype background`}
           />
           <div className="panel-overlay">
             <h2>{projectName}</h2>

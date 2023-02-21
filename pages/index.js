@@ -366,9 +366,7 @@ const Home = () => {
             imageURL="/images/screenshots/4.jpg"
             backgroundImage={"url('images/screenshots/4.jpg')"}
             link="/malcolm-wall"
-          >
-            {/* <img src="images/screenshots/1.jpg" /> */}
-          </HomeProjectPane>
+          />
 
           <HomeProjectPane
             projectName="Tenants Hub"

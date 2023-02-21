@@ -64,6 +64,7 @@ export default function winflat() {
                   data-aos="fade-up"
                   className="project-desktop mb-5"
                   src="/images/winaflat/desktop-screenshot.png"
+                  alt="Win A Flat desktop protoype"
                 />
               </div>
               <div className="col-md-6 text-center">
@@ -72,6 +73,7 @@ export default function winflat() {
                   data-aos-duration="500"
                   className="project-mobile"
                   src="/images/winaflat/mobile-screenshot.png"
+                  alt="Win A Flat mobile protoype"
                 />
               </div>
             </div>
@@ -164,7 +166,11 @@ export default function winflat() {
                 {loading ? (
                   <>
                     <div className="spinner">
-                      <img id="spin-logo" src="images/logo.png" />
+                      <img
+                        id="spin-logo"
+                        src="images/logo.png"
+                        alt="loading spinner"
+                      />
                       <h3>Loading...</h3>
                     </div>
                   </>

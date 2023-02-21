@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ProjectBanner = ({ title, type, text, img }) => {
   return (
@@ -16,6 +16,7 @@ const ProjectBanner = ({ title, type, text, img }) => {
               data-aos-duration="500"
               className="landing-img mb-5"
               src={img}
+              alt={`${title} banner prototype`}
             />
           </div>
         </div>

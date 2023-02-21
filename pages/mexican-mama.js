@@ -47,6 +47,7 @@ const mexicanMama = () => {
                   data-aos="fade-up"
                   className=""
                   src="/images/malcolm-wall/desktop-screenshot.png"
+                  alt="Mexican Mama desktop protoype"
                 />
               </div>
               <div className="project-grid-item">
@@ -55,6 +56,7 @@ const mexicanMama = () => {
                   data-aos-duration="500"
                   className=""
                   src="/images/malcolm-wall/mobile-screenshot.png"
+                  alt="Mexican Mama mobile protoype"
                 />
               </div>
               <div className="project-grid-item">

@@ -10,7 +10,7 @@ const Img = ({ src, alt, lazy, className, fill, hgt }) => {
 
   return (
     <div className="img-container" style={{ height: hgt }}>
-      <div className={loaded ? `img-loader loading` : `img-loader`}>
+      <div className={loaded ? `img-loader` : `img-loader loading`}>
         <span className="img-loader-circle"></span>
         <span className="img-loader-circle"></span>
         <span className="img-loader-circle"></span>
