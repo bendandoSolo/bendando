@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
-import Img from "./Img";
 
 const HomeProjectPane = ({
   projectName,
@@ -35,7 +34,7 @@ const HomeProjectPane = ({
           />
           <div className="panel-overlay">
             <h2>{projectName}</h2>
-            <h5 style={{ color: "#00E7B6" }}>{projectType}</h5>
+            <h3 style={{ color: "#00E7B6" }}>{projectType}</h3>
           </div>
         </div>
       </div>

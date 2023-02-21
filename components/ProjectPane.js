@@ -12,7 +12,7 @@ const ProjectPane = ({ title, type, img, bgColor, url }) => {
         />
         <div className="panel-overlay" style={{ zIndex: 0 }}>
           <h2>{title}</h2>
-          <h5 style={{ color: "#00E7B6" }}>{type}</h5>
+          <h3 style={{ color: "#00E7B6", fontSize: "16px" }}>{type}</h3>
         </div>
       </div>
     </Link>

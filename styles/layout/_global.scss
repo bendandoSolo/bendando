@@ -190,21 +190,13 @@ ul {
   border-radius: 0px;
 }
 
-.service-card h5 {
+.service-card h3 {
+  font-size: 1.25rem;
   text-transform: uppercase;
 }
 
 .service-card i {
   color: #18dca8;
-}
-
-.service-card p {
-  color: gray;
-}
-
-@media screen and (max-width: 992px) {
-  .services .card {
-  }
 }
 
 .services .card i {
@@ -649,6 +641,7 @@ footer a:hover {
   flex-direction: column;
   transition: 0.5s;
   list-style: none;
+  margin-bottom: 0;
 }
 
 .test-nav-items a {

@@ -63,7 +63,7 @@ export default function tenanthub() {
                   data-aos="fade-up"
                   className="project-desktop"
                   src="/images/tenant-hub/desktop-screenshot.png"
-                  alt="Green Acre desktop protoype"
+                  alt="Tenants Hub desktop protoype"
                 />
               </div>
               <div className="col-md-6 text-center">
@@ -72,7 +72,7 @@ export default function tenanthub() {
                   data-aos-duration="500"
                   className="project-mobile"
                   src="/images/tenant-hub/mobile-screenshot.png"
-                  alt="Green Acre desktop protoype"
+                  alt="Tenants Hub mobile protoype"
                 />
               </div>
             </div>

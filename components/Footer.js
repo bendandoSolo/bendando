@@ -47,21 +47,21 @@ export default function Footer() {
           <div className="col-md-3 footer-links">
             <h5>Connect</h5>
             <ul>
-              <Link href="mailto:enquiries@bendando.com">
-                <a>
-                  <li>
+              <li>
+                <Link href="mailto:enquiries@bendando.com">
+                  <a>
                     <i className="far fa-envelope me-3"></i>
                     enquiries@bendando.com
-                  </li>
-                </a>
-              </Link>
-              <Link href="tel:+4402089468865">
-                <a>
-                  <li>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="tel:+4402089468865">
+                  <a>
                     <i className="fas fa-phone me-3"></i>020 8543 8117
-                  </li>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="col-md-3">

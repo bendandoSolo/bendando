@@ -16,7 +16,7 @@ export default function Navbar({ bgColor }) {
     >
       <div className={`container-fluid ${bgColor}`}>
         <Link href="/">
-          <a className="navbar-brand ms-2">
+          <a className="navbar-brand ms-2" aria-label="Homepage Logo Link">
             <img
               src="/images/logo.png"
               alt="Bendando brand logo"
@@ -26,11 +26,15 @@ export default function Navbar({ bgColor }) {
           </a>
         </Link>
 
-        <button id="nav-btn-toggle" onClick={toggle}>
+        <button
+          id="nav-btn-toggle"
+          onClick={toggle}
+          aria-label="Nav Toggle Button"
+        >
           <i className={navToggle ? "fas fa-times" : "fas fa-bars"}></i>
         </button>
 
-        <div className={navToggle ? "test-nav-items active" : "test-nav-items"}>
+        <ul className={navToggle ? "test-nav-items active" : "test-nav-items"}>
           <li>
             <Link href="/projects">Projects</Link>
           </li>
@@ -40,7 +44,7 @@ export default function Navbar({ bgColor }) {
           <li>
             <Link href="/contact">Contact</Link>
           </li>
-        </div>
+        </ul>
       </div>
     </nav>
   );

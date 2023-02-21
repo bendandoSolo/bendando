@@ -338,14 +338,14 @@ const Home = () => {
                 <Link href="/services">
                   <a>
                     <button type="button" className="global-btn btn">
-                      <b>View Our Services</b>
+                      View Our Services
                     </button>
                   </a>
                 </Link>
               </div>
               <div className="d-flex scroll-option" id="ourprojects">
-                <h5 className="my-4">Scroll to view our projects</h5>
-                <a href="#ourprojects">
+                <p className="mt-4">Scroll to view our projects</p>
+                <a href="#ourprojects" aria-label="Link to our projects">
                   <i
                     className="fas fa-mouse scroll-point"
                     style={{ color: "#00E7B6", fontSize: "2rem" }}

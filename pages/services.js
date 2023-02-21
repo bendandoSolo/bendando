@@ -39,13 +39,13 @@ export default function Services() {
           content="Bendando | Services, Digital Design, Websites and Apps"
         />
         <meta
-         name="keywords"
+          name="keywords"
           content="We offer Digital Design Services, Website Development, App Development, SEO, Ecommerce, Digital Marketing, CRM and Customer Data Collection"
         />
         <meta
           name="description"
           content="digital, design, services, website, development, app, SEO, scommerce, marketing, CRM, customer, data, collection"
-          />
+        />
       </Head>
       <Navbar bgColor="services" />
       <div className="landing">
@@ -56,16 +56,20 @@ export default function Services() {
           >
             <div className="text-center" style={{ maxWidth: "800px" }}>
               <h1 className="mb-4">Our Services</h1>
-              <h5
+              <h2
                 className="mb-2"
-                style={{ lineHeight: "1.6em", paddingBottom: "24px" }}
+                style={{
+                  lineHeight: "1.6em",
+                  paddingBottom: "24px",
+                  fontSize: "1.25rem",
+                }}
               >
                 We understand all projects are different, and technology is
                 changing all the time. We pride ourselves on being ahead of the
                 game and keeping up to date with the latest software trends.
                 Whatever your requirements and budget we can offer you a
                 solution that will suit your needs.
-              </h5>
+              </h2>
               <Link href="/connect">
                 <a className="mb-5">
                   <button type="button" className="btn mb-5 global-btn">
