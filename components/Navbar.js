@@ -17,12 +17,12 @@ export default function Navbar({ bgColor }) {
       <div className={`container-fluid ${bgColor}`}>
         <Link href="/">
           <a className="navbar-brand ms-2">
-            <img style={{ width: "100%" }} src="/images/logo.png" />
+            <img style={{ width: "100%" }} src="/images/logo.png" alt="bendando logo" />
           </a>
         </Link>
 
         <button id="nav-btn-toggle" onClick={toggle}>
-          <i className={navToggle ? "fas fa-times" : "fas fa-bars"}></i>
+          <i aria-label="Menu" className={navToggle ? "fas fa-times" : "fas fa-bars"}></i>
         </button>
 
         <div className={navToggle ? "test-nav-items active" : "test-nav-items"}>

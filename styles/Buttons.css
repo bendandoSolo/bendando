@@ -1,10 +1,10 @@
 .global-btn {
   background-color: white;
   position: relative;
-  color: gray;
+  color: #15313d;
   border: 2px solid white;
   padding: 12px 20px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 0;
   font-weight: bold;
   mix-blend-mode: screen;

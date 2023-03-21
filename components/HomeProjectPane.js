@@ -30,6 +30,7 @@ const HomeProjectPane = ({
         <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
           <img
             src={imageURL}
+            alt={projectName}
             style={{ objectFit: "cover", width: "100%", height: "100%" }}
           />
           <div className="panel-overlay">

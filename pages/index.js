@@ -320,7 +320,7 @@ const Home = () => {
         />
         <meta
           name="description"
-          content="We create websites and apps using the most modern technology. Ensuring our clients stand out from the crowd and connect with people in a meaningful way."
+          content="We create beautiful websites and apps using the most modern technology."
         />
          <meta
           name="keywords"
@@ -344,7 +344,7 @@ const Home = () => {
               </div>
               <div className="d-flex scroll-option" id="ourprojects">
                 <h5 className="my-4">Scroll to view our projects</h5>
-                <a href="#ourprojects">
+                <a href="/projects" alt="projects">
                   <i
                     className="fas fa-mouse scroll-point"
                     style={{ color: "#00E7B6", fontSize: "2rem" }}
