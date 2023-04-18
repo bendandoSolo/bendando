@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 // Next
 import Head from "next/head";
-import Link from "next/link";
+//import Link from "next/link";
 
 // Imports
 import { Formik, Form, Field } from "formik";
@@ -17,37 +17,31 @@ export default function Connect() {
     message: Yup.string().required("Message is required"),
   });
 
-  const sendEmail = async (props) => {
+  const sendEmail = async (emailData) => {
     const contactFormBtn = document.getElementById("contact-form-btn");
     contactFormBtn.classList.add("disable-click");
-    sending();
-    props["to"] = "enquiries@bendando.com";
-    props["website"] = "bendando.com";
-    const response = await fetch(
-      "https://sendgridcsharp.azurewebsites.net/api/sendemail",
-      {
-        method: "POST",
-        contentType: "application/json",
-        body: JSON.stringify(props),
-      }
-    );
-    try {
-      let bodyresponse = await response.json();
-      if (
-        response.status === 200 &&
-        bodyresponse.message != null &&
-        bodyresponse.message == "Email Sent"
-      ) {
-        responseSuccess();
-      } else {
-        responseError();
-      }
-    } catch (err) {
-      responseError();
+    sendingAnimation();
+
+    const response = await fetch('/api/sendMail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(emailData),
+    });
+
+    if (response.ok) {
+      console.log('Email sent successfully');
+      console.log(await response.json());
+      responseSuccessAnimation();
+    } else {
+      console.error('Failed to send email:', await response.json());
+      responseErrorAnimation();
     }
+
   };
 
-  function sending() {
+  function sendingAnimation() {
     const feedback = document.getElementById("feedback");
     let feedbackText = document.getElementById("feedback-text");
     feedback.classList.add("pop-down");
@@ -63,7 +57,7 @@ export default function Connect() {
     }, 2500);
   }
 
-  function responseSuccess() {
+  function responseSuccessAnimation() {
     setTimeout(function () {
       const contactFormBtn = document.getElementById("contact-form-btn");
       const response = document.getElementById("response");
@@ -75,7 +69,7 @@ export default function Connect() {
     }, 2500);
   }
 
-  function responseError() {
+  function responseErrorAnimation() {
     setTimeout(function () {
       const contactFormBtn = document.getElementById("contact-form-btn");
       const response = document.getElementById("response");
@@ -200,7 +194,6 @@ export default function Connect() {
                           type="textarea"
                           as="textarea"
                           name="message"
-                          type="message"
                           id="message"
                           placeholder="Your Message"
                           cols="30"
