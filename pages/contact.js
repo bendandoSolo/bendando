@@ -1,4 +1,3 @@
-// Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -6,7 +5,6 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 //import Link from "next/link";
 
-// Imports
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
@@ -22,23 +20,30 @@ export default function Connect() {
     contactFormBtn.classList.add("disable-click");
     sendingAnimation();
 
-    const response = await fetch('/api/sendMail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(emailData),
-    });
-
-    if (response.ok) {
-      console.log('Email sent successfully');
-      console.log(await response.json());
-      responseSuccessAnimation();
-    } else {
-      console.error('Failed to send email:', await response.json());
-      responseErrorAnimation();
-    }
-
+    emailData["to"] = "enquiries@bendando.com";
+    emailData["website"] = "bendando.com";
+    const response = await fetch(
+          "https://sendgridcsharp.azurewebsites.net/api/sendemail",
+            {
+              method: "POST",
+              contentType: "application/json",
+              body: JSON.stringify(emailData),
+            }
+          );
+          try {
+                  let bodyresponse = await response.json();
+                  if (
+                    response.status === 200 &&
+                    bodyresponse.message != null &&
+                    bodyresponse.message == "Email Sent"
+                  ) {
+                    responseSuccessAnimation();
+                  } else {
+                    responseErrorAnimation();
+                  }
+                } catch (err) {
+                  responseErrorAnimation();
+            }
   };
 
   function sendingAnimation() {
