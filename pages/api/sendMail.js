@@ -9,15 +9,15 @@ const isSameOrigin = (req) => {
 
 const handler = async (req, res) => {
 
-  if (req.method !== 'POST') {    
-    res.status(405).json({ message: 'Method not allowed' });
-    return;
-  }
+  // if (req.method !== 'POST') {    
+  //   res.status(405).json({ message: 'Method not allowed' });
+  //   return;
+  // }
 
-   if (!isSameOrigin(req)) {
-    res.status(403).json({ message: 'Forbidden' });
-    return;
-  }
+  //  if (!isSameOrigin(req)) {
+  //   res.status(403).json({ message: 'Forbidden' });
+  //   return;
+  // }
   
   const azureFunctionUrl = 'https://sendgridcsharp.azurewebsites.net/api/sendemail'; // replace with your Azure Function URL
   
