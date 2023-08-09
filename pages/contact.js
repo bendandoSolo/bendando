@@ -85,6 +85,7 @@ export default function Connect() {
       contactFormBtn.classList.remove("disable-click");
     }, 2500);
   }
+  
   return (
     <div className="connect">
       <Head>
