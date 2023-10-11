@@ -48,7 +48,7 @@ const Carousel = ({ p1, p2, p3 }) => {
               </div>
               <div className="col-md-4 text-center">
                 <img
-                  src={p1.img}
+                   src={`/${p1.img}`}
                   style={{ height: "40vh", marginTop: "20px" }}
                 />
               </div>
@@ -71,7 +71,7 @@ const Carousel = ({ p1, p2, p3 }) => {
               </div>
               <div className="col-md-4">
                 <img
-                  src={p2.img}
+                   src={`/${p2.img}`}
                   style={{ height: "40vh", marginTop: "20px" }}
                 />
               </div>
@@ -94,7 +94,7 @@ const Carousel = ({ p1, p2, p3 }) => {
               </div>
               <div className="col-md-4">
                 <img
-                  src={p3.img}
+                  src={`/${p3.img}`}
                   style={{ height: "40vh", marginTop: "20px" }}
                 />
               </div>
