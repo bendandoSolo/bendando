@@ -136,7 +136,7 @@ export default function Connect() {
                       className="fas fa-phone me-3"
                       style={{ paddingTop: "10px" }}
                     ></i>
-                    +44 (0)121 751 0180
+                    0121 751 0180
                   </a>
                 </li>
                 <li className="mt-4">
