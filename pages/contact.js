@@ -130,12 +130,13 @@ export default function Connect() {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+4402085438117" className="link">
+                
+                  <a href="tel:+441217510180" className="link">
                     <i
                       className="fas fa-phone me-3"
                       style={{ paddingTop: "10px" }}
                     ></i>
-                    020 8543 8117
+                    +44 (0)121 751 0180
                   </a>
                 </li>
                 <li className="mt-4">
