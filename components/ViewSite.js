@@ -5,10 +5,8 @@ const ViewSite = ({ url, cName }) => {
   return (
     <div className={cName}>
       <div className="row text-center py-4 project-link">
-        <Link href={url}>
-          <a target="_blank">
-            <h3>View site</h3>
-          </a>
+        <Link href={url} target="_blank">
+          <h3>View site</h3>
         </Link>
       </div>
     </div>

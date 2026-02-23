@@ -335,11 +335,9 @@ const Home = () => {
               <h1 className="mb-4">We Build Beautiful Websites and Apps</h1>
               <div>
                 <Link href="/services">
-                  <a>
-                    <button type="button" className="global-btn btn">
-                      <b>View Our Services</b>
-                    </button>
-                  </a>
+                  <button type="button" className="global-btn btn">
+                    <b>View Our Services</b>
+                  </button>
                 </Link>
               </div>
               <div className="d-flex scroll-option" id="ourprojects">

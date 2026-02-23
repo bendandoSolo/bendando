@@ -66,12 +66,10 @@ export default function Services() {
                 Whatever your requirements and budget we can offer you a
                 solution that will suit your needs.
               </h5>
-              <Link href="/contact">
-                <a className="mb-5">
-                  <button type="button" className="btn mb-5 global-btn">
-                    Get in Touch
-                  </button>
-                </a>
+              <Link href="/contact" className="mb-5">
+                <button type="button" className="btn mb-5 global-btn">
+                  Get in Touch
+                </button>
               </Link>
             </div>
           </div>

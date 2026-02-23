@@ -39,11 +39,9 @@ const Carousel = ({ p1, p2, p3 }) => {
                 <h2>{p1.name}</h2>
                 <h5>{p1.type}</h5>
                 <Link href={p1.url}>
-                  <a>
-                    <button type="button" className="global-btn btn mt-3">
-                      <b>View This Project</b>
-                    </button>
-                  </a>
+                  <button type="button" className="global-btn btn mt-3">
+                    <b>View This Project</b>
+                  </button>
                 </Link>
               </div>
               <div className="col-md-4 text-center">
@@ -62,11 +60,9 @@ const Carousel = ({ p1, p2, p3 }) => {
                 <h2>{p2.name}</h2>
                 <h5>{p2.type}</h5>
                 <Link href={p2.url}>
-                  <a>
-                    <button type="button" className="global-btn btn mt-3">
-                      <b>View This Project</b>
-                    </button>
-                  </a>
+                  <button type="button" className="global-btn btn mt-3">
+                    <b>View This Project</b>
+                  </button>
                 </Link>
               </div>
               <div className="col-md-4">
@@ -85,11 +81,9 @@ const Carousel = ({ p1, p2, p3 }) => {
                 <h2>{p3.name}</h2>
                 <h5>{p3.type}</h5>
                 <Link href={p3.url}>
-                  <a>
-                    <button type="button" className="global-btn btn mt-3">
-                      <b>View This Project</b>
-                    </button>
-                  </a>
+                  <button type="button" className="global-btn btn mt-3">
+                    <b>View This Project</b>
+                  </button>
                 </Link>
               </div>
               <div className="col-md-4">

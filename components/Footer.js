@@ -51,19 +51,15 @@ export default function Footer() {
             <h5>Connect</h5>
             <ul>
               <Link href="mailto:enquiries@bendando.com">
-                <a>
-                  <li>
-                    <i className="far fa-envelope me-3"></i>
-                    enquiries@bendando.com
-                  </li>
-                </a>
+                <li>
+                  <i className="far fa-envelope me-3"></i>
+                  enquiries@bendando.com
+                </li>
               </Link>
               <Link href="tel:+4402089468865">
-                <a>
-                  <li>
-                    <i className="fas fa-phone me-3"></i>020 8543 8117
-                  </li>
-                </a>
+                <li>
+                  <i className="fas fa-phone me-3"></i>020 8543 8117
+                </li>
               </Link>
             </ul>
           </div>

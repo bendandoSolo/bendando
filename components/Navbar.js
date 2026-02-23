@@ -15,10 +15,8 @@ export default function Navbar({ bgColor }) {
       style={{ width: "100%", height: "80px" }}
     >
       <div className={`container-fluid ${bgColor}`}>
-        <Link href="/">
-          <a className="navbar-brand ms-2">
-            <img style={{ width: "100%" }} src="/images/logo.png" alt="bendando logo" />
-          </a>
+        <Link href="/" className="navbar-brand ms-2">
+          <img style={{ width: "100%" }} src="/images/logo.png" alt="bendando logo" />
         </Link>
 
         <button id="nav-btn-toggle" onClick={toggle}>
