@@ -27,7 +27,15 @@ function ContactForm() {
     contactFormBtn.classList.add("disable-click");
     sendingAnimation();
 
-    const recaptchaToken = await executeRecaptcha("contact_form");
+    let recaptchaToken = null;
+    try {
+      recaptchaToken = await Promise.race([
+        executeRecaptcha("contact_form"),
+        new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 3000)),
+      ]);
+    } catch {
+      // reCAPTCHA blocked or timed out — proceed without token
+    }
 
     emailData["to"] = "enquiries@bendando.com";
     emailData["website"] = "bendando.com";
