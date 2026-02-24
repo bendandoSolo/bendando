@@ -16,14 +16,16 @@ export default function Connect() {
   });
 
   const sendEmail = async (emailData) => {
+    
     const contactFormBtn = document.getElementById("contact-form-btn");
     contactFormBtn.classList.add("disable-click");
     sendingAnimation();
 
     emailData["to"] = "enquiries@bendando.com";
     emailData["website"] = "bendando.com";
+
     const response = await fetch(
-          "https://sendgridcsharp.azurewebsites.net/api/sendemail",
+          'https://csharpsendgridwithresponse.azurewebsites.net/api/SendGridWithResponseCSharp',
             {
               method: "POST",
               contentType: "application/json",
