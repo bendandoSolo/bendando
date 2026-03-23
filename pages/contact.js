@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -16,8 +17,19 @@ const SignupSchema = Yup.object().shape({
 
 function ContactForm() {
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const formLoadTime = useRef(Date.now());
 
   const sendEmail = async (emailData) => {
+    // Honeypot check — bots fill hidden fields, humans don't
+    if (emailData.website_url) {
+      return;
+    }
+
+    // Time check — reject submissions under 3 seconds (bots are fast)
+    if (Date.now() - formLoadTime.current < 3000) {
+      return;
+    }
+
     if (!executeRecaptcha) {
       responseErrorAnimation();
       return;
@@ -37,6 +49,7 @@ function ContactForm() {
       // reCAPTCHA blocked or timed out — proceed without token
     }
 
+    delete emailData.website_url;
     emailData["to"] = "enquiries@bendando.com";
     emailData["website"] = "bendando.com";
     emailData["recaptchaToken"] = recaptchaToken;
@@ -111,6 +124,7 @@ function ContactForm() {
         name: "",
         email: "",
         message: "",
+        website_url: "",
       }}
       validationSchema={SignupSchema}
       onSubmit={(values) => {
@@ -119,6 +133,14 @@ function ContactForm() {
     >
       {({ errors, touched }) => (
         <Form id="contact_form" className="my-4 connect-form">
+          {/* Honeypot — hidden from real users, bots will fill it */}
+          <Field
+            type="text"
+            name="website_url"
+            style={{ display: "none" }}
+            tabIndex="-1"
+            autoComplete="off"
+          />
           <div className="mb-4">
             <Field
               type="text"
