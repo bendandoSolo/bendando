@@ -15,196 +15,196 @@ const SignupSchema = Yup.object().shape({
   message: Yup.string().required("Message is required"),
 });
 
-function ContactForm() {
-  const { executeRecaptcha } = useGoogleReCaptcha();
-  const formLoadTime = useRef(Date.now());
+// function ContactForm() {
+//   const { executeRecaptcha } = useGoogleReCaptcha();
+//   const formLoadTime = useRef(Date.now());
 
-  const sendEmail = async (emailData) => {
-    // Honeypot check — bots fill hidden fields, humans don't
-    if (emailData.website_url) {
-      return;
-    }
+//   const sendEmail = async (emailData) => {
+//     // Honeypot check — bots fill hidden fields, humans don't
+//     if (emailData.website_url) {
+//       return;
+//     }
 
-    // Time check — reject submissions under 3 seconds (bots are fast)
-    if (Date.now() - formLoadTime.current < 3000) {
-      return;
-    }
+//     // Time check — reject submissions under 3 seconds (bots are fast)
+//     if (Date.now() - formLoadTime.current < 3000) {
+//       return;
+//     }
 
-    if (!executeRecaptcha) {
-      responseErrorAnimation();
-      return;
-    }
+//     if (!executeRecaptcha) {
+//       responseErrorAnimation();
+//       return;
+//     }
 
-    const contactFormBtn = document.getElementById("contact-form-btn");
-    contactFormBtn.classList.add("disable-click");
-    sendingAnimation();
+//     const contactFormBtn = document.getElementById("contact-form-btn");
+//     contactFormBtn.classList.add("disable-click");
+//     sendingAnimation();
 
-    let recaptchaToken = null;
-    try {
-      recaptchaToken = await Promise.race([
-        executeRecaptcha("contact_form"),
-        new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 3000)),
-      ]);
-    } catch {
-      // reCAPTCHA blocked or timed out — proceed without token
-    }
+//     let recaptchaToken = null;
+//     try {
+//       recaptchaToken = await Promise.race([
+//         executeRecaptcha("contact_form"),
+//         new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 3000)),
+//       ]);
+//     } catch {
+//       // reCAPTCHA blocked or timed out — proceed without token
+//     }
 
-    delete emailData.website_url;
-    emailData["to"] = "enquiries@bendando.com";
-    emailData["website"] = "bendando.com";
-    emailData["recaptchaToken"] = recaptchaToken;
+//     delete emailData.website_url;
+//     emailData["to"] = "enquiries@bendando.com";
+//     emailData["website"] = "bendando.com";
+//     emailData["recaptchaToken"] = recaptchaToken;
 
-    const response = await fetch(
-      "https://csharpsendgridwithresponse.azurewebsites.net/api/SendGridWithResponseCSharp",
-      {
-        method: "POST",
-        contentType: "application/json",
-        body: JSON.stringify(emailData),
-      }
-    );
-    try {
-      let bodyresponse = await response.json();
-      if (
-        response.status === 200 &&
-        bodyresponse.message != null &&
-        bodyresponse.message == "Email Sent"
-      ) {
-        responseSuccessAnimation();
-      } else {
-        responseErrorAnimation();
-      }
-    } catch (err) {
-      responseErrorAnimation();
-    }
-  };
+//     const response = await fetch(
+//       "https://csharpsendgridwithresponse.azurewebsites.net/api/SendGridWithResponseCSharp",
+//       {
+//         method: "POST",
+//         contentType: "application/json",
+//         body: JSON.stringify(emailData),
+//       }
+//     );
+//     try {
+//       let bodyresponse = await response.json();
+//       if (
+//         response.status === 200 &&
+//         bodyresponse.message != null &&
+//         bodyresponse.message == "Email Sent"
+//       ) {
+//         responseSuccessAnimation();
+//       } else {
+//         responseErrorAnimation();
+//       }
+//     } catch (err) {
+//       responseErrorAnimation();
+//     }
+//   };
 
-  function sendingAnimation() {
-    const feedback = document.getElementById("feedback");
-    let feedbackText = document.getElementById("feedback-text");
-    feedback.classList.add("pop-down");
-    feedbackText.classList.add("fade-in");
-    setTimeout(function () {
-      feedback.classList.remove("pop-down");
-      feedbackText.classList.add("fade-out");
-      feedback.classList.add("pop-up");
-    }, 1500);
-    setTimeout(function () {
-      feedback.classList.remove("pop-up");
-      feedbackText.classList.remove("fade-out", "fade-in");
-    }, 2500);
-  }
+//   function sendingAnimation() {
+//     const feedback = document.getElementById("feedback");
+//     let feedbackText = document.getElementById("feedback-text");
+//     feedback.classList.add("pop-down");
+//     feedbackText.classList.add("fade-in");
+//     setTimeout(function () {
+//       feedback.classList.remove("pop-down");
+//       feedbackText.classList.add("fade-out");
+//       feedback.classList.add("pop-up");
+//     }, 1500);
+//     setTimeout(function () {
+//       feedback.classList.remove("pop-up");
+//       feedbackText.classList.remove("fade-out", "fade-in");
+//     }, 2500);
+//   }
 
-  function responseSuccessAnimation() {
-    setTimeout(function () {
-      const contactFormBtn = document.getElementById("contact-form-btn");
-      const response = document.getElementById("response");
-      let responseText = document.getElementById("response-text");
-      response.classList.add("pop-down", "message-sent");
-      responseText.classList.add("fade-in");
-      responseText.innerHTML = `Message Sent Successfully <i class="fas fa-check ms-2"></i>`;
-      contactFormBtn.classList.remove("disable-click");
-    }, 2500);
-  }
+//   function responseSuccessAnimation() {
+//     setTimeout(function () {
+//       const contactFormBtn = document.getElementById("contact-form-btn");
+//       const response = document.getElementById("response");
+//       let responseText = document.getElementById("response-text");
+//       response.classList.add("pop-down", "message-sent");
+//       responseText.classList.add("fade-in");
+//       responseText.innerHTML = `Message Sent Successfully <i class="fas fa-check ms-2"></i>`;
+//       contactFormBtn.classList.remove("disable-click");
+//     }, 2500);
+//   }
 
-  function responseErrorAnimation() {
-    setTimeout(function () {
-      const contactFormBtn = document.getElementById("contact-form-btn");
-      const response = document.getElementById("response");
-      let responseText = document.getElementById("response-text");
-      response.classList.add("pop-down", "message-error");
-      responseText.classList.add("fade-in");
-      responseText.innerHTML = `Error - Please Try Again <i class="fas fa-undo ms-2"></i>`;
-      contactFormBtn.classList.remove("disable-click");
-    }, 2500);
-  }
+//   function responseErrorAnimation() {
+//     setTimeout(function () {
+//       const contactFormBtn = document.getElementById("contact-form-btn");
+//       const response = document.getElementById("response");
+//       let responseText = document.getElementById("response-text");
+//       response.classList.add("pop-down", "message-error");
+//       responseText.classList.add("fade-in");
+//       responseText.innerHTML = `Error - Please Try Again <i class="fas fa-undo ms-2"></i>`;
+//       contactFormBtn.classList.remove("disable-click");
+//     }, 2500);
+//   }
 
-  return (
-    <Formik
-      initialValues={{
-        name: "",
-        email: "",
-        message: "",
-        website_url: "",
-      }}
-      validationSchema={SignupSchema}
-      onSubmit={(values) => {
-        sendEmail(values);
-      }}
-    >
-      {({ errors, touched }) => (
-        <Form id="contact_form" className="my-4 connect-form">
-          {/* Honeypot — hidden from real users, bots will fill it */}
-          <Field
-            type="text"
-            name="website_url"
-            style={{ display: "none" }}
-            tabIndex="-1"
-            autoComplete="off"
-          />
-          <div className="mb-4">
-            <Field
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              className="form-input"
-            />
-            {errors.name && touched.name ? (
-              <div className="error-validation">*{errors.name}</div>
-            ) : null}
-          </div>
+//   return (
+//     <Formik
+//       initialValues={{
+//         name: "",
+//         email: "",
+//         message: "",
+//         website_url: "",
+//       }}
+//       validationSchema={SignupSchema}
+//       onSubmit={(values) => {
+//         sendEmail(values);
+//       }}
+//     >
+//       {({ errors, touched }) => (
+//         <Form id="contact_form" className="my-4 connect-form">
+//           {/* Honeypot — hidden from real users, bots will fill it */}
+//           <Field
+//             type="text"
+//             name="website_url"
+//             style={{ display: "none" }}
+//             tabIndex="-1"
+//             autoComplete="off"
+//           />
+//           <div className="mb-4">
+//             <Field
+//               type="text"
+//               name="name"
+//               placeholder="Your Name"
+//               className="form-input"
+//             />
+//             {errors.name && touched.name ? (
+//               <div className="error-validation">*{errors.name}</div>
+//             ) : null}
+//           </div>
 
-          <div className="mb-4">
-            <Field
-              name="email"
-              type="email"
-              id="email"
-              placeholder="Your Email"
-              className="form-input"
-            />
-            {errors.email && touched.email ? (
-              <div className="error-validation">*{errors.email}</div>
-            ) : null}
-          </div>
+//           <div className="mb-4">
+//             <Field
+//               name="email"
+//               type="email"
+//               id="email"
+//               placeholder="Your Email"
+//               className="form-input"
+//             />
+//             {errors.email && touched.email ? (
+//               <div className="error-validation">*{errors.email}</div>
+//             ) : null}
+//           </div>
 
-          <div className="mb-4">
-            <Field
-              type="textarea"
-              as="textarea"
-              name="message"
-              id="message"
-              placeholder="Your Message"
-              cols="30"
-              rows="10"
-              className="form-input"
-            />
-            {errors.message && touched.message ? (
-              <div className="error-validation">*{errors.message}</div>
-            ) : null}
-          </div>
-          <div id="feedback">
-            <p id="feedback-text">Sending...</p>
-          </div>
-          <div id="response">
-            <p id="response-text"></p>
-          </div>
-          <div className="text-end">
-            <button
-              className="global-btn btn mt-4 px-5"
-              type="submit"
-              id="contact-form-btn"
-            >
-              Send
-              <span className="mt_load">
-                <span></span>
-              </span>
-            </button>
-          </div>
-          <div id="msg"></div>
-        </Form>
-      )}
-    </Formik>
-  );
-}
+//           <div className="mb-4">
+//             <Field
+//               type="textarea"
+//               as="textarea"
+//               name="message"
+//               id="message"
+//               placeholder="Your Message"
+//               cols="30"
+//               rows="10"
+//               className="form-input"
+//             />
+//             {errors.message && touched.message ? (
+//               <div className="error-validation">*{errors.message}</div>
+//             ) : null}
+//           </div>
+//           <div id="feedback">
+//             <p id="feedback-text">Sending...</p>
+//           </div>
+//           <div id="response">
+//             <p id="response-text"></p>
+//           </div>
+//           <div className="text-end">
+//             <button
+//               className="global-btn btn mt-4 px-5"
+//               type="submit"
+//               id="contact-form-btn"
+//             >
+//               Send
+//               <span className="mt_load">
+//                 <span></span>
+//               </span>
+//             </button>
+//           </div>
+//           <div id="msg"></div>
+//         </Form>
+//       )}
+//     </Formik>
+//   );
+// }
 
 export default function Connect() {
   return (
@@ -278,7 +278,7 @@ export default function Connect() {
                 data-aos="zoom-in"
                 data-aos-delay="250"
               >
-                <ContactForm />
+                {/* <ContactForm /> */}
               </div>
             </div>
           </div>
